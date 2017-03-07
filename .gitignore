@@ -1,7 +1,3 @@
 # Database #
 ############
 config/db.js
-
-# NPM #
-###############
-node_modules/
