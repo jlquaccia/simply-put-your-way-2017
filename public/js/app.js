@@ -1,0 +1,1 @@
+angular.module('simply-put-your-way', ['ui.router']);
