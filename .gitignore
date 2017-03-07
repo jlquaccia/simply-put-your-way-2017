@@ -2,7 +2,6 @@
 ############
 config/db.js
 
-# NPM & Bower #
+# NPM #
 ###############
 node_modules/
-bower_components/
