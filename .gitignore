@@ -1,0 +1,8 @@
+# Database #
+############
+config/db.js
+
+# NPM & Bower #
+###############
+node_modules/
+bower_components/
