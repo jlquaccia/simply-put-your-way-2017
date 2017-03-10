@@ -13,7 +13,7 @@ var db = require('./config/db');
 var port = process.env.PORT || 3000;
 
 // connect to our mongoDB database
-mongoose.connect(db.url);
+mongoose.connect(process.env.MONGOLAB_OLIVE || db.url);
 
 // get all data/stuff of the body (POST) parameters
 // parse application/json
