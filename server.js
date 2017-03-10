@@ -13,7 +13,7 @@ var db = require('./config/db');
 var port = process.env.PORT || 3000;
 
 // connect to our mongoDB database
-mongoose.connect('mongodb://heroku_84m5kv5w:$$27R3sJQ$$$$@ds127730.mlab.com:27730/heroku_84m5kv5w' || db.url);
+mongoose.connect(process.env.MONGODB_URI || db.url);
 
 // get all data/stuff of the body (POST) parameters
 // parse application/json
