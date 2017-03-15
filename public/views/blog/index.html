@@ -1,1 +1,9 @@
-{{index}}
+<h1>Blog Index:</h1>
+<a ui-sref="blogNew">new</a>
+
+<ul>
+  <li ng-repeat="post in posts">
+    <h4><a ui-sref="blogShow">{{post.title}}</a></h4><a href="#">edit</a> | <a href="#">delete</a>
+    <p>{{post.body}}</p>
+  </li>
+</ul>
