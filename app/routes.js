@@ -1,5 +1,5 @@
 // grab the post model we just created
-var Post = require('./models/TempPost');
+var Post = require('./models/Post');
 
 module.exports = function (app) {
   // server routes ===========================================================
