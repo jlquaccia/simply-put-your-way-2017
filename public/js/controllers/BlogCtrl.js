@@ -1,6 +1,6 @@
 angular
   .module('simply-put-your-way')
-  .controller('BlogCtrl', ['$scope', '$state', 'Post', function ($scope, $state, Post) {
+  .controller('BlogCtrl', ['$scope', '$state', '$stateParams', 'Post', function ($scope, $state, $stateParams, Post) {
     // get all posts
     $scope.getPosts = function () {
       Post.getAll().then(function (response) {
@@ -19,6 +19,10 @@ angular
         console.log(error);
       });
     };
+
+    if ($state.current.name === 'blogShow') {
+      $scope.getPost($stateParams.id);
+    }
 
     // create a new post
     $scope.createPost = function () {

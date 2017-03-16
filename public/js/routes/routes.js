@@ -99,6 +99,16 @@ angular
         url: '/blog/:id',
         controller: 'BlogCtrl as blog',
         templateUrl: '/views/blog/show.html'
+        // resolve: {
+        //   getCurrentPost: ['$stateParams', 'Post', function ($stateParams, Post) {
+        //     Post.getOne($stateParams.id).then(function (response) {
+        //       // console.log(response.data);
+        //       $scope.post = response.data;
+        //     }, function (error) {
+        //       console.log(error);
+        //     });
+        //   }]
+        // }
       });
 
     $urlRouterProvider
