@@ -3,9 +3,18 @@ angular
   .controller('BlogCtrl', ['$scope', '$state', 'Post', function ($scope, $state, Post) {
     // get all posts
     $scope.getPosts = function () {
-      Post.get().then(function (response) {
+      Post.getAll().then(function (response) {
         $scope.posts = response.data;
         console.log(response.data);
+      }, function (error) {
+        console.log(error);
+      });
+    };
+
+    // get one post
+    $scope.getPost = function (id) {
+      Post.getOne(id).then(function (response) {
+        $scope.post = response.data;
       }, function (error) {
         console.log(error);
       });

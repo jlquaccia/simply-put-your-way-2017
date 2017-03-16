@@ -85,20 +85,20 @@ angular
         controller: 'BlogCtrl as blog',
         templateUrl: '/views/blog/index.html'
       })
+      .state('blogNew', {
+        url: '/blog/new',
+        controller: 'BlogCtrl as blog',
+        templateUrl: '/views/blog/new.html'
+      })
       .state('blogEdit', {
         url: '/blogEdit',
         controller: 'BlogCtrl as blog',
         templateUrl: '/views/blog/edit.html'
       })
       .state('blogShow', {
-        url: '/blogShow',
+        url: '/blog/:id',
         controller: 'BlogCtrl as blog',
         templateUrl: '/views/blog/show.html'
-      })
-      .state('blogNew', {
-        url: '/blogNew',
-        controller: 'BlogCtrl as blog',
-        templateUrl: '/views/blog/new.html'
       });
 
     $urlRouterProvider
