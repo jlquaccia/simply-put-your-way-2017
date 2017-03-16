@@ -91,7 +91,7 @@ angular
         templateUrl: '/views/blog/new.html'
       })
       .state('blogEdit', {
-        url: '/blogEdit',
+        url: '/blog/edit/:id',
         controller: 'BlogCtrl as blog',
         templateUrl: '/views/blog/edit.html'
       })

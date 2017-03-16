@@ -17,6 +17,10 @@ angular
       // delete a post
       delete: function (id) {
         return $http.delete('/api/posts/' + id);
+      },
+      // update a post
+      update: function (id, postData) {
+        return $http.put('/api/posts/' + id, postData);
       }
     };
   }]);

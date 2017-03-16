@@ -20,7 +20,7 @@ angular
       });
     };
 
-    if ($state.current.name === 'blogShow') {
+    if ($state.current.name === 'blogShow' || $state.current.name === 'blogEdit') {
       $scope.getPost($stateParams.id);
     }
 
@@ -33,6 +33,20 @@ angular
 
       Post.create(newPost).then(function (response) {
         $scope.post.title = $scope.post.body = '';
+        $state.go('blog');
+      }, function (error) {
+        console.log(error);
+      });
+    };
+
+    // update a post
+    $scope.updatePost = function () {
+      var updatedPost = {
+        title: $scope.post.title,
+        body: $scope.post.body
+      };
+
+      Post.update($stateParams.id, updatedPost).then(function (response) {
         $state.go('blog');
       }, function (error) {
         console.log(error);
