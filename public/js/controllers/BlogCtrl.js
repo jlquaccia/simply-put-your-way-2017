@@ -35,6 +35,16 @@ angular
       });
     };
 
+    // delete a post
+    $scope.deletePost = function (id) {
+      if (confirm('are you sure?')) {
+        Post.delete(id);
+        $scope.getPosts();
+      } else {
+        return;
+      }
+    };
+
     $scope.getPosts();
 
     $scope.edit = 'blog edit';
