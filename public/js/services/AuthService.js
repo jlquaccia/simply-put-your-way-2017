@@ -13,14 +13,13 @@ angular
 
     function getUserStatus () {
       return $http.get('/user/status')
-        .success(function (data) {
+        .then(function (data) {
           if (data.status) {
             user = true;
           } else {
             user = false;
           }
-        })
-        .error(function (data) {
+        }, function (data) {
           console.log(data);
           user = false;
         });
@@ -30,7 +29,7 @@ angular
       var deferred = $q.defer();
 
       $http.post('/user/login', {username: username, password: password})
-        .success(function (data, status) {
+        .then(function (data, status) {
           if (status === 200 && data.status) {
             console.log(username + ' has successfully logged in!');
             user = true;
@@ -40,8 +39,7 @@ angular
             user = false;
             deferred.reject();
           }
-        })
-        .error(function (data) {
+        }, function (data) {
           console.log(data);
           user = false;
           deferred.reject();
@@ -54,11 +52,10 @@ angular
       var deferred = $q.defer();
 
       $http.get('/user/logout')
-        .success(function (data) {
+        .then(function (data) {
           user = false;
           deferred.resolve();
-        })
-        .error(function (data) {
+        }, function (data) {
           console.log(data);
           user = false;
           deferred.reject();
@@ -71,7 +68,7 @@ angular
       var deferred = $q.defer();
 
       $http.post('/user/register', {username: username, password: password})
-        .success(function (data, status) {
+        .then(function (data, status) {
           if (status === 200 && data.status) {
             console.log(username + ' has successfully been registered');
             deferred.resolve();
@@ -79,8 +76,7 @@ angular
             console.log('data: ' + data, 'status: ' + status);
             deferred.reject();
           }
-        })
-        .error(function (data) {
+        }, function (data) {
           console.log(data);
           deferred.reject();
         });
