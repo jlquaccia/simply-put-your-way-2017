@@ -99,6 +99,18 @@ angular
         url: '/blog/:id',
         controller: 'BlogCtrl as blog',
         templateUrl: '/views/blog/show.html'
+      })
+
+      // auth
+      .state('login', {
+        url: '/login',
+        controller: 'AuthCtrl as auth',
+        templateUrl: 'views/auth/login.html'
+      })
+      .state('register', {
+        url: '/register',
+        controller: 'AuthCtrl as auth',
+        templateUrl: 'views/auth/register.html'
       });
 
     $urlRouterProvider
