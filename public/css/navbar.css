@@ -1,0 +1,42 @@
+.navigationBar.navbar {
+  border-radius: 0;
+  background-color: #fff;
+  border: none;
+}
+
+.navigationBar .navbar-header {
+  text-align: center;
+  font-weight: 100;
+  line-height: 16px;
+  text-transform: lowercase;
+  padding: 10px 0 10px 30px;
+}
+
+.navigationBar .navbar-header a.navLogo {
+  color: #000;
+}
+
+span.simply {
+  font-size: 16px;
+}
+
+span.way {
+  font-size: 16px;
+}
+
+.navLinks {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.navLinks li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.navLinks li a {
+  color: #000;
+  text-transform: lowercase;
+  font-weight: 200;
+}

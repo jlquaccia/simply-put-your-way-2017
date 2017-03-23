@@ -6,6 +6,8 @@
   <!-- CSS -->
   <link rel="stylesheet" href="/libs/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/general.css"> <!-- custom styles -->
+  <link rel="stylesheet" href="/css/navbar.css"> <!-- custom styles -->
+  <link rel="stylesheet" href="/css/home.css"> <!-- custom styles -->
 
   <!-- JS -->
   <script src="/libs/angular/angular.js"></script>
@@ -38,6 +40,8 @@
   <script src="/js/services/AuthService.js"></script>
 </head>
 <body>
+  <div ng-include="'partials/navbar.html'"></div>
   <div ui-view></div>
+  <div ng-include="'partials/footer.html'"></div>
 </body>
 </html>
