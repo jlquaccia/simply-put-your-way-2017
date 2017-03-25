@@ -1,0 +1,17 @@
+@media screen and (max-width: 800px) {
+  .navWrapper .navigationBar .button {
+    display: inline-block;
+  }
+
+  .navWrapper .navigationBar .desktop {
+    display: none;
+  }
+
+  .navigationBar .navbar-header {
+    display: inline-block;
+  }
+
+  .navWrapper .navigationBar .navLinks {
+    float: right;
+  }
+}

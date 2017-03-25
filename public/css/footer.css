@@ -1,0 +1,142 @@
+footer .overlay {
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: #333;
+  overflow: auto;
+  z-index: 99;
+}
+
+footer .overlay .wrap {
+  color:#e9e9e9;
+  text-align: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+footer .overlay .wrap ul.wrap-nav {
+  border-bottom: 1px solid #575757;
+  text-transform: capitalize;
+  padding: 100px 0;
+}
+
+footer .overlay .wrap ul.wrap-nav li {
+  font-size: 20px;
+  display: inline-block;
+  vertical-align: top;
+  width: 24%;
+  position: relative;
+}
+
+footer .overlay .wrap ul.wrap-nav li a {
+  color:#34B484;
+  display: block;
+  padding: 8px 0;
+  text-decoration: none;
+}
+
+footer .overlay .wrap ul.wrap-nav li a:hover {
+  color:#f0f0f0;
+}
+
+footer .overlay .wrap ul.wrap-nav ul {
+  padding: 20px 0;
+}
+
+footer .overlay .wrap ul.wrap-nav ul li {
+  display: block;
+  font-size: 13px;
+  width: 100%;
+  color:#e9e9e9;
+}
+
+footer .overlay .wrap ul.wrap-nav ul li a {
+  color:#f0f0f0;
+  transition: all .2s linear 0s;
+  -moz-transition: all .2s linear 0s;
+  -webkit-transition: all .2s linear 0s;
+  -o-transition: all .2s linear 0s;
+  display: inline-block;
+}
+
+footer .overlay .wrap ul.wrap-nav ul li a:hover {
+  color:#34B484;
+}
+
+footer .overlay .social {
+  font-size: 25px;
+  padding: 20px 20px 40px;
+}
+
+footer .overlay .social p {
+  margin: 0;
+  padding: 20px 0 5px 0;
+  line-height: 30px;
+  font-size: 13px;
+}
+
+footer .overlay .social p a {
+  color:#34B484;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer .overlay .social a:hover {
+  text-decoration: none;
+}
+
+footer .overlay .social .social-icon {
+  width: 80px;
+  height: 50px;
+  background:#e9e9e9;
+  color: #333;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+footer .overlay .social .social-icon:hover {
+  background:#34B484;
+  color:#f0f0f0;
+}
+
+footer .overlay .social .social-icon i {
+  margin-top: 12px;
+}
+
+@media screen and (max-width: 48em) {
+  footer .overlay .wrap ul.wrap-nav > li {
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid #575757;
+  }
+
+  footer .overlay .wrap ul.wrap-nav {
+    padding: 30px 0 0;
+  }
+
+  footer .overlay .social {
+    color:#c1c1c1;
+    font-size: 25px;
+    padding: 15px 0;
+  }
+
+  footer .overlay .social .social-icon {
+    width: 20%;
+    height: 50px;
+    background: #fff;
+    color: #333;
+    display: inline-block;
+    margin: 5px auto;
+  }
+
+  footer .overlay .social .social-icon.one {
+    position: relative;
+    top: 5px;
+  }
+
+  footer .overlay .social .social-icon.two {
+    position: relative;
+    top: -5px;
+  }
+}
