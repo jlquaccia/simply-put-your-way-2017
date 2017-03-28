@@ -1,1 +1,1 @@
-angular.module('simply-put-your-way', ['ui.router']);
+angular.module('simply-put-your-way', ['duParallax', 'ui.router']);

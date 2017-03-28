@@ -2,6 +2,7 @@
   border-radius: 0;
   background-color: #fff;
   border: none;
+  margin: 0;
 }
 
 .navigationBar .navbar-header {
@@ -9,7 +10,7 @@
   font-weight: 100;
   line-height: 16px;
   text-transform: lowercase;
-  padding: 10px 0 10px 30px;
+  padding: 5px 0 0 30px;
 }
 
 .navigationBar .navbar-header a.navLogo {
@@ -187,6 +188,10 @@ span.way {
 
 .navWrapper .overlay .social .social-icon i {
   margin-top: 12px;
+}
+
+a.navLogo img.img-responsive {
+  width: 80px;
 }
 
 @media screen and (max-width: 48em) {
