@@ -1,8 +1,8 @@
-#home p {
+#home .content {
   position: relative;
-  background: #ebebeb;
+  background: #fff;
   z-index: 1;
-  padding: 100px 20px;
+  padding: 50px 20px;
 }
 
 #home h1.title {
