@@ -1,3 +1,8 @@
+footer {
+  position: relative;
+  z-index: 9;
+}
+
 footer .overlay {
   bottom: 0;
   height: 100%;

@@ -2,7 +2,7 @@
   position: relative;
   background: #fff;
   z-index: 1;
-  padding: 25px 20px;
+  padding: 25px 0 0;
 }
 
 #home h1.title {
@@ -42,8 +42,18 @@
   background-size: cover;
 }
 
+#home .spacerImage {
+  background-image: url("../images/living-room.webp");
+  min-height: 50em;
+  background-position: 0 -150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: -10% 0;
+}
+
 #home .companies {
   padding: 25px 0;
+  background-color: #fff;
 }
 
 #home .companies img {
@@ -91,4 +101,14 @@
 
 #home .flickity-page-dots .dot.is-selected {
   background: #7AA641;
+}
+
+#home .spacerImageWrapper {
+  padding: 0;
+  position: relative;
+}
+
+#home section.testimonials {
+  z-index: 9;
+  position: relative;
 }
