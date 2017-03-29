@@ -1,1 +1,1 @@
-angular.module('simply-put-your-way', ['duParallax', 'ui.router']);
+angular.module('simply-put-your-way', ['duParallax', 'ui.router', 'bc.Flickity']);
