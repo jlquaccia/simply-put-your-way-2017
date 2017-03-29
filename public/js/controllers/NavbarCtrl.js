@@ -17,11 +17,9 @@ angular
 
       // show/hide navbar when necessary
       if (currentScroll > lastScrollTop) {
-        console.log('downscrolled');
         $('.navWrapper .headroom').removeClass('headroom--pinned');
         $('.navWrapper .headroom').addClass('headroom--unpinned');
       } else {
-        console.log('upscrolled');
         $('.navWrapper .headroom').removeClass('headroom--unpinned');
         $('.navWrapper .headroom').addClass('headroom--pinned');
       }
@@ -30,9 +28,9 @@ angular
     });
       
     // toggle mobile overlay
-    $('.button a').click(function () {
+    $('.button a, .navWrapper .overlay .closeOverlay').click(function () {
       $('.overlay').fadeToggle(200);
-      $(this).toggleClass('btn-open').toggleClass('btn-close');
+      // $(this).toggleClass('btn-open').toggleClass('btn-close');
     });
 
     // scroll to top of page button

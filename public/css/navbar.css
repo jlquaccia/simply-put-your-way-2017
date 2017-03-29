@@ -140,7 +140,7 @@ span.way {
 }
 
 .navWrapper .overlay .wrap ul.wrap-nav ul li a {
-  color:#f0f0f0;
+  color: #fff;
   transition: all .2s linear 0s;
   -moz-transition: all .2s linear 0s;
   -webkit-transition: all .2s linear 0s;
@@ -195,6 +195,15 @@ span.way {
 
 a.navLogo img.img-responsive {
   width: 80px;
+}
+
+.navWrapper .overlay .closeOverlay {
+  color: #fff;
+  position: absolute;
+  right: 15px;
+  padding: 10px;
+  top: 15px;
+  z-index: 9999;
 }
 
 @media screen and (max-width: 48em) {
