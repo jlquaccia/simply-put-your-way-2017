@@ -230,3 +230,47 @@ a.navLogo img.img-responsive {
     top: -5px;
   }
 }
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* scrolltop button */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+.navWrapper .scrollTop {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 44px;
+  height: 44px;
+  text-decoration: none;
+  padding: 0;
+  color: #e7e6f1;
+  background: #737373;
+  border: none;
+  border-radius: 100%;
+  -webkit-transform: translate(0, 80px);
+  -webkit-transform: translate3d(0, 80px, 0);
+  -ms-transform: translate(0, 80px);
+  -ms-transform: translate3d(0, 80px, 0);
+  transform: translate(0, 80px);
+  transform: translate3d(0, 80px, 0);
+  transition: transform 0.2s ease-in;
+  opacity: 0.7;
+  z-index: 11;
+}
+
+.navWrapper .scrollTop.show-button {
+  -webkit-transform: translate(0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate(0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate(0, 0);
+  transform: translate3d(0, 0, 0);
+}
