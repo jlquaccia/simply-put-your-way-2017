@@ -6,6 +6,7 @@
   position: fixed;
   z-index: 99;
   width: 100%;
+  box-shadow: 1px 0px 1px;
 }
 
 .navigationBar .navbar-header {
