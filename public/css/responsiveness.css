@@ -1,3 +1,9 @@
+@media screen and (max-width: 950px) {
+  #home .headerImage {
+    background-position: center;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .navWrapper .navigationBar .button {
     display: inline-block;
@@ -13,5 +19,16 @@
 
   .navWrapper .navigationBar .navLinks {
     float: right;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #home .card {
+    display: block;
+    margin: 20px auto;
+  }
+
+  #home .card.right {
+    float: none;
   }
 }

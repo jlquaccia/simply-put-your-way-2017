@@ -81,7 +81,7 @@
 
 #home section.services {
   background-color: rgba(52,180,127,1);
-  padding-bottom: 15px;
+  padding-bottom: 45px;
 }
 
 #home section.about {
@@ -163,14 +163,14 @@
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 /* cards */
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
-#home .cards {
+/*#home .cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 75%;
+  width: 85%;
   margin: 0 auto;
   color: rgba(52,180,127,1);
 }
@@ -205,4 +205,25 @@
 #home .cards center i {
   color: rgba(52,180,127,1);
   font-size: 50px;
+}*/
+
+#home .card {
+  background-color: #fff;
+  display: inline-block;
+  padding: 40px;
+  max-width: 282px;
+  min-height: 352px;
+}
+
+#home .card.right {
+  float: right;
+}
+
+#home .card i {
+  color: rgba(52,180,127,1);
+  font-size: 50px;
+}
+
+#home .card-header {
+  text-align: center;
 }
