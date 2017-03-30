@@ -1,6 +1,8 @@
 footer {
-  position: relative;
-  z-index: 9;
+  position: fixed;
+  z-index: -1;
+  bottom: 0;
+  width: 100%;
 }
 
 footer .overlay {
@@ -10,6 +12,7 @@ footer .overlay {
   background: #333;
   overflow: auto;
   z-index: 99;
+  padding-top: 50px;
 }
 
 footer .overlay .wrap {
@@ -22,7 +25,7 @@ footer .overlay .wrap {
 footer .overlay .wrap ul.wrap-nav {
   border-bottom: 1px solid #575757;
   text-transform: capitalize;
-  padding: 100px 0;
+  /*padding: 100px 0;*/
 }
 
 footer .overlay .wrap ul.wrap-nav li {
@@ -36,7 +39,7 @@ footer .overlay .wrap ul.wrap-nav li {
 footer .overlay .wrap ul.wrap-nav li a {
   color:#34B484;
   display: block;
-  padding: 8px 0;
+  padding: 0;
   text-decoration: none;
 }
 
@@ -70,7 +73,7 @@ footer .overlay .wrap ul.wrap-nav ul li a:hover {
 
 footer .overlay .social {
   font-size: 25px;
-  padding: 20px 20px 40px;
+  padding: 20px 20px 10px;
 }
 
 footer .overlay .social p {
@@ -119,6 +122,17 @@ footer .overlay .social .contactInfo .license {
 
 footer .contactInfo {
   color: #fff;
+}
+
+footer .linksWrapper li,
+footer .linkCategoryTitle {
+  text-align: left;
+}
+
+footer .overlay .wrap ul.wrap-nav li,
+footer a.linkCategoryTitle {
+  position: relative;
+  left: 45px;
 }
 
 @media screen and (max-width: 48em) {
