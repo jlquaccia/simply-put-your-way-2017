@@ -65,7 +65,17 @@
   max-width: 10%;
 }
 
-/* flickity */
+#home .about .titleBlurb {
+  text-align: center;
+}
+
+#home h1 {
+  color: rgba(52,180,127,1);
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* flickety (testimonial section) */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
 #home .main-gallery {
   background: #fff;
 }
@@ -96,7 +106,7 @@
 #home .testimonial-author {
   display: block;
   font-weight: 800;
-  color: #7AA641;
+  color: #34B484;
 }
 
 #home .flickity-page-dots {
@@ -104,7 +114,7 @@
 }
 
 #home .flickity-page-dots .dot.is-selected {
-  background: #7AA641;
+  background: #34B484;
 }
 
 #home .spacerImageWrapper {

@@ -3,3 +3,12 @@ body {
   padding: 0;
   font-family: 'Open Sans Condensed', sans-serif;
 }
+
+.separator.small {
+  background-color: #000;
+  height: 2px;
+  position: relative;
+  width: 22px;
+  display: block;
+  margin: 25px auto 45px;
+}
