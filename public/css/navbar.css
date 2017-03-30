@@ -206,6 +206,14 @@ a.navLogo img.img-responsive {
   z-index: 9999;
 }
 
+.navWrapper .contactInfo {
+  color: #fff;
+}
+
+.navWrapper .desktop {
+  padding-right: 30px;
+}
+
 @media screen and (max-width: 48em) {
   .navWrapper .overlay .wrap ul.wrap-nav > li {
     width: 100%;
@@ -301,4 +309,85 @@ a.navLogo img.img-responsive {
 
 .headroom--unpinned {
   transform: translateY(-100%);
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* nav dropdowns */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+.navWrapper .folder {
+  position: relative;
+}
+
+.navWrapper .subnav {
+  background-color: #bdbdbd;
+  text-align: left;
+  padding: 1em 0;
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 0.3em;
+  z-index: 1000;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform: scale(1, 0);
+  -moz-transform: scale(1, 0);
+  -ms-transform: scale(1, 0);
+  -o-transform: scale(1, 0);
+  transform: scale(1, 0);
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transition: -webkit-transform .14s 0s ease-in-out;
+  -moz-transition: -moz-transform .14s 0s ease-in-out;
+  -ms-transition: -ms-transform .14s 0s ease-in-out;
+  -o-transition: -o-transform .14s 0s ease-in-out;
+  transition: transform .14s 0s ease-in-out;
+}
+
+.navWrapper .folder:hover .subnav {
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+.navWrapper .folder:hover .subnav > div {
+  opacity: 1;
+  -webkit-transition: opacity .14s .14s ease-in-out;
+  -moz-transition: opacity .14s .14s ease-in-out;
+  -ms-transition: opacity .14s .14s ease-in-out;
+  -o-transition: opacity .14s .14s ease-in-out;
+  transition: opacity .14s .14s ease-in-out;
+}
+
+.navWrapper .folder .subnav > div {
+  opacity: 0;
+  padding: 0;
+  -webkit-transition: opacity .05s 0s ease-in-out;
+  -moz-transition: opacity .05s 0s ease-in-out;
+  -o-transition: opacity .05s 0s ease-in-out;
+  -ms-transition: opacity .05s 0s ease-in-out;
+  transition: opacity .05s 0s ease-in-out;
+}
+
+.navWrapper .folder .subnav > div a {
+  display: block;
+  padding: .5em 1.5em;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  font-weight: 100;
+  font-style: normal;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: lowercase;
+  text-decoration: none;
+  line-height: 1em;
+  color: #fff;
 }

@@ -117,6 +117,10 @@ footer .overlay .social .contactInfo .license {
   padding: 0;
 }
 
+footer .contactInfo {
+  color: #fff;
+}
+
 @media screen and (max-width: 48em) {
   footer .overlay .wrap ul.wrap-nav > li {
     width: 100%;
