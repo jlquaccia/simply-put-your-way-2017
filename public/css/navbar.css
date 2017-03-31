@@ -215,6 +215,10 @@ a.navLogo img.img-responsive {
   padding-right: 30px;
 }
 
+.navWrapper .overlay .linkTitle {
+  color: rgba(52,180,127,1);
+}
+
 @media screen and (max-width: 48em) {
   .navWrapper .overlay .wrap ul.wrap-nav > li {
     width: 100%;

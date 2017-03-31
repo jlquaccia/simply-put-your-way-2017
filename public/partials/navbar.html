@@ -3,7 +3,7 @@
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
-        <a class="navLogo" href="#">
+        <a class="navLogo" ui-sref="home" ng-click="scrollToTop();">
           <!-- <span class="simply">Simply</span><br><span class="putYour">Put Your</span><br><span class="way">Way</span> -->
           <img src="https://static.wixstatic.com/media/0832c6_a16eeed310bf4033b478412c064cd00c.jpg/v1/fill/w_458,h_354,al_c,lg_1,q_80/0832c6_a16eeed310bf4033b478412c064cd00c.webp" class="img-responsive" alt="">
         </a>
@@ -12,18 +12,21 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <ul class="navLinks navbar-right">
         <div class="desktop">
-          <li><a href="#">Home</a></li>
+          <li><a ui-sref="home">Home</a></li>
           <li class="folder">
             <a class="folder-toggle" href="#">About</a>
             <div class="subnav">
               <div class="external">
-                <a href="#">About</a>
+                <a ui-sref="about">About</a>
               </div>
               <div class="external">
-                <a href="#">Contact</a>
+                <a ui-sref="contact">Contact</a>
               </div>
               <div class="external">
-                <a href="#">Portfolio</a>
+                <a ui-sref="portfolio">Portfolio</a>
+              </div>
+              <div class="external">
+                <a ui-sref="blog">Blog</a>
               </div>
             </div>
           </li>
@@ -31,16 +34,16 @@
             <a class="folder-toggle" href="#">Services</a>
             <div class="subnav">
               <div class="external">
-                <a href="#">Services</a>
+                <a ui-sref="services">Services</a>
               </div>
               <div class="external">
-                <a href="#">Rates</a>
+                <a ui-sref="rates">Rates</a>
               </div>
               <div class="external">
-                <a href="#">What is an Organizer</a>
+                <a ui-sref="what-is-an-organizer">What is an Organizer?</a>
               </div>
               <div class="external">
-                <a href="#">Resources</a>
+                <a ui-sref="resources">Resources</a>
               </div>
             </div>
           </li>
@@ -48,26 +51,26 @@
             <a class="folder-toggle" href="#">Tips</a>
             <div class="subnav">
               <div class="external">
-                <a href="#">Kids Ready for School?</a>
+                <a ui-sref="kids-ready-for-school">Kids Ready for School?</a>
               </div>
               <div class="external">
-                <a href="#">Time Management Strategies</a>
+                <a ui-sref="time-management-strategies">Time Management Strategies</a>
               </div>
               <div class="external">
-                <a href="#">Prepare for a Move</a>
+                <a ui-sref="prepare-for-a-move">Prepare for a Move</a>
               </div>
               <div class="external">
-                <a href="#">Enjoy the Holidays</a>
+                <a ui-sref="enjoy-the-holidays">Enjoy the Holidays</a>
               </div>
               <div class="external">
-                <a href="#">Donations</a>
+                <a ui-sref="donations">Donations</a>
               </div>
               <div class="external">
-                <a href="#">Tips</a>
+                <a ui-sref="tips">Tips</a>
               </div>
             </div>
           </li>
-          <li><a href="#">Contact</a></li>
+          <li><a ui-sref="contact">Contact</a></li>
         </div>
         <li class="button"><a href="#" class="btn-open"></a></li>
       </ul>
@@ -79,76 +82,83 @@
     <div class="wrap">
       <ul class="wrap-nav">
         <li>
-          <a href="#">About</a>
+          <div class="linkTitle" href="#">About</div>
           <ul>
             <li>
-              <a href="#">About</a>
+              <a ui-sref="about">About</a>
             </li>
             <li>
-              <a href="#">Portolio</a>
+              <a ui-sref="contact">Contact</a>
             </li>
             <li>
-              <a href="#">Developers</a>
+              <a ui-sref="portfolio">Portfolio</a>
             </li>
             <li>
-              <a href="#">Pets</a>
+              <a ui-sref="blog">Blog</a>
             </li>
           </ul>
         </li>
         <li>
-          <a href="#">Services</a>
+          <div class="linkTitle" href="#">Services</div>
           <ul>
             <li>
-              <a href="#">Services</a>
+              <a ui-sref="services">Services</a>
             </li>
             <li>
-              <a href="#">Rates</a>
+              <a ui-sref="rates">Rates</a>
             </li>
             <li>
-              <a href="#">Apps</a>
+              <a ui-sref="what-is-an-organizer">What is an Organizer?</a>
             </li>
             <li>
-              <a href="#">Graphic Design</a>
-            </li>
-            <li>
-              <a href="#">Branding</a>
+              <a ui-sref="resources">Resources</a>
             </li>
           </ul>
         </li>
         <li>
-          <a href="#">Tips</a>
+          <div class="linkTitle" href="#">Tips</div>
           <ul>
             <li>
-              <a href="#">Contact</a>
+              <a href="kids-ready-for-school">Kids Ready for School?</a>
             </li>
             <li>
-              <a href="#">Graphic</a>
+              <a href="time-management-strategies">Time Management Strategies</a>
             </li>
             <li>
-              <a href="#">Apps</a>
+              <a href="prepare-for-a-move">Prepare for a Move</a>
+            </li>
+            <li>
+              <a href="enjoy-the-holidays">Enjoy the Holidays</a>
+            </li>
+            <li>
+              <a href="donations">Donations</a>
+            </li>
+
+            <li>
+              <a href="tips">Tips</a>
             </li>
           </ul>
         </li>
       </ul>
       <div class="social">
-        <a href="#">
+        <a href="https://www.facebook.com/simplyput.yourway">
           <div class="social-icon one">
             <i class="fa fa-facebook"></i>
           </div>
         </a>
-        <a href="#">
+        <a href="https://twitter.com/SmplyPutYourWay">
           <div class="social-icon two">
             <i class="fa fa-twitter"></i>
           </div>
         </a>
-        <a href="#">
+        <a href="https://www.pinterest.com/craftideas88">
           <div class="social-icon one">
-            <i class="fa fa-codepen"></i>
+            <i class="fa fa-pinterest-p"></i>
           </div>
         </a>
-        <a href="#">
+        <a href="https://plus.google.com/collections/featured">
           <div class="social-icon two">
-            <i class="fa fa-behance"></i>
+            <i class="fa fa-google-plus"></i>
           </div>
         </a>
         <div class="contactInfo">
