@@ -15,18 +15,39 @@ angular
     };
 
     // getting pinterest data
-    // board: its your space
-    Pinterest.getBoardPins('490329546869188172').then(function (response) {
-      $scope.itsYourSpace = response.data;
-    });
+    if (Pinterest.isLoggedIn()) {
+      // board: its your space
+      Pinterest.getBoardPins('490329546869188172').then(function (response) {
+        $scope.itsYourSpace = response.data;
+      });
 
-    // board: repurpose it
-    Pinterest.getBoardPins('490329546869301849').then(function (response) {
-      $scope.repurposeIt = response.data;
-    });
+      // board: repurpose it
+      Pinterest.getBoardPins('490329546869301849').then(function (response) {
+        $scope.repurposeIt = response.data;
+      });
 
-    // board: redecorate
-    Pinterest.getBoardPins('490329546869301857').then(function (response) {
-      $scope.redecorate = response.data;
-    });
+      // board: redecorate
+      Pinterest.getBoardPins('490329546869301857').then(function (response) {
+        $scope.redecorate = response.data;
+      });
+    } else {
+      Pinterest.login(function (response) {
+        console.log('logged into pinterest');
+
+        // board: its your space
+        Pinterest.getBoardPins('490329546869188172').then(function (response) {
+          $scope.itsYourSpace = response.data;
+        });
+
+        // board: repurpose it
+        Pinterest.getBoardPins('490329546869301849').then(function (response) {
+          $scope.repurposeIt = response.data;
+        });
+
+        // board: redecorate
+        Pinterest.getBoardPins('490329546869301857').then(function (response) {
+          $scope.redecorate = response.data;
+        });
+      });
+    }
   }]);
