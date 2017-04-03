@@ -233,7 +233,7 @@
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 @media (max-width: 480px) {
   section.pinterest  .masonry {
-    margin: 3% 0;
+    margin-left: 2%;
   }
   
   section.pinterest .masonry .grid-sizer {
@@ -279,7 +279,7 @@
 
 @media only screen and (max-width: xxspx) {
   section.pinterest .masonry {
-    margin: 3% 0;
+    margin-left: 7%;
   }
   
   section.pinterest .masonry .grid-sizer {
@@ -325,7 +325,7 @@
 
 @media (min-width: 481px) and (max-width: 767px) {
   section.pinterest .masonry {
-    margin: 2.25% 0;
+    margin-left: 4%;
   }
   
   section.pinterest .masonry .grid-sizer {
@@ -371,7 +371,7 @@
 
 @media (min-width: 768px) {
   section.pinterest .masonry {
-    margin: 2% 0;
+    margin-left: 5.5%;
   }
   
   section.pinterest .masonry .grid-sizer {
@@ -417,7 +417,7 @@
 
 @media (min-width: 992px) {
   section.pinterest .masonry {
-    margin: 1.875%;
+    margin-left: 7%;
   }
   
   section.pinterest .masonry .grid-sizer {
@@ -463,7 +463,7 @@
 
 @media (min-width: 1200px) {
   section.pinterest .masonry {
-    margin: 1.8% 0;
+    margin-left: 9%;
   }
   
   section.pinterest .masonry .grid-sizer {
