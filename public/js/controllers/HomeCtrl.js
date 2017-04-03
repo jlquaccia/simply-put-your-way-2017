@@ -52,14 +52,9 @@ angular
       });
     }
 
-    // masonry
-    // (function () {
-    //   $(window).on('load', function () {
-    //     $('section.pinterest .masonry').masonry({
-    //       columnWidth: 'section.pinterest .grid-sizer',
-    //       gutter: 'section.pinterest .gutter-sizer',
-    //       itemSelector: 'section.pinterest .item'
-    //     });
-    //   });
-    // })();
+    // active pinterest board
+    $('section.pinterest .boards li').click(function () {
+      $('section.pinterest .boards li').removeClass('active');
+      $(this).addClass('active');
+    });
   }]);

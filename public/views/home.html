@@ -140,16 +140,15 @@
       <section class="pinterest">
         <div class="row">
           <div class="col-md-12">
-            <h1>Pinterest</h1>
-            <h4>select a board:</h4>
-            <small>It's Your Space - Repurpose It - Redecorate</small>
-            <!-- <div ng-repeat="pin in itsYourSpace">
-              <a href="{{pin.url}}" target="_blank">
-                <img src="{{pin.image.original.url}}" alt="Pin">
-                <div class="name"><b>{{pin.metadata.article.name}}</b></div>
-                <div class="note">{{pin.note}}</div>
-              </a>
-            </div> -->
+            <div class="text-center">
+              <h1>Recent Pins</h1>
+              <h4>select a board:</h4>
+              <ul class="boards">
+                <li class="active">It's Your Space</li>
+                <li>Repurpose It</li>
+                <li>Redecorate</li>
+              </ul>
+            </div>
 
             <div masonry='{"columnWidth": "section.pinterest .grid-sizer", "gutter": "section.pinterest .gutter-sizer", "itemSelector": "section.pinterest .item"}' class="masonry">
               <div class="grid-sizer"></div>

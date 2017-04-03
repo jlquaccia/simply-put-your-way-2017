@@ -160,53 +160,6 @@
   position: relative;
 }
 
-/*-----------------------------------------------------------------------------------------------------------------------------------*/
-/* cards */
-/*-----------------------------------------------------------------------------------------------------------------------------------*/
-/*#home .cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  width: 85%;
-  margin: 0 auto;
-  color: rgba(52,180,127,1);
-}
-
-#home .card .card-content {
-  margin: 0 2.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0 30px 30px;
-  padding: 2rem 2.5rem;
-  border: 1px solid rgba(0,0,0,0.15);
-  min-height: 359px;
-  background-color: #fff;
-}
-
-#home .card {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-#home .row.coloredBg {
-  width: 80%;
-  margin: 0 auto;
-}
-
-#home .cards center i {
-  color: rgba(52,180,127,1);
-  font-size: 50px;
-}*/
-
 #home .card {
   background-color: #fff;
   display: inline-block;
@@ -530,6 +483,35 @@ section.pinterest .item::before {
 
 section.pinterest .item a {
   text-decoration: none;
+}
+
+section.pinterest .boards {
+  margin: 0 0 20px 0;
+  padding: 0;
+  list-style: none;
+}
+
+section.pinterest .boards li.active {
+  background-color: rgba(52,180,127,0.2);
+}
+
+section.pinterest .boards li.active:hover {
+  background-color: rgba(52,180,127,0.2);
+}
+
+section.pinterest .boards li {
+  display: inline-block;
+  margin-right: 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.25s cubic-bezier(0.31, 1, 0.34, 1);
+  -moz-transition: all 0.25s cubic-bezier(0.31, 1, 0.34, 1);
+  transition: all 0.25s cubic-bezier(0.31, 1, 0.34, 1);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+section.pinterest .boards li:hover {
+  background: rgba(0, 0, 0, 0.05);
 }
 
 @keyframes tapAnimation {
