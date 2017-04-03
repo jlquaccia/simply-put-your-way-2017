@@ -144,9 +144,9 @@
               <h1>Recent Pins</h1>
               <h4>select a board:</h4>
               <ul class="boards">
-                <li class="active">It's Your Space</li>
-                <li>Repurpose It</li>
-                <li>Redecorate</li>
+                <li id="itsYourSpace" class="active">It's Your Space</li>
+                <li id="repurposeIt">Repurpose It</li>
+                <li id="redecorate">Redecorate</li>
               </ul>
             </div>
 
@@ -154,7 +154,7 @@
               <div class="grid-sizer"></div>
               <div class="gutter-sizer"></div>
               
-              <div masonry-tile ng-repeat="pin in itsYourSpace">
+              <div masonry-tile ng-repeat="pin in currentBoard">
                 <div class="item">
                   <a href="{{pin.url}}" target="_blank">
                     <img src="{{pin.image.original.url}}" alt="Pin" />
