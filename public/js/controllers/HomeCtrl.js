@@ -18,6 +18,7 @@ angular
     if (Pinterest.isLoggedIn()) {
       // board: its your space
       Pinterest.getBoardPins('490329546869188172').then(function (response) {
+        console.log(response.data);
         $scope.itsYourSpace = response.data;
       });
 
@@ -50,4 +51,15 @@ angular
         });
       });
     }
+
+    // masonry
+    (function () {
+      $(window).on('load', function () {
+        $('section.pinterest .masonry').masonry({
+          columnWidth: 'section.pinterest .grid-sizer',
+          gutter: 'section.pinterest .gutter-sizer',
+          itemSelector: 'section.pinterest .item'
+        });
+      });
+    })();
   }]);

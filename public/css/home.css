@@ -227,3 +227,317 @@
 #home .card-header {
   text-align: center;
 }
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* pinterest masonry */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 480px) {
+  section.pinterest  .masonry {
+    margin: 3% 0;
+  }
+  
+  section.pinterest .masonry .grid-sizer {
+    width: 48.5%;
+  }
+  
+  section.pinterest .masonry .gutter-sizer {
+    width: 3%;
+  }
+  
+  section.pinterest .masonry .item {
+    width: 48.5%;
+    margin-bottom: 3%;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  section.pinterest .masonry .item p,
+  section.pinterest .masonry .item h3 {
+    background: #fff;
+    margin: 10px 0 0 0;
+  }
+  
+  section.pinterest .masonry .item img {
+    width: 90%;
+    border-radius: 10px;
+    position: relative;
+    top: 10px;
+  }
+  
+  section.pinterest .masonry .item .textWrapper {
+    padding: 0 15px 15px;
+    color: #333333;
+    font-weight: 100;
+    text-align: left;
+  }
+  
+  section.pinterest .masonry .item em {
+    position: relative;
+    top: 5px;
+  }
+}
+
+@media only screen and (max-width: xxspx) {
+  section.pinterest .masonry {
+    margin: 3% 0;
+  }
+  
+  section.pinterest .masonry .grid-sizer {
+    width: 48.5%;
+  }
+  
+  section.pinterest .masonry .gutter-sizer {
+    width: 3%;
+  }
+  
+  section.pinterest .masonry .item {
+    width: 48.5%;
+    margin-bottom: 3%;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  section.pinterest .masonry .item p,
+  section.pinterest .masonry .item h3 {
+    background: #fff;
+    margin: 10px 0 0 0;
+  }
+  
+  section.pinterest .masonry .item img {
+    width: 90%;
+    border-radius: 10px;
+    position: relative;
+    top: 10px;
+  }
+  
+  section.pinterest .masonry .item .textWrapper {
+    padding: 0 15px 15px;
+    color: #333333;
+    font-weight: 100;
+    text-align: left;
+  }
+  
+  section.pinterest .masonry .item em {
+    position: relative;
+    top: 5px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  section.pinterest .masonry {
+    margin: 2.25% 0;
+  }
+  
+  section.pinterest .masonry .grid-sizer {
+    width: 31.83333333%;
+  }
+  
+  section.pinterest .masonry .gutter-sizer {
+    width: 2.25%;
+  }
+  
+  section.pinterest .masonry .item {
+    width: 31.83333333%;
+    margin-bottom: 2.25%;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  section.pinterest .masonry .item p,
+  section.pinterest .masonry .item h3 {
+    background: #fff;
+    margin: 10px 0 0 0;
+  }
+  
+  section.pinterest .masonry .item img {
+    width: 90%;
+    border-radius: 10px;
+    position: relative;
+    top: 10px;
+  }
+  
+  section.pinterest .masonry .item .textWrapper {
+    padding: 0 15px 15px;
+    color: #333333;
+    font-weight: 100;
+    text-align: left;
+  }
+  
+  section.pinterest .masonry .item em {
+    position: relative;
+    top: 5px;
+  }
+}
+
+@media (min-width: 768px) {
+  section.pinterest .masonry {
+    margin: 2% 0;
+  }
+  
+  section.pinterest .masonry .grid-sizer {
+    width: 23.5%;
+  }
+  
+  section.pinterest .masonry .gutter-sizer {
+    width: 2%;
+  }
+  
+  section.pinterest .masonry .item {
+    width: 23.5%;
+    margin-bottom: 2%;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  section.pinterest .masonry .item p,
+  section.pinterest .masonry .item h3 {
+    background: #fff;
+    margin: 10px 0 0 0;
+  }
+  
+  section.pinterest .masonry .item img {
+    width: 90%;
+    border-radius: 10px;
+    position: relative;
+    top: 10px;
+  }
+  
+  section.pinterest .masonry .item .textWrapper {
+    padding: 0 15px 15px;
+    color: #333333;
+    font-weight: 100;
+    text-align: left;
+  }
+  
+  section.pinterest .masonry .item em {
+    position: relative;
+    top: 5px;
+  }
+}
+
+@media (min-width: 992px) {
+  section.pinterest .masonry {
+    margin: 1.875%;
+  }
+  
+  section.pinterest .masonry .grid-sizer {
+    width: 18.5%;
+  }
+  
+  section.pinterest .masonry .gutter-sizer {
+    width: 1.875%;
+  }
+  
+  section.pinterest .masonry .item {
+    width: 18.5%;
+    margin-bottom: 1.875%;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  section.pinterest .masonry .item p,
+  section.pinterest .masonry .item h3 {
+    background: #fff;
+    margin: 10px 0 0 0;
+  }
+  
+  section.pinterest .masonry .item img {
+    width: 90%;
+    border-radius: 10px;
+    position: relative;
+    top: 10px;
+  }
+  
+  section.pinterest .masonry .item .textWrapper {
+    padding: 0 15px 15px;
+    color: #333333;
+    font-weight: 100;
+    text-align: left;
+  }
+  
+  section.pinterest .masonry .item em {
+    position: relative;
+    top: 5px;
+  }
+}
+
+@media (min-width: 1200px) {
+  section.pinterest .masonry {
+    margin: 1.8% 0;
+  }
+  
+  section.pinterest .masonry .grid-sizer {
+    width: 15.16666667%;
+  }
+  
+  section.pinterest .masonry .gutter-sizer {
+    width: 1.8%;
+  }
+  
+  section.pinterest .masonry .item {
+    width: 15.16666667%;
+    margin-bottom: 1.8%;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  section.pinterest .masonry .item p,
+  section.pinterest .masonry .item h3 {
+    background: #fff;
+    margin: 10px 0 0 0;
+  }
+  
+  section.pinterest .masonry .item img {
+    width: 90%;
+    border-radius: 10px;
+    position: relative;
+    top: 10px;
+  }
+  
+  section.pinterest .masonry .item .textWrapper {
+    padding: 0 15px 15px;
+    color: #333333;
+    font-weight: 100;
+    text-align: left;
+  }
+  
+  section.pinterest .masonry .item em {
+    position: relative;
+    top: 5px;
+  }
+}
+
+section.pinterest .item:hover::before {
+  -webkit-animation: tapAnimation 0.25s cubic-bezier(0.31, 1, 0.34, 1) forwards;
+  animation: tapAnimation 0.25s cubic-bezier(0.31, 1, 0.34, 1) forwards;
+}
+
+section.pinterest .item::before {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  content: '' !important;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  -webkit-transform: scale(0.96);
+  transform: scale(0.96);
+  z-index: 3;
+}
+
+@keyframes tapAnimation {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(0.96);
+    transform: scale(0.96);
+  }
+  
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}

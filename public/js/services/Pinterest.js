@@ -9,6 +9,7 @@ angular
 
     function logout () {
       PDK.logout();
+      console.log('logged out');
     }
 
     function isLoggedIn () {
