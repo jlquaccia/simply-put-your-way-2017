@@ -154,14 +154,22 @@
             <div masonry='{"columnWidth": "section.pinterest .grid-sizer", "gutter": "section.pinterest .gutter-sizer", "itemSelector": "section.pinterest .item"}' class="masonry">
               <div class="grid-sizer"></div>
               <div class="gutter-sizer"></div>
-              <div class="item">
-                <img src="https://s-media-cache-ak0.pinimg.com/474x/90/e6/1b/90e61b1d200220d0a80866a7c64261ef.jpg" alt="" />
-                <div class="textWrapper">
-                  <p>Cloth bags held open with embroidery hoops hang from a…</p>
-                  <em>April 1, 2017</em>
+              
+              <div masonry-tile ng-repeat="pin in itsYourSpace">
+                <div class="item">
+                  <a href="{{pin.url}}" target="_blank">
+                    <img src="{{pin.image.original.url}}" alt="Pin" />
+                    <div class="textWrapper">
+                      <h3>{{pin.metadata.article.name}}</h3>
+                      <p>{{pin.note}}</p>
+                      <em>{{pin.created_at | date:'MMM d, yyyy'}}</em>
+                    </div>
+                  </a>
                 </div>
               </div>
-              <div class="item">
+              
+
+              <!-- <div class="item">
                 <img src="https://s-media-cache-ak0.pinimg.com/474x/2c/b8/1e/2cb81ecc408f4282f3e217f8d101b47c.jpg" alt="" />
                 <div class="textWrapper">
                   <h3>65 Ingenious Kitchen Organization Tips And Storage Ideas</h3>
@@ -192,7 +200,7 @@
                   <p>Chalkboard Painted File Cabinet - 14 Originally Repurposed…</p>
                   <em>March 12, 2017</em>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>

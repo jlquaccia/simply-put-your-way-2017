@@ -528,6 +528,10 @@ section.pinterest .item::before {
   z-index: 3;
 }
 
+section.pinterest .item a {
+  text-decoration: none;
+}
+
 @keyframes tapAnimation {
   0% {
     opacity: 1;
