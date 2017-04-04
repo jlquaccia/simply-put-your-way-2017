@@ -1,3 +1,9 @@
+@media screen and (max-width: 1200px) {
+  #home .companies img {
+    max-width: 20%;
+  }
+}
+
 @media screen and (max-width: 1100px) {
   #home .spacerImage {
     min-height: 40em;
@@ -55,6 +61,16 @@
   #home .card.right {
     float: none;
   }
+
+  #home .companies img {
+    max-width: 25%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #home .companies img {
+    max-width: 30%;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -75,5 +91,9 @@
   #home h1.title {
     top: 35%;
     font-size: 4em;
+  }
+
+  #home .companies img {
+    max-width: 50%;
   }
 }
