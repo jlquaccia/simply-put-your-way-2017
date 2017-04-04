@@ -14,7 +14,7 @@
   font-weight: 100;
   line-height: 16px;
   text-transform: lowercase;
-  padding: 5px 0 0 30px;
+  padding: 5px 0 0 60px;
 }
 
 .navigationBar .navbar-header a.navLogo {
@@ -212,11 +212,25 @@ a.navLogo img.img-responsive {
 }
 
 .navWrapper .desktop {
-  padding-right: 30px;
+  padding-right: 60px;
 }
 
 .navWrapper .overlay .linkTitle {
   color: rgba(52,180,127,1);
+}
+
+.navWrapper .navLinks a {
+  -webkit-transition: color .14s 0s ease-in-out;
+  -moz-transition: color .14s 0s ease-in-out;
+  -ms-transition: color .14s 0s ease-in-out;
+  -o-transition: color .14s 0s ease-in-out;
+  transition: color .14s 0s ease-in-out;
+}
+
+.navWrapper .navLinks a:hover,
+.navWrapper .folder .subnav > div a:hover {
+  text-decoration: none;
+  color: #9c9999;
 }
 
 @media screen and (max-width: 48em) {
@@ -390,9 +404,10 @@ a.navLogo img.img-responsive {
   font-weight: 100;
   font-style: normal;
   font-size: 13px;
-  letter-spacing: 2px;
+  letter-spacing: 0;
   text-transform: lowercase;
   text-decoration: none;
   line-height: 1em;
   color: #fff;
+  white-space: nowrap;
 }

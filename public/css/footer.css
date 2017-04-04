@@ -43,10 +43,6 @@ footer .overlay .wrap ul.wrap-nav li a {
   text-decoration: none;
 }
 
-footer .overlay .wrap ul.wrap-nav li a:hover {
-  color:#fff;
-}
-
 footer .overlay .wrap ul.wrap-nav ul {
   padding: 20px 0;
 }
