@@ -128,7 +128,15 @@ footer .linkCategoryTitle {
 footer .overlay .wrap ul.wrap-nav li,
 footer a.linkCategoryTitle {
   position: relative;
-  left: 45px;
+  left: 7%;
+}
+
+@media screen and (max-width: 850px) {
+  footer .overlay .wrap ul.wrap-nav li,
+  footer a.linkCategoryTitle {
+    position: relative;
+    left: 6%;
+  }
 }
 
 @media screen and (max-width: 48em) {
@@ -138,8 +146,8 @@ footer a.linkCategoryTitle {
     border-bottom: 1px solid #575757;
   }
 
-  footer .overlay .wrap ul.wrap-nav {
-    padding: 30px 0 0;
+  footer .overlay .wrap ul.wrap-nav ul li a {
+    padding: 8px 0;
   }
 
   footer .overlay .social {
@@ -165,5 +173,20 @@ footer a.linkCategoryTitle {
   footer .overlay .social .social-icon.two {
     position: relative;
     top: -5px;
+  }
+
+  footer {
+    position: relative;
+    z-index: 5;
+  }
+
+  footer .overlay .wrap ul.wrap-nav li,
+  footer a.linkCategoryTitle {
+    left: 0;
+    text-align: center;
+  }
+
+  #home {
+    margin-bottom: 0;
   }
 }
