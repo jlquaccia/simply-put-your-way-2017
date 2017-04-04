@@ -1,10 +1,11 @@
 angular
   .module('simply-put-your-way')
-  .controller('HomeCtrl', ['$scope', 'parallaxHelper', 'Pinterest', function ($scope, parallaxHelper, Pinterest) {
+  .controller('HomeCtrl', ['$scope', 'parallaxHelper', 'Pinterest', 'Testimonials', function ($scope, parallaxHelper, Pinterest, Testimonials) {
     // parallax
     $scope.background = parallaxHelper.createAnimator(-0.3,150,0);
     $scope.spacerImage = parallaxHelper.createAnimator(-0.3,150,-150);
 
+    // testimonials
     // tesimonials carousel
     $scope.flickityOptions = {
       cellAlign: 'left',
@@ -13,6 +14,8 @@ angular
       prevNextButtons: false,
       autoPlay: 5000
     };
+
+    $scope.testimonials = Testimonials;
 
     // getting pinterest data
     if (Pinterest.isLoggedIn()) {
