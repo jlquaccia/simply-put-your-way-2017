@@ -203,6 +203,17 @@
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 /* pinterest masonry */
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
+#home .text-center.pinterestTitleWrapper,
+#home .text-center.pinterestTitleWrapper h1 {
+  background-color: rgba(52,180,127,1);
+  color: #fff;
+  padding: 5px 0;
+}
+
+#home .text-center.pinterestTitleWrapper {
+  margin-bottom: 20px;
+}
+
 @media (max-width: 480px) {
   section.pinterest  .masonry {
     margin-left: 2%;
@@ -511,11 +522,7 @@ section.pinterest .boards {
 }
 
 section.pinterest .boards li.active {
-  background-color: rgba(52,180,127,0.2);
-}
-
-section.pinterest .boards li.active:hover {
-  background-color: rgba(52,180,127,0.2);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 section.pinterest .boards li {
@@ -530,7 +537,7 @@ section.pinterest .boards li {
 }
 
 section.pinterest .boards li:hover {
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 @keyframes tapAnimation {
