@@ -32,3 +32,28 @@
     float: none;
   }
 }
+
+@media screen and (max-width: 500px) {
+  #home h1 {
+    font-size: 25px;
+  }
+
+  #home .about p {
+    font-size: 14px;
+  }
+
+  h1 + h4 {
+    font-size: 16px;
+  }
+
+  #home .whiteWrapper, #home .whiteWrapper .separator.small {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #home h1.title {
+    top: 35%;
+    font-size: 4em;
+  }
+}
