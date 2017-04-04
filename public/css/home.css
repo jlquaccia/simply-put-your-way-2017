@@ -39,11 +39,11 @@
 }
 
 #home .headerImage {
-  background-image: url("http://www.doglib.com/wp-content/uploads/de/decker-decker-rat-terrier-about-the-breed.jpg");
+  background-image: url("../images/Single Red Flower.jpg");
   min-height: 40em;
-  background-position: 0 -50px;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-position: 0 10px;
+  /* background-repeat: no-repeat; */
+  background-size: contain;
 }
 
 #home .spacerImage {
