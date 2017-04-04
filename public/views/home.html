@@ -97,7 +97,7 @@
             <div class="main-gallery" bc-flickity="{{flickityOptions}}" id="myCustomId">
               <div class="gallery-cell" ng-repeat="testimonial in testimonials">
                 <div class="testimonial">
-                  <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" alt="" class="testimonial-avatar" />
+                  <img src="{{testimonial.image}}" alt="" class="testimonial-avatar" />
                   <h3 class="testimonial-title">{{testimonial.title}}</h3>
                   <q class="testimonial-quote">{{testimonial.review}}</q>
                   <small>{{testimonial.date}}</small>
