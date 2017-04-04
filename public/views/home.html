@@ -154,7 +154,7 @@
               <div class="grid-sizer"></div>
               <div class="gutter-sizer"></div>
               
-              <div masonry-tile ng-repeat="pin in currentBoard">
+              <div masonry-tile ng-repeat="pin in currentBoard | limitTo:15">
                 <div class="item">
                   <a href="{{pin.url}}" target="_blank">
                     <img src="{{pin.image.original.url}}" alt="Pin" />
