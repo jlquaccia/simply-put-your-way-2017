@@ -65,6 +65,10 @@
   #home .companies img {
     max-width: 25%;
   }
+
+  #home section.services img.remoov {
+    max-width: 50%;
+  }
 }
 
 @media screen and (max-width: 575px) {
