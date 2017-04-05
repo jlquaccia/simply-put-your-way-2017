@@ -1,0 +1,96 @@
+/* for footer on desktop */
+#services {
+  margin-bottom: 500px;
+  padding-bottom: 25px;
+  background-color: #fff;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* header */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+#services .headerImage {
+  background-image: url("../images/Single Red Flower.jpg");
+  min-height: 40em;
+  background-position: 0 10px;
+  /* background-repeat: no-repeat; */
+  background-size: contain;
+}
+
+#services h1.title {
+  display: inline-block;
+  z-index: 9;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 5em;
+}
+
+#services h1.title span.thin {
+  font-weight: 100;
+  background-color: rgba(0,0,0,0.3);
+  padding: 0 10px;
+  letter-spacing: 10px;
+}
+
+#services h1.title span.fat {
+  font-weight: 100;
+  background-color: rgba(0,0,0,0.3);
+  padding: 0 10px;
+  letter-spacing: 10px;
+  position: relative;
+  top: 25px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* services */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+#services .services .separator.small {
+  margin: 25px auto 45px;
+  width: 22px;
+}
+
+#services .services ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 45%;
+}
+
+#services .services ul li {
+  display: inline-block;
+  border-radius: 40px;
+  border: 1px solid rgba(52,180,127,1);
+  color: rgba(52,180,127,1);
+  background-color: #fff;
+  margin: 0 10px 10px 0;
+  padding: 9px 23px;
+  font-size: 14px;
+
+}
+
+#services section.services.text-center {
+  margin-bottom: 35px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* residential home organizing */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+#services .contentWrapper {
+  position: relative;
+  background: #fff;
+  z-index: 1;
+  padding: 25px 0 0;
+}
+
+#services .separator.small {
+  margin: 25px 0 45px;
+  width: 50%;
+}
+
+#services img {
+  margin: 25px 0;
+}
