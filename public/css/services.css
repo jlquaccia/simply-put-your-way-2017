@@ -8,6 +8,17 @@
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 /* header */
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* new header style */
+#services .noPadding {
+  padding: 0;
+}
+
+#services .noPadding img {
+  margin: 0;
+  height: 701px;
+}
+/* end new header style */
+
 #services .headerImage {
   background-image: url("../images/Single Red Flower.jpg");
   min-height: 40em;
