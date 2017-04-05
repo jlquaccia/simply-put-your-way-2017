@@ -13,11 +13,12 @@
 /* header */
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 #rates .headerImage {
-  background-image: url("../images/Single Red Flower.jpg");
+  background-image: url("../images/Fun Decor.jpg");
   min-height: 40em;
   background-position: 0 10px;
-  /* background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   background-size: contain;
+  background-color: #fff;
 }
 
 #rates h1.title {
@@ -25,8 +26,8 @@
   z-index: 9;
   position: absolute;
   top: 30%;
-  left: 0;
-  right: 0;
+  /*left: 0;*/
+  right: 12%;
   text-align: center;
   color: #fff;
   text-transform: uppercase;

@@ -14,8 +14,8 @@
   z-index: 9;
   position: absolute;
   top: 30%;
-  left: 0;
-  right: 0;
+  left: 7%;
+  /* right: 7%; */
   text-align: center;
   color: #fff;
   text-transform: uppercase;
@@ -39,10 +39,10 @@
 }
 
 #home .headerImage {
-  background-image: url("../images/Single Red Flower.jpg");
+  background: url("../images/Fun Decor.jpg"), url("../images/subtle patterns/crossword.png");
   min-height: 40em;
-  background-position: 0 10px;
-  /* background-repeat: no-repeat; */
+  background-position: 100% 0, 0px 0;
+  background-repeat: no-repeat, repeat;
   background-size: contain;
 }
 
