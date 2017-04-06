@@ -79,11 +79,6 @@
   color: #fff;
 }
 
-#home section.services {
-  background-color: rgba(52,180,127,1);
-  padding-bottom: 45px;
-}
-
 #home section.about {
   padding-bottom: 45px;
 }
@@ -114,9 +109,40 @@
   display: none;
 }
 
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* services */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+#home .services h4 {
+  color: #fff;
+}
+
+#home .services ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 80%;
+}
+
+#home .services ul li {
+  display: inline-block;
+  border-radius: 40px;
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: rgba(52,180,127,1);
+  margin: 0 10px 10px 0;
+  padding: 9px 23px;
+  font-size: 14px;
+}
+
 #home section.services img.remoov {
   margin: 25px auto 0;
-  max-width: 30%;
+  max-width: 80%;
+}
+
+#home section.services {
+  background-color: rgba(52,180,127,1);
+  padding-bottom: 45px;
+  text-align: center;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
