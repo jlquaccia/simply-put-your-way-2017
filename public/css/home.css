@@ -24,14 +24,14 @@
 
 #home h1.title span.thin {
   font-weight: 100;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(145,56,63,0.3);
   padding: 0 10px;
   letter-spacing: 10px;
 }
 
 #home h1.title span.fat {
   font-weight: 100;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(145,56,63,0.3);
   padding: 0 10px;
   letter-spacing: 10px;
   position: relative;
