@@ -14,7 +14,7 @@
   z-index: 9;
   position: absolute;
   top: 30%;
-  left: 7%;
+  left: 3%;
   /* right: 7%; */
   text-align: center;
   color: #fff;
@@ -135,7 +135,7 @@
 }
 
 #home section.services img.remoov {
-  margin: 25px auto 25px;
+  margin: 25px auto 35px;
   max-width: 80%;
 }
 
