@@ -32,6 +32,12 @@
   }
 }
 
+@media screen and (max-width: 992px) {
+  #services .services ul {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 950px) {
   #home .spacerImage {
     margin: 0;
