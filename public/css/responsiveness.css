@@ -1,10 +1,12 @@
 @media screen and (max-width: 1315px) {
-  #home .headerImage {
+  #home .headerImage,
+  #services .headerImage {
     background-position: center;
     background-size: cover;
   }
 
-  #home h1.title {
+  #home h1.title,
+  #services h1.title {
     left: 0;
     right: 0;
   }
@@ -35,6 +37,10 @@
 @media screen and (max-width: 992px) {
   #services .services ul {
     width: 100%;
+  }
+
+  #services img {
+    margin: 25px auto;
   }
 }
 
@@ -76,7 +82,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   #home .card {
     display: block;
     margin: 20px auto;
@@ -92,6 +98,10 @@
 
   #home section.services img.remoov {
     max-width: 80%;
+  }
+
+  #services {
+    margin-bottom: 0;
   }
 }
 
