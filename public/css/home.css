@@ -135,7 +135,7 @@
 }
 
 #home section.services img.remoov {
-  margin: 25px auto 0;
+  margin: 25px auto 25px;
   max-width: 80%;
 }
 
@@ -143,6 +143,10 @@
   background-color: rgba(52,180,127,1);
   padding-bottom: 45px;
   text-align: center;
+}
+
+#home section.services .pillWrapper {
+  padding: 0 15px;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
