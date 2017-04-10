@@ -37,7 +37,7 @@ footer .overlay .wrap ul.wrap-nav li {
 }
 
 footer .overlay .wrap ul.wrap-nav li a {
-  color:#34B484;
+  color: #fff;
   display: block;
   padding: 0;
   text-decoration: none;
@@ -64,7 +64,7 @@ footer .overlay .wrap ul.wrap-nav ul li a {
 }
 
 footer .overlay .wrap ul.wrap-nav ul li a:hover {
-  color:#34B484;
+  color: #9c9999;
 }
 
 footer .overlay .social {
@@ -100,7 +100,7 @@ footer .overlay .social .social-icon {
 }
 
 footer .overlay .social .social-icon:hover {
-  background:#34B484;
+  background: rgba(145,56,63,1);
   color:#fff;
 }
 
@@ -123,6 +123,10 @@ footer .contactInfo {
 footer .linksWrapper li,
 footer .linkCategoryTitle {
   text-align: left;
+}
+
+footer .overlay .wrap ul.wrap-nav li a.linkCategoryTitle {
+  text-decoration: underline;
 }
 
 footer .overlay .wrap ul.wrap-nav li,

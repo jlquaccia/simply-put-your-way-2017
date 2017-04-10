@@ -74,7 +74,7 @@ span.way {
 }
 
 .navigationBar .btn-open:hover:after {
-  color:#34B484;
+  color: #9c9999;
 }
 
 .navigationBar .btn-close:after {
@@ -150,7 +150,7 @@ span.way {
 }
 
 .navWrapper .overlay .wrap ul.wrap-nav ul li a:hover {
-  color:#34B484;
+  color: #9c9999;
 }
 
 .navWrapper .overlay .social {
@@ -186,7 +186,7 @@ span.way {
 }
 
 .navWrapper .overlay .social .social-icon:hover {
-  background:#34B484;
+  background: rgba(145,56,63,1);
   color:#f0f0f0;
 }
 
@@ -216,7 +216,8 @@ a.navLogo img.img-responsive {
 }
 
 .navWrapper .overlay .linkTitle {
-  color: rgba(52,180,127,1);
+  color: #fff;
+  text-decoration: underline;
 }
 
 .navWrapper .navLinks a {
@@ -230,6 +231,10 @@ a.navLogo img.img-responsive {
 .navWrapper .navLinks a:hover,
 .navWrapper .folder .subnav > div a:hover {
   text-decoration: none;
+  color: #9c9999;
+}
+
+.navWrapper .overlay .closeOverlay:hover {
   color: #9c9999;
 }
 

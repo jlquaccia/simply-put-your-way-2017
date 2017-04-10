@@ -24,14 +24,14 @@
 
 #home h1.title span.thin {
   font-weight: 100;
-  background-color: rgba(145,56,63,0.3);
+  background-color: rgba(145,56,63,0.5);
   padding: 0 10px;
   letter-spacing: 10px;
 }
 
 #home h1.title span.fat {
   font-weight: 100;
-  background-color: rgba(145,56,63,0.3);
+  background-color: rgba(145,56,63,0.5);
   padding: 0 10px;
   letter-spacing: 10px;
   position: relative;
@@ -71,7 +71,7 @@
 }
 
 #home h1 {
-  color: rgba(52,180,127,1);
+  color: rgba(145,56,63,1);
 }
 
 #home .createPeace {
@@ -128,7 +128,7 @@
   border-radius: 40px;
   border: 1px solid #fff;
   color: #fff;
-  background-color: rgba(52,180,127,1);
+  background-color: rgba(145,56,63,1);
   margin: 0 10px 10px 0;
   padding: 9px 23px;
   font-size: 14px;
@@ -140,7 +140,7 @@
 }
 
 #home section.services {
-  background-color: rgba(52,180,127,1);
+  background-color: rgba(145,56,63,1);
   padding-bottom: 45px;
   text-align: center;
 }
@@ -183,7 +183,7 @@
 #home .testimonial-author {
   display: block;
   font-weight: 800;
-  color: #34B484;
+  color: rgba(145,56,63,1);
 }
 
 #home .flickity-page-dots {
@@ -191,7 +191,7 @@
 }
 
 #home .flickity-page-dots .dot.is-selected {
-  background: #34B484;
+  background: rgba(145,56,63,1);
 }
 
 #home .spacerImageWrapper {
@@ -235,7 +235,7 @@
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 #home .text-center.pinterestTitleWrapper,
 #home .text-center.pinterestTitleWrapper h1 {
-  background-color: rgba(52,180,127,1);
+  background-color: rgba(145,56,63,1);
   color: #fff;
   padding: 5px 0;
 }

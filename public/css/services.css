@@ -5,6 +5,9 @@
   background-color: #fff;
 }
 
+#services h1 {
+  color: rgba(145,56,63,1);
+}
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 /* header */
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
@@ -34,14 +37,14 @@
   top: 30%;
   right: 3%;
   text-align: center;
-  color: rgba(145,56,63,1);
+  color: rgba(145,56,63,0.5);
   text-transform: uppercase;
   font-size: 5em;
 }
 
 #services h1.title span.thin {
   font-weight: 100;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(189,189,189,0.5);
   padding: 0 10px;
   letter-spacing: 10px;
 }
@@ -73,8 +76,8 @@
 #services .services ul li {
   display: inline-block;
   border-radius: 40px;
-  border: 1px solid rgba(52,180,127,1);
-  color: rgba(52,180,127,1);
+  border: 1px solid rgba(145,56,63,1);
+  color: rgba(145,56,63,1);
   background-color: #fff;
   margin: 0 10px 10px 0;
   padding: 9px 23px;
