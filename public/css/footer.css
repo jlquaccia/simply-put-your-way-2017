@@ -12,7 +12,7 @@ footer .overlay {
   background: #333;
   overflow: auto;
   z-index: 99;
-  padding-top: 50px;
+  padding: 50px 0;
 }
 
 footer .overlay .wrap {
@@ -23,9 +23,9 @@ footer .overlay .wrap {
 }
 
 footer .overlay .wrap ul.wrap-nav {
-  border-bottom: 1px solid #575757;
+  /*border-bottom: 1px solid #575757;*/
   text-transform: capitalize;
-  /*padding: 100px 0;*/
+  text-align: left;
 }
 
 footer .overlay .wrap ul.wrap-nav li {
@@ -69,7 +69,7 @@ footer .overlay .wrap ul.wrap-nav ul li a:hover {
 
 footer .overlay .social {
   font-size: 25px;
-  padding: 20px 20px 10px;
+  float: left;
 }
 
 footer .overlay .social p {
@@ -96,7 +96,7 @@ footer .overlay .social .social-icon {
   background:#fff;
   color: #333;
   display: inline-block;
-  margin: 0 20px;
+  margin: 0 20px 0 0;
 }
 
 footer .overlay .social .social-icon:hover {
@@ -110,6 +110,7 @@ footer .overlay .social .social-icon i {
 
 footer .contactInfo hr {
   width: 150px;
+  margin-left: 0;
 }
 
 footer .overlay .social .contactInfo .license {
@@ -118,6 +119,9 @@ footer .overlay .social .contactInfo .license {
 
 footer .contactInfo {
   color: #fff;
+  text-align: left;
+  font-size: 13px;
+  padding: 20px 0;
 }
 
 footer .linksWrapper li,
@@ -129,10 +133,19 @@ footer .overlay .wrap ul.wrap-nav li a.linkCategoryTitle {
   text-decoration: underline;
 }
 
-footer .overlay .wrap ul.wrap-nav li,
+/*footer .overlay .wrap ul.wrap-nav li,
 footer a.linkCategoryTitle {
-  position: relative;
-  left: 7%;
+  text-align: center;
+}*/
+
+footer .social li {
+  display: inline-block;
+}
+
+footer .separator.small {
+  background-color: #fff;
+  margin: 25px 0 45px;
+  width: 50%;
 }
 
 @media screen and (max-width: 850px) {

@@ -10,15 +10,17 @@
 }
 
 .navigationBar .navbar-header {
-  text-align: center;
   font-weight: 100;
   line-height: 16px;
-  text-transform: lowercase;
-  padding: 5px 0 0 60px;
+  padding: 11px 0 11px 60px;
 }
 
 .navigationBar .navbar-header a.navLogo {
   color: #000;
+}
+
+.navigationBar .navbar-header a.navLogo:hover {
+  text-decoration: none;
 }
 
 span.simply {
@@ -236,6 +238,11 @@ a.navLogo img.img-responsive {
 
 .navWrapper .overlay .closeOverlay:hover {
   color: #9c9999;
+}
+
+.navWrapper .navigationBar .navLogo span.name {
+  font-weight: 600;
+  color: rgba(145,56,63,1);
 }
 
 @media screen and (max-width: 48em) {
