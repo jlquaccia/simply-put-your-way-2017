@@ -168,6 +168,10 @@
   footer .contactInfo {
     font-size: 18px;
   }
+
+  footer .overlay .social .social-icon {
+    margin: 0 10px;
+  }
 }
 
 @media screen and (max-width: 450px) {

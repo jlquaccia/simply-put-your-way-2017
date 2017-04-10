@@ -96,7 +96,7 @@ footer .overlay .social .social-icon {
   background:#fff;
   color: #333;
   display: inline-block;
-  margin: 0 20px;
+  margin: 0 20px 0 0;
 }
 
 footer .overlay .social .social-icon:hover {
