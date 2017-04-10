@@ -96,7 +96,7 @@ footer .overlay .social .social-icon {
   background:#fff;
   color: #333;
   display: inline-block;
-  margin: 0 20px 0 0;
+  margin: 0 20px;
 }
 
 footer .overlay .social .social-icon:hover {
@@ -155,9 +155,9 @@ footer .separator.small {
     border-bottom: 1px solid #575757;
   }
 
-  footer .overlay .wrap ul.wrap-nav ul li a {
+  /*footer .overlay .wrap ul.wrap-nav ul li a {
     padding: 8px 0;
-  }
+  }*/
 
   footer .overlay .social {
     color:#c1c1c1;
