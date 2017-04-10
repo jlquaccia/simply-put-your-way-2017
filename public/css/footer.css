@@ -148,14 +148,6 @@ footer .separator.small {
   width: 50%;
 }
 
-@media screen and (max-width: 850px) {
-  footer .overlay .wrap ul.wrap-nav li,
-  footer a.linkCategoryTitle {
-    position: relative;
-    left: 6%;
-  }
-}
-
 @media screen and (max-width: 48em) {
   footer .overlay .wrap ul.wrap-nav > li {
     width: 100%;
@@ -179,7 +171,7 @@ footer .separator.small {
     background: #fff;
     color: #333;
     display: inline-block;
-    margin: 5px auto;
+    /*margin: 5px auto;*/
   }
 
   footer .overlay .social .social-icon.one {

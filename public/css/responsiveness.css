@@ -103,6 +103,28 @@
   #services {
     margin-bottom: 0;
   }
+
+  footer .contactInfo {
+    text-align: center;
+  }
+
+  footer .separator.small {
+    display: none;
+  }
+
+  footer .overlay .social {
+    float: none;
+    padding: 35px 0;
+  }
+
+  footer .social li {
+    width: 65px;
+    margin: 0 20px 0 0;
+  }
+
+  footer .overlay .social .social-icon {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 575px) {
