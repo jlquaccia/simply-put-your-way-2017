@@ -156,6 +156,10 @@ footer img.img-responsive.remoov {
   filter: grayscale(100%);
 }
 
+footer .overlay .wrap ul.wrap-nav li span.phoneMobile a {
+  display: none;
+}
+
 @media screen and (max-width: 48em) {
   footer .overlay .wrap ul.wrap-nav > li {
     width: 100%;

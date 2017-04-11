@@ -251,6 +251,10 @@ a.navLogo img.img-responsive {
   color: rgba(145,56,63,1);
 }
 
+.navWrapper .overlay .wrap ul.wrap-nav li span.phoneMobile a {
+  display: none;
+}
+
 @media screen and (max-width: 48em) {
   .navWrapper .overlay .wrap ul.wrap-nav > li {
     width: 100%;

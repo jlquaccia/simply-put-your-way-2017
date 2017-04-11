@@ -221,4 +221,14 @@
     width: 100%;
     top: 0;
   }
+
+  footer .overlay .wrap ul.wrap-nav li span.phoneMobile a,
+  .navWrapper .overlay .wrap ul.wrap-nav li span.phoneMobile a {
+    display: block;
+  }
+
+  footer .overlay .wrap ul.wrap-nav li span.phoneDesktop,
+  .navWrapper .overlay .wrap ul.wrap-nav li span.phoneDesktop {
+    display: none;
+  }
 }
