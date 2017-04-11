@@ -143,7 +143,6 @@
   background-color: rgba(145,56,63,1);
   /*padding-bottom: 45px;*/
   text-align: center;
-  max-height: 490px;
 }
 
 #home section.services .pillWrapper {
@@ -163,8 +162,8 @@
 
 #home section.services .flowerWrapper img {
   max-width: 70%;
-  -webkit-mask-image: url(http://www.clker.com/cliparts/Y/4/3/f/r/E/house-silhouette.svg);
-  mask-image: url(http://www.clker.com/cliparts/Y/4/3/f/r/E/house-silhouette.svg);
+  -webkit-mask-image: url(../images/house-silhouette.svg);
+  mask-image: url(../images/house-silhouette.svg);
   -webkit-mask-size: 185%;
   mask-size: cover;
   -webkit-mask-position: 30% -270%;
@@ -172,6 +171,11 @@
   position: relative;
   left: -12px;
   top: -40px;
+}
+
+#home section.services .flowerWrapper {
+  max-height: 270px;
+  margin-bottom: 30px;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
