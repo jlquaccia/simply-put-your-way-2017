@@ -104,10 +104,6 @@
     margin-bottom: 0;
   }
 
-  footer .contactInfo {
-    text-align: center;
-  }
-
   footer .separator.small {
     display: none;
   }
@@ -157,7 +153,7 @@
     font-size: 20px;
   }
 
-  footer .overlay .wrap ul.wrap-nav li a.linkCategoryTitle {
+  /*footer .overlay .wrap ul.wrap-nav li a.linkCategoryTitle {
     font-size: 28px;
   }
 
@@ -167,7 +163,7 @@
 
   footer .contactInfo {
     font-size: 18px;
-  }
+  }*/
 
   footer .overlay .social .social-icon {
     margin: 0 10px;

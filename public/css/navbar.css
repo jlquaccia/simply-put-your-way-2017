@@ -101,7 +101,7 @@ span.way {
 
 .navWrapper .overlay .wrap {
   color:#e9e9e9;
-  text-align: center;
+  text-align: left;
   max-width: 90%;
   margin: 0 auto;
 }
@@ -123,7 +123,6 @@ span.way {
 .navWrapper .overlay .wrap ul.wrap-nav li a {
   color:#34B484;
   display: block;
-  padding: 8px 0;
   text-decoration: none;
 }
 
@@ -211,6 +210,8 @@ a.navLogo img.img-responsive {
 
 .navWrapper .contactInfo {
   color: #fff;
+  font-size: 13px;
+  padding-top: 20px;
 }
 
 .navWrapper .desktop {
@@ -259,16 +260,17 @@ a.navLogo img.img-responsive {
   .navWrapper .overlay .social {
     color:#c1c1c1;
     font-size: 25px;
-    padding: 15px 0;
+    padding: 35px 0;
+    text-align: center;
   }
 
   .navWrapper .overlay .social .social-icon {
-    width: 20%;
+    width: 65px;
     height: 50px;
     background: #fff;
     color: #333;
     display: inline-block;
-    margin: 5px auto;
+    margin: 5px 20px 5px 0;
   }
 
   .navWrapper .overlay .social .social-icon.one {

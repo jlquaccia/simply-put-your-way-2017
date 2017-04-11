@@ -192,7 +192,7 @@ footer .separator.small {
   footer .overlay .wrap ul.wrap-nav li,
   footer a.linkCategoryTitle {
     left: 0;
-    text-align: center;
+    text-align: left;
   }
 
   #home {
