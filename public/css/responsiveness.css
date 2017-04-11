@@ -41,6 +41,10 @@
   #home .spacerImage {
     min-height: 40em;
   }
+
+  footer img.img-responsive.remoov {
+    width: 75%;
+  }
 }
 
 @media screen and (max-width: 992px) {

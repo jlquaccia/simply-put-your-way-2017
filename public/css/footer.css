@@ -12,7 +12,7 @@ footer .overlay {
   background: #333;
   overflow: auto;
   z-index: 99;
-  padding: 50px 0;
+  padding: 50px 0 25px;
 }
 
 footer .overlay .wrap {
@@ -146,6 +146,12 @@ footer .separator.small {
   background-color: #fff;
   margin: 25px 0 45px;
   width: 50%;
+}
+
+footer img.img-responsive.remoov {
+  width: 60%;
+  margin: 20px 0 0;
+  filter: grayscale(100%);
 }
 
 @media screen and (max-width: 48em) {
