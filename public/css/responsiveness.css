@@ -26,6 +26,10 @@
   #home section.services img.remoov {
     max-width: 50%;
   }
+
+  #home section.services .flowerWrapper img {
+    width: 20%;
+  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -121,7 +125,17 @@
   footer .overlay .social .social-icon {
     width: 100%;
   }
+
+  #home section.services .flowerWrapper img {
+    width: 40%;
+  }
 }
+
+/*@media screen and (max-width: 650px) {
+  #home section.services .flowerWrapper img {
+    width: 40%;
+  }
+}*/
 
 @media screen and (max-width: 575px) {
   #home .companies img {
@@ -184,5 +198,9 @@
 
   #home .companies img {
     max-width: 50%;
+  }
+
+  #home section.services .flowerWrapper img {
+    width: 100%;
   }
 }
