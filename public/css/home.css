@@ -141,8 +141,9 @@
 
 #home section.services {
   background-color: rgba(145,56,63,1);
-  padding-bottom: 45px;
+  /*padding-bottom: 45px;*/
   text-align: center;
+  max-height: 490px;
 }
 
 #home section.services .pillWrapper {
@@ -153,9 +154,24 @@
   margin-bottom: 45px;
 }
 
-#home section.services .flowerWrapper img {
+/*#home section.services .flowerWrapper img {
   width: 40%;
   margin: 0 auto 45px;
+  -webkit-clip-path: circle(40% at 50% 50%);
+  clip-path: circle(40% at 50% 50%);
+}*/
+
+#home section.services .flowerWrapper img {
+  max-width: 70%;
+  -webkit-mask-image: url(http://www.clker.com/cliparts/Y/4/3/f/r/E/house-silhouette.svg);
+  mask-image: url(http://www.clker.com/cliparts/Y/4/3/f/r/E/house-silhouette.svg);
+  -webkit-mask-size: 185%;
+  mask-size: cover;
+  -webkit-mask-position: 30% -270%;
+  -webkit-mask-repeat: no-repeat;
+  position: relative;
+  left: -12px;
+  top: -40px;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
