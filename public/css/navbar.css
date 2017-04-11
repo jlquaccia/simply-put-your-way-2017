@@ -144,7 +144,8 @@ span.way {
   color:#e9e9e9;
 }
 
-.navWrapper .overlay .wrap ul.wrap-nav ul li a {
+.navWrapper .overlay .wrap ul.wrap-nav ul li a,
+.navWrapper .overlay .wrap ul.wrap-nav li .contactInfo a.email {
   color: #fff;
   transition: all .2s linear 0s;
   -moz-transition: all .2s linear 0s;
@@ -153,7 +154,8 @@ span.way {
   display: inline-block;
 }
 
-.navWrapper .overlay .wrap ul.wrap-nav ul li a:hover {
+.navWrapper .overlay .wrap ul.wrap-nav ul li a:hover,
+.navWrapper .overlay .wrap ul.wrap-nav li .contactInfo a.email:hover {
   color: #9c9999;
 }
 

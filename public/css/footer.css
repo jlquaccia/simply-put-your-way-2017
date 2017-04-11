@@ -54,7 +54,8 @@ footer .overlay .wrap ul.wrap-nav ul li {
   color:#fff;
 }
 
-footer .overlay .wrap ul.wrap-nav ul li a {
+footer .overlay .wrap ul.wrap-nav ul li a,
+footer .overlay .wrap ul.wrap-nav li .contactInfo a.email {
   color:#fff;
   transition: all .2s linear 0s;
   -moz-transition: all .2s linear 0s;
@@ -63,7 +64,8 @@ footer .overlay .wrap ul.wrap-nav ul li a {
   display: inline-block;
 }
 
-footer .overlay .wrap ul.wrap-nav ul li a:hover {
+footer .overlay .wrap ul.wrap-nav ul li a:hover,
+footer .overlay .wrap ul.wrap-nav li .contactInfo a.email:hover {
   color: #9c9999;
 }
 
