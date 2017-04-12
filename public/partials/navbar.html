@@ -31,6 +31,9 @@
             <a class="folder-toggle" href="#">Services</a>
             <div class="subnav">
               <div class="external">
+                <a ui-sref="services">Services</a>
+              </div>
+              <div class="external">
                 <a ui-sref="rates">Rates</a>
               </div>
               <div class="external">
@@ -59,7 +62,7 @@
     <i class="closeOverlay fa fa-times" aria-hidden="true"></i>
     <div class="wrap">
       <ul class="wrap-nav">
-        <li>
+        <li class="about animated fadeInUp">
           <div class="linkTitle" href="#">About</div>
           <ul>
             <li>
@@ -79,9 +82,12 @@
             </li>
           </ul>
         </li>
-        <li>
+        <li class="services animated fadeInUp">
           <div class="linkTitle" href="#">Services</div>
           <ul>
+            <li>
+              <a ui-sref="services">Services</a>
+            </li>
             <li>
               <a ui-sref="rates">Rates</a>
             </li>
@@ -99,7 +105,7 @@
             </li>
           </ul>
         </li>
-        <li>
+        <li class="contact animated fadeInUp">
           <div class="linkTitle" href="#">Contact</div>
           <div class="contactInfo">
             <p>
@@ -112,7 +118,7 @@
           </div>
         </li>
       </ul>
-      <div class="social">
+      <div class="social animated fadeInUp">
         <a href="https://www.facebook.com/simplyput.yourway">
           <div class="social-icon one">
             <i class="fa fa-facebook"></i>

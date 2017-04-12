@@ -255,6 +255,26 @@ a.navLogo img.img-responsive {
   display: none;
 }
 
+.navWrapper .overlay .wrap .wrap-nav li.about {
+  /*-webkit-animation-duration: 3s;*/
+  -webkit-animation-delay: .2s;
+}
+
+.navWrapper .overlay .wrap .wrap-nav li.services {
+  /*-webkit-animation-duration: 3s;*/
+  -webkit-animation-delay: .4s;
+}
+
+.navWrapper .overlay .wrap .wrap-nav li.contact {
+  /*-webkit-animation-duration: 3s;*/
+  -webkit-animation-delay: .6s;
+}
+
+.navWrapper .overlay .wrap .social {
+  /*-webkit-animation-duration: 3s;*/
+  -webkit-animation-delay: .8s;
+}
+
 @media screen and (max-width: 48em) {
   .navWrapper .overlay .wrap ul.wrap-nav > li {
     width: 100%;
