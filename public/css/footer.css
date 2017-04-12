@@ -55,12 +55,6 @@ footer .overlay .wrap ul.wrap-nav ul li {
 }
 
 footer .overlay .wrap ul.wrap-nav ul li a,
-footer .overlay .wrap ul.wrap-nav li .contactInfo {
-  font-size: 18px;
-  padding: 1px 0;
-}
-
-footer .overlay .wrap ul.wrap-nav ul li a,
 footer .overlay .wrap ul.wrap-nav li .contactInfo a.email {
   color:#fff;
   transition: all .2s linear 0s;
@@ -129,7 +123,7 @@ footer .contactInfo {
   color: #fff;
   text-align: left;
   font-size: 13px;
-  margin-top: 20px;
+  padding: 20px 0;
 }
 
 footer .linksWrapper li,
@@ -139,7 +133,6 @@ footer .linkCategoryTitle {
 
 footer .overlay .wrap ul.wrap-nav li a.linkCategoryTitle {
   text-decoration: underline;
-  font-size: 24px;
 }
 
 /*footer .overlay .wrap ul.wrap-nav li,

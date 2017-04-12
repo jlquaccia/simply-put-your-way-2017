@@ -231,4 +231,27 @@
   .navWrapper .overlay .wrap ul.wrap-nav li span.phoneDesktop {
     display: none;
   }
+
+  .navWrapper .overlay .wrap ul.wrap-nav ul li a {
+    font-size: 18px;
+    padding: 1px 0;
+  }
+
+  .navWrapper .overlay .wrap ul.wrap-nav li .contactInfo {
+    font-size: 18px;
+  }
+
+  footer .contactInfo {
+    margin-top: 20px;
+  }
+
+  footer .overlay .wrap ul.wrap-nav li a.linkCategoryTitle {
+    font-size: 24px;
+  }
+
+  footer .overlay .wrap ul.wrap-nav ul li a,
+  footer .overlay .wrap ul.wrap-nav li .contactInfo {
+    font-size: 18px;
+    padding: 1px 0;
+  }
 }
