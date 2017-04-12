@@ -40,6 +40,7 @@
   <!-- Routes -->
   <script src="/js/routes/routes.js"></script>
   <!-- Controllers -->
+  <script src="/js/controllers/MainCtrl.js"></script>
   <script src="/js/controllers/HomeCtrl.js"></script>
   <script src="/js/controllers/BlogCtrl.js"></script>
   <script src="/js/controllers/AuthCtrl.js"></script>
@@ -63,7 +64,7 @@
   <script src="/js/services/PinterestService.js"></script>
   <script src="/js/services/TestimonialsService.js"></script>
 </head>
-<body>
+<body ng-controller="MainCtrl">
   <div ng-include="'partials/navbar.html'"></div>
   <div ui-view></div>
   <div ng-include="'partials/footer.html'"></div>
