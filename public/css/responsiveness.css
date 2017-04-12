@@ -1,14 +1,21 @@
 @media screen and (max-width: 1315px) {
   #home .headerImage,
-  #services .headerImage {
+  #services .headerImage,
+  #about .headerImage {
     background-position: center;
     background-size: cover;
   }
 
   #home h1.title,
-  #services h1.title {
+  #services h1.title,
+  #about h1.title {
     left: 0;
     right: 0;
+  }
+
+  #about h1.title span.thin,
+  #services h1.title span.thin {
+    background-color: rgba(189,189,189,0.7);
   }
 }
 
@@ -58,6 +65,18 @@
 
   #home section.services .flowerWrapper img {
     width: 35%;
+  }
+
+  #about .about .socialAndSelfie {
+    text-align: center;
+  }
+
+  #about .about img.maaam {
+    margin: 0 auto;
+  }
+
+  #about h1.jill {
+    margin-top: 45px;
   }
 }
 
@@ -117,7 +136,8 @@
     max-width: 80%;
   }
 
-  #services {
+  #services,
+  #about {
     margin-bottom: 0;
   }
 
