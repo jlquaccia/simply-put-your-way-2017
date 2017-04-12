@@ -1,5 +1,6 @@
 angular
   .module('simply-put-your-way')
-  .controller('AboutCtrl', ['$scope', function ($scope) {
-    $scope.test = 'about';
+  .controller('AboutCtrl', ['$scope', 'parallaxHelper', function ($scope, parallaxHelper) {
+    // parallax
+    $scope.background = parallaxHelper.createAnimator(-0.3,150,0);
   }]);

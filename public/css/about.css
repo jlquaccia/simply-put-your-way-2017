@@ -1,0 +1,113 @@
+/* for footer on desktop */
+#about {
+  margin-bottom: 355px;
+  padding-bottom: 25px;
+  background-color: #fff;
+}
+
+#about .contentWrapper {
+  position: relative;
+  background: #fff;
+  z-index: 1;
+  padding: 25px 0 0;
+}
+
+#about h1 {
+  color: rgba(145,56,63,1);
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* header */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+#about .headerImage {
+  background: url("http://lorempixel.com/1000/600/animals"), url("../images/subtle patterns/crossword.png");
+  min-height: 40em;
+  background-position: 0 0, 0px 0;
+  background-repeat: no-repeat, repeat;
+  background-size: contain;
+}
+
+#about h1.title {
+  display: inline-block;
+  z-index: 9;
+  position: absolute;
+  top: 30%;
+  right: 3%;
+  text-align: center;
+  color: rgba(145,56,63,0.5);
+  text-transform: uppercase;
+  font-size: 5em;
+}
+
+#about h1.title span.thin {
+  font-weight: 100;
+  background-color: rgba(189,189,189,0.5);
+  padding: 0 10px;
+  letter-spacing: 10px;
+}
+
+#about h1.title span.fat {
+  font-weight: 100;
+  background-color: rgba(0,0,0,0.3);
+  padding: 0 10px;
+  letter-spacing: 10px;
+  position: relative;
+  top: 25px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* about */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+#about .about img.maaam {
+  -webkit-clip-path: circle(46% at 50% 50%);
+  clip-path: circle(46% at 50% 50%);
+}
+
+#about .about b {
+  color: rgba(145,56,63,1);
+}
+
+#about .about .social {
+  font-size: 25px;
+}
+
+#about .about .social a:hover {
+  text-decoration: none;
+}
+
+#about .about .social .social-icon {
+  width: 80px;
+  height: 50px;
+  background: rgba(145,56,63,1);
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  -webkit-transition: transform .14s 0s ease-in-out;
+  -moz-transition: transform .14s 0s ease-in-out;
+  -ms-transition: transform .14s 0s ease-in-out;
+  -o-transition: transform .14s 0s ease-in-out;
+  transition: transform .14s 0s ease-in-out;
+}
+
+#about .about .social .social-icon:hover {
+  background: rgba(145,56,63,1);
+  color: #fff;
+  -webkit-transform: translateY(5px);
+  -moz-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  -o-transform: translateY(5px);
+  transform: translateY(5px);
+}
+
+#about .about .social a:focus {
+  text-decoration: none;
+}
+
+#about .about .social .social-icon i {
+  margin-top: 12px;
+}
+
+#about .separator.small {
+  margin: 25px 0 45px;
+  width: 50%;
+}
