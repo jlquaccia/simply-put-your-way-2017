@@ -12,3 +12,7 @@ body {
   display: block;
   margin: 25px auto 45px;
 }
+
+.overflowHidden {
+  overflow: hidden;
+}
