@@ -143,6 +143,15 @@ span.way {
   color:#e9e9e9;
 }
 
+.navWrapper .overlay .wrap ul.wrap-nav ul li a {
+  font-size: 18px;
+  padding: 1px 0;
+}
+
+.navWrapper .overlay .wrap ul.wrap-nav li .contactInfo {
+  font-size: 18px;
+}
+
 .navWrapper .overlay .wrap ul.wrap-nav ul li a,
 .navWrapper .overlay .wrap ul.wrap-nav li .contactInfo a.email {
   color: #fff;
@@ -225,6 +234,7 @@ a.navLogo img.img-responsive {
 .navWrapper .overlay .linkTitle {
   color: #fff;
   text-decoration: underline;
+  font-size: 24px;
 }
 
 .navWrapper .navLinks a {
