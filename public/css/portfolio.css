@@ -122,10 +122,45 @@
   padding: 10px;
 }
 
-#portfolio .storageIdeas .innerWrapper {
-  box-shadow: rgba(0, 0, 0, 0.329412) 0px 1px 3px 0px;
-}
-
 #portfolio .storageIdeas .columnWidth {
   width: 300px;
+}
+
+#portfolio .storageIdeas .innerWrapper img {
+  border-radius: 10px;
+}
+
+#portfolio .storageIdeas .grid-item:hover::before {
+  -webkit-animation: tapAnimation 0.25s cubic-bezier(0.31, 1, 0.34, 1) forwards;
+  animation: tapAnimation 0.25s cubic-bezier(0.31, 1, 0.34, 1) forwards;
+}
+
+#portfolio .storageIdeas .grid-item::before {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  content: '' !important;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  -webkit-transform: scale(0.96);
+  transform: scale(0.96);
+  z-index: 3;
+}
+
+@keyframes tapAnimation {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(0.96);
+    transform: scale(0.96);
+  }
+  
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }
