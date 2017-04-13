@@ -95,3 +95,37 @@
 #portfolio .portfolio .portfolioSectionWrapper.one .separator.small {
   float: right;
 }
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* storage ideas */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* ---- grid ---- */
+#portfolio .storageIdeas .grid {
+  margin: 0 auto;
+}
+
+/* clearfix */
+#portfolio .storageIdeas .grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+#portfolio .storageIdeas .grid-item {
+  width: 300px;
+  float: left;
+  padding: 10px;
+}
+
+#portfolio .storageIdeas .text {
+  padding: 10px;
+}
+
+#portfolio .storageIdeas .innerWrapper {
+  box-shadow: rgba(0, 0, 0, 0.329412) 0px 1px 3px 0px;
+}
+
+#portfolio .storageIdeas .columnWidth {
+  width: 300px;
+}
