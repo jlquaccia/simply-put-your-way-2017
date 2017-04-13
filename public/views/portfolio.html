@@ -80,7 +80,20 @@
 
             <div masonry='{"columnWidth": "#portfolio .storageIdeas .columnWidth", "itemSelector": "#portfolio .storageIdeas .grid-item", "isFitWidth": "true"}' class="grid">
               <div class="columnWidth"></div>
-              <div class="grid-item">
+              
+              <div masonry-tile ng-repeat="storageIdea in storageIdeas">
+                <div class="grid-item">
+                  <div class="innerWrapper">
+                    <img src="{{storageIdea.image}}" class="img-responsive" alt="" />
+                    <div class="text">
+                      <h3>{{storageIdea.title}}</h3>
+                      <p>{{storageIdea.content}}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="grid-item">
                 <div class="innerWrapper">
                   <img src="https://static.wixstatic.com/media/0832c6_f0bf3a52f85a41d5a0a2a138016493b1.jpg/v1/fill/w_1646,h_926,al_c,q_90,usm_0.66_1.00_0.01/0832c6_f0bf3a52f85a41d5a0a2a138016493b1.webp" class="img-responsive" alt="" />
                   <div class="text">
@@ -124,7 +137,7 @@
                     <p>If your stack of to-do's are piled flat on your desk, chances are you'll spend hours looking for that one thing.  Store your files and bills in a tiered, sorted holder to find what you're looking for quickly.  Colors and phrases that make sense to you will also help you locate paper items easily.</p>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
