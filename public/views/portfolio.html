@@ -83,7 +83,7 @@
               
               <div masonry-tile ng-repeat="storageIdea in storageIdeas">
                 <div class="grid-item">
-                  <div class="innerWrapper">
+                  <div class="innerWrapper" ng-click="toggleOverlay(); setCurrentStorageIdea($index);">
                     <img src="{{storageIdea.image}}" class="img-responsive" alt="" />
                     <div class="text">
                       <h3>{{storageIdea.title}}</h3>
@@ -101,6 +101,15 @@
 
   <!-- storage ideas overlay -->
   <div class="overlay overlay-scale">
-    <button type="button" class="overlay-close">Close</button>
+    <button type="button" class="overlay-close" ng-click="toggleOverlay();">Close</button>
+    <i class="ion-ios-arrow-left" ng-click="prev();"></i>
+    <i class="ion-ios-arrow-right" ng-click="next();"></i>
+    <div class="innerWrapper">
+      <img src="{{currentStorageIdea.image}}" class="img-responsive currentImage" alt="">
+      <div class="text-center text">
+        <h3>{{currentStorageIdea.title}}</h3>
+        <p>{{currentStorageIdea.content}}</p>
+      </div>
+    </div>
   </div>
 </div>
