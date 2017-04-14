@@ -1,14 +1,16 @@
 @media screen and (max-width: 1315px) {
   #home .headerImage,
   #services .headerImage,
-  #about .headerImage {
+  #about .headerImage,
+  #portfolio .headerImage {
     background-position: center;
     background-size: cover;
   }
 
   #home h1.title,
   #services h1.title,
-  #about h1.title {
+  #about h1.title,
+  #portfolio h1.title {
     left: 0;
     right: 0;
   }
@@ -84,6 +86,26 @@
   #about h1.jill {
     margin-top: 45px;
   }
+
+  #portfolio .portfolio .mobile {
+    display: block;
+  }
+
+  #portfolio .portfolio .desktop {
+    display: none;
+  }
+
+  #portfolio .portfolio .container .row {
+    padding: 25px 10px;
+  }
+
+  #portfolio h1 {
+    margin-top: 0;
+  }
+
+  #portfolio .portfolio p {
+    margin-bottom: 25px;
+  }
 }
 
 @media screen and (max-width: 950px) {
@@ -99,6 +121,12 @@
   #home .img-responsive.forMobile {
     display: block;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #portfolio .portfolio .container .row {
+    margin: 0 5px 30px;
   }
 }
 
@@ -143,7 +171,8 @@
   }
 
   #services,
-  #about {
+  #about,
+  #portfolio {
     margin-bottom: 0;
   }
 
@@ -183,6 +212,13 @@
 
   #home section.services .flowerWrapper img {
     width: 55%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #portfolio .portfolio h1.one,
+  #portfolio .portfolio h1.two {
+    font-size: 26px;
   }
 }
 

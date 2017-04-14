@@ -34,7 +34,7 @@
 
 #portfolio h1.title span.thin {
   font-weight: 100;
-  background-color: rgba(189,189,189,0.5);
+  background-color: rgba(189,189,189,0.7);
   padding: 0 10px;
   letter-spacing: 10px;
 }
@@ -83,7 +83,7 @@
 }
 
 #portfolio .portfolio .container .row {
-  padding: 25px 25px 19px 14px;
+  padding: 45px 25px 45px 25px;
   background-color: #e6e6e6;
   margin-bottom: 30px;
 }
@@ -94,6 +94,14 @@
 
 #portfolio .portfolio .portfolioSectionWrapper.one .separator.small {
   float: right;
+}
+
+#portfolio .portfolio img.img-responsive.beepi {
+  margin: 0 auto;
+}
+
+#portfolio .portfolio .mobile {
+  display: none;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
