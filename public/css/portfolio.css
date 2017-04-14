@@ -130,6 +130,12 @@
   border-radius: 10px;
 }
 
+#portfolio .storageIdeas .innerWrapper img,
+#portfolio .storageIdeas .text {
+  position: relative;
+  z-index: -1;
+}
+
 #portfolio .storageIdeas .grid-item:hover::before {
   -webkit-animation: tapAnimation 0.25s cubic-bezier(0.31, 1, 0.34, 1) forwards;
   animation: tapAnimation 0.25s cubic-bezier(0.31, 1, 0.34, 1) forwards;
@@ -163,4 +169,65 @@
     -webkit-transform: scale(1);
     transform: scale(1);
   }
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* storage ideas overlay */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 34em) {
+  #portfolio .overlay {
+    font-size: 90%;
+  }
+  
+  #portfolio .overlay .overlay-close {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+}
+
+/* style5 css */
+/* Overlay style */
+#portfolio .overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(153,204,51,0.9);
+}
+
+/* Overlay closing cross */
+#portfolio .overlay .overlay-close {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  overflow: hidden;
+  border: none;
+  background: url(https://tympanus.net/Development/FullscreenOverlayStyles/img/cross.png) no-repeat center center;
+  text-indent: 200%;
+  color: transparent;
+  outline: none;
+  z-index: 100;
+}
+
+/* Effects */
+#portfolio .overlay-scale {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+  -webkit-transition: -webkit-transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+  transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+  z-index: 99;
+}
+
+#portfolio .overlay-scale.storageIdeasOverlayOpen {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+  transition: -webkit-transform 0.4s, opacity 0.4s;
 }
