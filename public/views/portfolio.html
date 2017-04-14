@@ -105,10 +105,13 @@
     <i class="ion-ios-arrow-left" ng-click="prev();"></i>
     <i class="ion-ios-arrow-right" ng-click="next();"></i>
     <div class="innerWrapper">
-      <img src="{{currentStorageIdea.image}}" class="img-responsive currentImage" alt="">
+      <img src="{{currentStorageIdea.image}}" class="img-responsive currentImage {{currentStorageIdea.imageClass}}" style="width: {{currentStorageIdea.imageWidth}}" alt="">
       <div class="text-center text">
         <h3>{{currentStorageIdea.title}}</h3>
         <p>{{currentStorageIdea.content}}</p>
+        <div ng-show="currentStorageIdea.link">
+          <a href="{{currentStorageIdea.link}}" target="_blank"><i>more</i></a>
+        </div>
       </div>
     </div>
   </div>

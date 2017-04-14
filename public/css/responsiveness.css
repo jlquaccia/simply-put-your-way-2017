@@ -54,6 +54,12 @@
   }
 }
 
+@media screen and (max-width: 1000px) {
+  #portfolio .overlay-scale img.img-responsive.img1 {
+    width: 75%;
+  }
+}
+
 @media screen and (max-width: 992px) {
   #services .services ul {
     width: 100%;

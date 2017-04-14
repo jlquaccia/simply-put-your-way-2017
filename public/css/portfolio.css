@@ -233,8 +233,11 @@
 }
 
 #portfolio .overlay-scale img.img-responsive.currentImage {
-  width: 20%;
   margin: 0 auto;
+}
+
+#portfolio .overlay-scale img.img-responsive.img1 {
+  width: 55%;
 }
 
 #portfolio .overlay-scale .ion-ios-arrow-left,
@@ -262,7 +265,11 @@
   margin: 0 auto;
 }
 
+#portfolio .overlay-scale .text a {
+  color: #fff;
+}
+
 #portfolio .overlay-scale .innerWrapper {
   position: relative;
-  top: 25%;
+  top: 12%;
 }
