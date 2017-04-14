@@ -3,7 +3,8 @@
   #services .headerImage,
   #about .headerImage,
   #portfolio .headerImage,
-  #whatIsAnOrganizer .headerImage {
+  #whatIsAnOrganizer .headerImage,
+  #rates .headerImage {
     background-position: center;
     background-size: cover;
   }
@@ -12,7 +13,8 @@
   #services h1.title,
   #about h1.title,
   #portfolio h1.title,
-  #whatIsAnOrganizer h1.title {
+  #whatIsAnOrganizer h1.title,
+  #rates h1.title {
     left: 0;
     right: 0;
   }
@@ -116,6 +118,10 @@
   #whatIsAnOrganizer .organizeYourStuff .napoBullet {
     width: 100%;
   }
+
+  #rates .rates img.img-responsive.hangers {
+    margin: 25px auto 0;
+  }
 }
 
 @media screen and (max-width: 950px) {
@@ -183,7 +189,8 @@
   #services,
   #about,
   #portfolio,
-  #whatIsAnOrganizer {
+  #whatIsAnOrganizer,
+  #rates {
     margin-bottom: 0;
   }
 

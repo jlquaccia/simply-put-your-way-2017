@@ -2,23 +2,31 @@
   margin-bottom: 355px;
 }
 
+#rates h1 {
+  color: rgba(145,56,63,1);
+}
+
 #rates .contentWrapper {
   position: relative;
   background: #fff;
   z-index: 1;
-  padding: 25px 0 0;
+  padding: 25px 0;
+}
+
+#rates .separator.small {
+  margin: 25px 0 45px;
+  width: 50%;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 /* header */
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 #rates .headerImage {
-  background-image: url("https://static.wixstatic.com/media/0832c6_58aedff45f674eed968f900e800d8308.jpg/v1/fill/w_516,h_516,al_c,q_80,usm_0.66_1.00_0.01/0832c6_58aedff45f674eed968f900e800d8308.webp");
+  background: url("http://lorempixel.com/1000/600/animals"), url("../images/subtle patterns/crossword.png");
   min-height: 40em;
-  background-position: 0 10px;
-  background-repeat: no-repeat;
+  background-position: 0 0, 0px 0;
+  background-repeat: no-repeat, repeat;
   background-size: contain;
-  background-color: #fff;
 }
 
 #rates h1.title {
@@ -26,17 +34,16 @@
   z-index: 9;
   position: absolute;
   top: 30%;
-  /*left: 0;*/
-  right: 12%;
+  right: 3%;
   text-align: center;
-  color: #fff;
+  color: rgba(145,56,63,0.5);
   text-transform: uppercase;
   font-size: 5em;
 }
 
 #rates h1.title span.thin {
   font-weight: 100;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(189,189,189,0.5);
   padding: 0 10px;
   letter-spacing: 10px;
 }
@@ -48,4 +55,12 @@
   letter-spacing: 10px;
   position: relative;
   top: 25px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* rates */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+#rates .rates img.img-responsive.hangers {
+  width: 70%;
+  margin: 0 auto;
 }
