@@ -4,7 +4,8 @@
   #about .headerImage,
   #portfolio .headerImage,
   #whatIsAnOrganizer .headerImage,
-  #rates .headerImage {
+  #rates .headerImage,
+  #donations .headerImage {
     background-position: center;
     background-size: cover;
   }
@@ -14,13 +15,15 @@
   #about h1.title,
   #portfolio h1.title,
   #whatIsAnOrganizer h1.title,
-  #rates h1.title {
+  #rates h1.title,
+  #donations h1.title {
     left: 0;
     right: 0;
   }
 
   #about h1.title span.thin,
-  #services h1.title span.thin {
+  #services h1.title span.thin,
+  #donations h1.title span.thin {
     background-color: rgba(189,189,189,0.7);
   }
 }
@@ -122,6 +125,10 @@
   #rates .rates img.img-responsive.hangers {
     margin: 25px auto 0;
   }
+
+  #donations .whereToDonate p {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 950px) {
@@ -190,7 +197,8 @@
   #about,
   #portfolio,
   #whatIsAnOrganizer,
-  #rates {
+  #rates,
+  #donations {
     margin-bottom: 0;
   }
 
@@ -224,7 +232,8 @@
 }*/
 
 @media screen and (max-width: 600px) {
-  #whatIsAnOrganizer h1.title {
+  #whatIsAnOrganizer h1.title,
+  #donations h1.title {
     font-size: 36px;
   }
 }
@@ -284,6 +293,10 @@
 
   footer .overlay .social .social-icon {
     margin: 0 10px;
+  }
+
+  #donations .whereToDonate .whereToDonateHeader p {
+    width: 90%;
   }
 }
 
