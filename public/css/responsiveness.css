@@ -5,7 +5,8 @@
   #portfolio .headerImage,
   #whatIsAnOrganizer .headerImage,
   #rates .headerImage,
-  #donations .headerImage {
+  #donations .headerImage,
+  #resources .headerImage {
     background-position: center;
     background-size: cover;
   }
@@ -16,14 +17,16 @@
   #portfolio h1.title,
   #whatIsAnOrganizer h1.title,
   #rates h1.title,
-  #donations h1.title {
+  #donations h1.title,
+  #resources h1.title {
     left: 0;
     right: 0;
   }
 
   #about h1.title span.thin,
   #services h1.title span.thin,
-  #donations h1.title span.thin {
+  #donations h1.title span.thin,
+  #resources h1.title span.thin {
     background-color: rgba(189,189,189,0.7);
   }
 }
@@ -198,7 +201,8 @@
   #portfolio,
   #whatIsAnOrganizer,
   #rates,
-  #donations {
+  #donations,
+  #resources {
     margin-bottom: 0;
   }
 
@@ -233,7 +237,8 @@
 
 @media screen and (max-width: 600px) {
   #whatIsAnOrganizer h1.title,
-  #donations h1.title {
+  #donations h1.title,
+  #resources h1.title {
     font-size: 36px;
   }
 }
