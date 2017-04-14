@@ -1,5 +1,6 @@
 angular
   .module('simply-put-your-way')
-  .controller('WhatIsAnOrganizerCtrl', ['$scope', function ($scope) {
-    $scope.test = 'what is an organizer';
+  .controller('WhatIsAnOrganizerCtrl', ['$scope', 'parallaxHelper', function ($scope, parallaxHelper) {
+    // parallax
+    $scope.background = parallaxHelper.createAnimator(-0.3,150,0);
   }]);

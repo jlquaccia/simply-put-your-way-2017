@@ -2,7 +2,8 @@
   #home .headerImage,
   #services .headerImage,
   #about .headerImage,
-  #portfolio .headerImage {
+  #portfolio .headerImage,
+  #whatIsAnOrganizer .headerImage {
     background-position: center;
     background-size: cover;
   }
@@ -10,7 +11,8 @@
   #home h1.title,
   #services h1.title,
   #about h1.title,
-  #portfolio h1.title {
+  #portfolio h1.title,
+  #whatIsAnOrganizer h1.title {
     left: 0;
     right: 0;
   }
@@ -43,6 +45,10 @@
 
   #home section.services {
     padding-bottom: 45px;
+  }
+
+  #whatIsAnOrganizer .organizeYourStuff .napoBullet {
+    width: 25%;
   }
 }
 
@@ -105,6 +111,10 @@
 
   #portfolio .portfolio p {
     margin-bottom: 25px;
+  }
+
+  #whatIsAnOrganizer .organizeYourStuff .napoBullet {
+    width: 100%;
   }
 }
 
@@ -172,7 +182,8 @@
 
   #services,
   #about,
-  #portfolio {
+  #portfolio,
+  #whatIsAnOrganizer {
     margin-bottom: 0;
   }
 
@@ -204,6 +215,12 @@
     width: 40%;
   }
 }*/
+
+@media screen and (max-width: 600px) {
+  #whatIsAnOrganizer h1.title {
+    font-size: 36px;
+  }
+}
 
 @media screen and (max-width: 575px) {
   #home .companies img {

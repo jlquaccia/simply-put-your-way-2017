@@ -1,0 +1,82 @@
+/* for footer on desktop */
+#whatIsAnOrganizer {
+  margin-bottom: 355px;
+  padding-bottom: 25px;
+  background-color: #fff;
+}
+
+#whatIsAnOrganizer h1 {
+  color: rgba(145,56,63,1);
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* header */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+#whatIsAnOrganizer .headerImage {
+  background: url("http://lorempixel.com/1000/600/animals"), url("../images/subtle patterns/crossword.png");
+  min-height: 40em;
+  background-position: 0 0, 0px 0;
+  background-repeat: no-repeat, repeat;
+  background-size: contain;
+}
+
+#whatIsAnOrganizer h1.title {
+  display: inline-block;
+  z-index: 9;
+  position: absolute;
+  top: 30%;
+  right: 3%;
+  text-align: center;
+  color: rgba(145,56,63,0.5);
+  text-transform: uppercase;
+  font-size: 5em;
+}
+
+#whatIsAnOrganizer h1.title span.thin {
+  font-weight: 100;
+  background-color: rgba(189,189,189,0.7);
+  padding: 0 10px;
+  letter-spacing: 10px;
+}
+
+#whatIsAnOrganizer h1.title span.fat {
+  font-weight: 100;
+  background-color: rgba(189,189,189,0.7);
+  padding: 0 10px;
+  letter-spacing: 10px;
+  position: relative;
+  top: 25px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* organize your stuff, improve your life */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+#whatIsAnOrganizer .contentWrapper {
+  position: relative;
+  background: #fff;
+  z-index: 1;
+  padding: 25px 0 0;
+}
+
+#whatIsAnOrganizer .whiteFlower {
+  -webkit-clip-path: circle(38.5% at 50% 50%);
+  clip-path: circle(38.5% at 50% 50%);
+  margin: 0 auto;
+}
+
+#whatIsAnOrganizer .separator.small {
+  margin: 25px 0 45px;
+  width: 50%;
+}
+
+#whatIsAnOrganizer .organizeYourStuff .napo {
+  width: 78px;
+}
+
+#whatIsAnOrganizer .organizeYourStuff .napoSf {
+  width: 69px;
+}
+
+#whatIsAnOrganizer .organizeYourStuff .napoBullet {
+  width: 20%;
+}
