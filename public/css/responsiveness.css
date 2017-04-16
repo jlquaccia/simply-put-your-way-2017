@@ -31,6 +31,12 @@
   }
 }
 
+@media screen and (max-width: 1278px) {
+  #resources .helpfulBooks .booksWrapper .transform.longTitle {
+    transform: translateY(43%);
+  }
+}
+
 @media (min-width: 1200px) and (max-width: 1300px) {
   #home .services ul {
     width: 100%;
@@ -131,6 +137,36 @@
 
   #donations .whereToDonate p {
     width: 100%;
+  }
+
+  #resources .organizingResources img.remoov {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  #resources .helpfulBooks .booksWrapper .textWrapper {
+    margin: 0 auto 0;
+  }
+
+  #resources .helpfulBooks .booksWrapper .transform,
+  #resources .helpfulBooks .booksWrapper .transform.longTitle {
+    transform: translateY(0%);
+  }
+
+  #resources .helpfulBooks .row {
+    padding: 25px 0;
+  }
+
+  #resources .helpfulBooks .booksWrapper .mobile {
+    display: block;
+  }
+
+  #resources .helpfulBooks .booksWrapper .desktop {
+    display: none;
+  }
+
+  #resources .helpfulBooks img {
+    margin-bottom: 25px;
   }
 }
 

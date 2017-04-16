@@ -1,7 +1,6 @@
 /* for footer on desktop */
 #resources {
   margin-bottom: 355px;
-  padding-bottom: 25px;
   background-color: #fff;
 }
 
@@ -69,40 +68,38 @@
 }
 
 #resources .organizingResources img.remoov {
-  width: 25%;
-  float: left;
+  width: 100%;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 /* helpful books */
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 #resources .helpfulBooks img {
-  width: 20%;
-  margin: 25px 0;
+  width: 225px;
+  margin: 0 auto;
 }
 
-#resources .helpfulBooks img.img-responsive.img1,
-#resources .helpfulBooks img.img-responsive.img3 {
-  float: left;
+#resources .helpfulBooks .row.redBg {
+  background-color: rgba(145,56,63,1);
+  color: #fff;
 }
 
-#resources .helpfulBooks img.img-responsive.img2 {
-  float: right;
+#resources .helpfulBooks .booksWrapper .textWrapper {
+  width: 95%;
 }
 
-#resources .helpfulBooks p {
-  width: 50%;
-  display: inline-block;
+#resources .helpfulBooks .booksWrapper .transform {
+  transform: translateY(50%);
 }
 
-#resources .helpfulBooks p.p1 {
-  position: relative;
-  top: 100px;
-  left: 100px;
+#resources .helpfulBooks .booksWrapper b.white {
+  color: #fff;
 }
 
-#resources .helpfulBooks p.p2 {
-  position: relative;
-  top: 100px;
-  right: -250px;
+#resources .helpfulBooks .booksWrapper .mobile {
+  display: none;
+}
+
+#resources .helpfulBooks .booksWrapper p {
+  margin: 0;
 }
