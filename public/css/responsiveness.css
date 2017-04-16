@@ -6,7 +6,8 @@
   #whatIsAnOrganizer .headerImage,
   #rates .headerImage,
   #donations .headerImage,
-  #resources .headerImage {
+  #resources .headerImage,
+  #contact .headerImage {
     background-position: center;
     background-size: cover;
   }
@@ -18,7 +19,8 @@
   #whatIsAnOrganizer h1.title,
   #rates h1.title,
   #donations h1.title,
-  #resources h1.title {
+  #resources h1.title,
+  #contact h1.title {
     left: 0;
     right: 0;
   }
@@ -26,7 +28,8 @@
   #about h1.title span.thin,
   #services h1.title span.thin,
   #donations h1.title span.thin,
-  #resources h1.title span.thin {
+  #resources h1.title span.thin,
+  #contact h1.title span.thin {
     background-color: rgba(189,189,189,0.7);
   }
 }
@@ -168,6 +171,10 @@
   #resources .helpfulBooks img {
     margin-bottom: 25px;
   }
+
+  #contact .contact .formWrapper p {
+    margin-bottom: 25px;
+  }
 }
 
 @media screen and (max-width: 950px) {
@@ -238,7 +245,8 @@
   #whatIsAnOrganizer,
   #rates,
   #donations,
-  #resources {
+  #resources,
+  #contact {
     margin-bottom: 0;
   }
 
@@ -274,7 +282,8 @@
 @media screen and (max-width: 600px) {
   #whatIsAnOrganizer h1.title,
   #donations h1.title,
-  #resources h1.title {
+  #resources h1.title,
+  #contact h1.title {
     font-size: 36px;
   }
 }
@@ -338,6 +347,18 @@
 
   #donations .whereToDonate .whereToDonateHeader p {
     width: 90%;
+  }
+
+  /*#contact .contact form .form-group label {
+    max-width: 100%;
+  }*/
+
+  #contact .contact form .form-group {
+    display: block;
+  }
+
+  #contact .contact form#contactForm button {
+    left: 0;
   }
 }
 

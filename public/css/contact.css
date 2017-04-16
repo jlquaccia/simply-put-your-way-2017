@@ -1,0 +1,107 @@
+/* for footer on desktop */
+#contact {
+  margin-bottom: 355px;
+  padding-bottom: 25px;
+  background-color: #fff;
+}
+
+#contact h1 {
+  color: rgba(145,56,63,1);
+}
+
+#contact .contact .separator.small {
+  margin: 25px auto 25px;
+  width: 22px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* header */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+#contact .headerImage {
+  background: url("http://lorempixel.com/1000/600/animals"), url("../images/subtle patterns/crossword.png");
+  min-height: 40em;
+  background-position: 0 0, 0px 0;
+  background-repeat: no-repeat, repeat;
+  background-size: contain;
+}
+
+#contact h1.title {
+  display: inline-block;
+  z-index: 9;
+  position: absolute;
+  top: 30%;
+  right: 3%;
+  text-align: center;
+  color: rgba(145,56,63,0.5);
+  text-transform: uppercase;
+  font-size: 5em;
+}
+
+#contact h1.title span.thin {
+  font-weight: 100;
+  background-color: rgba(189,189,189,0.5);
+  padding: 0 10px;
+  letter-spacing: 10px;
+}
+
+#contact h1.title span.fat {
+  font-weight: 100;
+  background-color: rgba(0,0,0,0.3);
+  padding: 0 10px;
+  letter-spacing: 10px;
+  position: relative;
+  top: 25px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* when you're ready for some help */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+#contact .contentWrapper {
+  position: relative;
+  background: #fff;
+  z-index: 1;
+  padding: 25px 0 0;
+}
+
+#contact .contact img.img-responsive.gardenUtencils {
+  margin: 0 auto;
+  -webkit-clip-path: circle(39% at 50% 50%);
+  clip-path: circle(39% at 50% 50%);
+  width: 25%;
+}
+
+#contact .contact p.contactText {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+}
+
+#contact .contact form .form-group {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+#contact .contact form .form-group label {
+  width: 62px;
+}
+
+#contact .contact form {
+  width: 100%;
+}
+
+#contact .contact .row.formWrapper {
+  margin: 25px 0;
+}
+
+#contact .contact form .form-control:focus {
+  border-color: rgba(145,56,63,1);
+  box-shadow: none;
+}
+
+#contact .contact form#contactForm button {
+  position: relative;
+  left: 56.98px;
+}
