@@ -4,12 +4,11 @@ let transporter = nodemailer.createTransport({
   service: 'Gmail',
   auth: {
     type: 'OAuth2',
-    user: 'jquatch78@gmail.com',
-    clientId: '1063535587753-8ip00vor4vn5ol9joccslf4e7kparrdr.apps.googleusercontent.com',
-    clientSecret: '-thOniwv47AGP3Gf_8loGOoC',
-    refreshToken: '1/kCKuFuJm6O6rgTgsqYwBHmWyUnK75L7JAwKN7pyQZybRdQI0GRvKWlBkRw-Bnb5F',
-    accessToken: 'ya29.GlswBD4bxhb-f3T0NcK7dHiUwUhfXQbXoAP-O8zM5a13SsZi9l_Yb8vCcFONzE0kpZp9n1mewBq1bDc6NWVPHbbkibCsGxjM1wq-R1RASFhWf4eclwH4Mr1SSjhO'
-    // pass: '$$27R3sJQ$$$$'
+    user: 'jlquaccia@gmail.com',
+    clientId: '1056918800491-snsb8u2jnkceks8bs4c2ns8aan2h9aoe.apps.googleusercontent.com',
+    clientSecret: 'Mr_2CSeDNNHWFlBC5gI327xl',
+    refreshToken: '1/tQByriGl4n8XcUe7XiTFXRCXb3ccZ-EHF11FcY6514w',
+    accessToken: 'ya29.GlswBIDfxYgpfRzyu1tO-HHG8rBJE7HeI9wfdOoirrzyTaCKUUlAgT9lkIQx5Ewfr-7rgEy-z42uT6cRE0PWyLzenkjoPlO_OjFInIhD3_Wv8v6WHhdR4mZ4ABhy'
   }
 });
 
@@ -102,7 +101,7 @@ module.exports = function (app) {
     // setup email data with unicode symbols
     let mailOptions = {
       from: req.body.email,
-      to: 'jquatch78@gmail.com',
+      to: 'jlquaccia@gmail.com',
       subject: req.body.name + ': ' + req.body.subject,
       text: req.body.message
     };
