@@ -304,6 +304,20 @@
   }
 }
 
+@media screen and (max-width: 598px) {
+  #contact .contact form#contactForm button {
+    left: 0;
+  }
+
+  #contact .contact form .form-control {
+    width: 100%;
+  }
+
+  #contact .contact span.errorMsg {
+    left: 0;
+  }
+}
+
 @media screen and (max-width: 575px) {
   #home .companies img {
     max-width: 30%;
@@ -375,10 +389,6 @@
 
   #contact .contact form .form-group {
     display: block;
-  }
-
-  #contact .contact form#contactForm button {
-    left: 0;
   }
 }
 
