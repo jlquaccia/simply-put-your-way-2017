@@ -1,4 +1,18 @@
-// grab the post model we just created
+const nodemailer = require('nodemailer');
+// create reusable transporter object using the default SMTP transport
+let transporter = nodemailer.createTransport({
+  service: 'Gmail',
+  auth: {
+    type: 'OAuth2',
+    user: 'jquatch78@gmail.com',
+    clientId: '1063535587753-8ip00vor4vn5ol9joccslf4e7kparrdr.apps.googleusercontent.com',
+    clientSecret: '-thOniwv47AGP3Gf_8loGOoC',
+    refreshToken: '1/kCKuFuJm6O6rgTgsqYwBHmWyUnK75L7JAwKN7pyQZybRdQI0GRvKWlBkRw-Bnb5F',
+    accessToken: 'ya29.GlswBD4bxhb-f3T0NcK7dHiUwUhfXQbXoAP-O8zM5a13SsZi9l_Yb8vCcFONzE0kpZp9n1mewBq1bDc6NWVPHbbkibCsGxjM1wq-R1RASFhWf4eclwH4Mr1SSjhO'
+    // pass: '$$27R3sJQ$$$$'
+  }
+});
+
 var Post = require('./models/Post');
 
 module.exports = function (app) {
@@ -84,7 +98,29 @@ module.exports = function (app) {
   // ======================================================================
   // contact form ==========================================================
   // ======================================================================
-  
+  app.post('/api/contact-form', function (req, res) {
+    // setup email data with unicode symbols
+    let mailOptions = {
+      from: req.body.email,
+      to: 'jquatch78@gmail.com',
+      subject: req.body.name + ': ' + req.body.subject,
+      text: req.body.message
+    };
+
+    transporter.sendMail(mailOptions, (error, info) => {
+      if (error) {
+        return console.log(error);
+      }
+
+      console.log('message %s sent: %s', info.messageId, info.response);
+    });
+
+    res.json(req.body.name);
+  });
+
+  app.get('/api/gmail-redirect', function (req, res) {
+    console.log('request: ' + req, 'response: ' + res);
+  });
 
   // ======================================================================
   // angular =========================================================

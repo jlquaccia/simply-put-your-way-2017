@@ -18,11 +18,14 @@ angular
 
         // console.log(data);
 
-        $http.post('/contact-form', data)
+        $http.post('/api/contact-form', data)
           .then(
             function (data, status, headers, config) {
               // show material design toast here on success
               console.log('success');
+              $scope.cf = {};
+              form.$setPristine();
+              form.$setUntouched();
             },
             function (data, status, headers, config) {
               console.log('something went wrong');
