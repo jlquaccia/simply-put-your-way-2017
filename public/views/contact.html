@@ -38,22 +38,22 @@
               <form ng-submit="sendMessage(contactForm);" name="contactForm" id="contactForm">
                 <div class="form-group">
                   <label>Name</label>
-                  <input name="name" ng-model="name" type="text" class="form-control" required><br>
+                  <input name="name" ng-model="cf.name" type="text" class="form-control" required><br>
                   <span class="errorMsg" ng-show="contactForm.name.$touched && contactForm.name.$invalid">A name is required.</span>
                 </div>
                 <div class="form-group">
                   <label>Email</label>
-                  <input name="email" ng-model="email" type="email" class="form-control" required><br>
+                  <input name="email" ng-model="cf.email" type="email" class="form-control" required><br>
                   <span class="errorMsg" ng-show="contactForm.email.$touched && contactForm.email.$invalid">A valid email is required.</span>
                 </div>
                 <div class="form-group">
                   <label>Subject</label>
-                  <input name="subject" ng-model="subject" type="text" class="form-control" required><br>
+                  <input name="subject" ng-model="cf.subject" type="text" class="form-control" required><br>
                   <span class="errorMsg" ng-show="contactForm.subject.$touched && contactForm.subject.$invalid">A subject is required.</span>
                 </div>
                 <div class="form-group">
                   <label>Message</label>
-                  <textarea name="message" ng-model="message" rows="7" class="form-control" required></textarea><br>
+                  <textarea name="message" ng-model="cf.message" rows="7" class="form-control" required></textarea><br>
                   <span class="errorMsg" ng-show="contactForm.message.$touched && contactForm.message.$invalid">A message is required.</span>
                 </div>
                 <button class="button btn-1 btn-1c">Send</button>
