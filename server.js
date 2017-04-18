@@ -1,4 +1,5 @@
 // modules =================================================
+require('dotenv').config();
 var express = require('express');
 var validator = require('express-validator');
 var app = express();
