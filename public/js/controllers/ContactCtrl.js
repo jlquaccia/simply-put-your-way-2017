@@ -6,7 +6,7 @@ angular
 
     // success flash message
     var successMsg = $mdToast.simple()
-      .content('message sent!')
+      .content('message sent. we\'ll be in touch!')
       .hideDelay(4000);
 
     // success flash message
