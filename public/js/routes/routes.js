@@ -28,25 +28,10 @@ angular
         controller: 'DonationsCtrl as donations',
         templateUrl: '/views/donations.html'
       })
-      .state('enjoy-the-holidays', {
-        url: '/enjoy-the-holidays',
-        controller: 'EnjoyTheHolidaysCtrl as enjoyTheHolidays',
-        templateUrl: '/views/enjoy-the-holidays.html'
-      })
-      .state('kids-ready-for-school', {
-        url: '/kids-ready-for-school',
-        controller: 'KidsReadyForSchoolCtrl as kidsReadyForSchool',
-        templateUrl: '/views/kids-ready-for-school.html'
-      })
       .state('portfolio', {
         url: '/portfolio',
         controller: 'PortfolioCtrl as portfolio',
         templateUrl: '/views/portfolio.html'
-      })
-      .state('prepare-for-a-move', {
-        url: '/prepare-for-a-move',
-        controller: 'PrepareForAMoveCtrl as prepareForAMove',
-        templateUrl: '/views/prepare-for-a-move.html'
       })
       .state('rates', {
         url: '/rates',
@@ -62,16 +47,6 @@ angular
         url: '/services',
         controller: 'ServicesCtrl as services',
         templateUrl: '/views/services.html'
-      })
-      .state('time-management-strategies', {
-        url: '/time-management-strategies',
-        controller: 'TimeManagementStrategiesCtrl as timeManagementStrategies',
-        templateUrl: '/views/time-management-strategies.html'
-      })
-      .state('tips', {
-        url: '/tips',
-        controller: 'TipsCtrl as tips',
-        templateUrl: '/views/tips.html'
       })
       .state('what-is-an-organizer', {
         url: '/what-is-an-organizer',
