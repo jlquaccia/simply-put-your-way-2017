@@ -98,27 +98,35 @@ module.exports = function (app) {
   // contact form ==========================================================
   // ======================================================================
   app.post('/api/contact-form', function (req, res) {
-    // setup email data with unicode symbols
-    let mailOptions = {
-      from: req.body.email,
-      to: 'jlquaccia@gmail.com',
-      subject: req.body.name + ': ' + req.body.subject,
-      text: req.body.message
-    };
+    req.checkBody('name', 'please enter your name').notEmpty();
+    req.checkBody('email', 'please enter a valid email').notEmpty().isEmail();
+    req.checkBody('subject', 'you must leave a subject line').notEmpty();
+    req.checkBody('message', 'you must leave a message').notEmpty();
 
-    transporter.sendMail(mailOptions, (error, info) => {
-      if (error) {
-        return console.log(error);
-      }
+    var errors = req.validationErrors(true);
 
-      console.log('message %s sent: %s', info.messageId, info.response);
-    });
+    if (errors) {
+      res.send({errors: errors});
+      return;
+    } else {
+      // setup email data with unicode symbols
+      let mailOptions = {
+        from: req.body.email,
+        to: 'jlquaccia@gmail.com',
+        subject: req.body.name + ': ' + req.body.subject,
+        text: req.body.message
+      };
 
-    res.json(req.body.name);
-  });
+      transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+          return console.log(error);
+        }
 
-  app.get('/api/gmail-redirect', function (req, res) {
-    console.log('request: ' + req, 'response: ' + res);
+        console.log('message %s sent: %s', info.messageId, info.response);
+      });
+
+      res.json({name: req.body.name});
+    }
   });
 
   // ======================================================================

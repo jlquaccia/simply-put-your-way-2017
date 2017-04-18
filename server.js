@@ -1,5 +1,6 @@
 // modules =================================================
 var express = require('express');
+var validator = require('express-validator');
 var app = express();
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
@@ -24,6 +25,7 @@ app.use(bodyParser.json({type: 'application/vnd.api+json'}));
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(validator());
 
 // override with the X-HTTP-Method-Override header in the request. simulate DELETE/PUT
 app.use(methodOverride('X-HTTP-Method-Override'));
