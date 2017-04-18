@@ -17,46 +17,45 @@ angular
 
     $scope.testimonials = Testimonials;
 
-    Pinterest.logout();
     // getting pinterest data
-    // if (Pinterest.isLoggedIn()) {
-    //   // default board: its your space
-    //   Pinterest.getBoardPins('490329546869188172').then(function (response) {
-    //     console.log(response.data);
-    //     $scope.currentBoard = response.data;
-    //   });
-    // } else {
-    //   Pinterest.login(function (response) {
-    //     console.log('logged into pinterest');
+    if (Pinterest.isLoggedIn()) {
+      // default board: its your space
+      Pinterest.getBoardPins('490329546869188172').then(function (response) {
+        console.log(response.data);
+        $scope.currentBoard = response.data;
+      });
+    } else {
+      Pinterest.login(function (response) {
+        console.log('logged into pinterest');
 
-    //     // default board: its your space
-    //     Pinterest.getBoardPins('490329546869188172').then(function (response) {
-    //       $scope.currentBoard = response.data;
-    //     });
-    //   });
-    // }
+        // default board: its your space
+        Pinterest.getBoardPins('490329546869188172').then(function (response) {
+          $scope.currentBoard = response.data;
+        });
+      });
+    }
 
-    // // set active pinterest board
-    // $('section.pinterest .boards li').click(function () {
-    //   if (!$(this).hasClass('active')) {
-    //     $('section.pinterest .boards li').removeClass('active');
-    //     $(this).addClass('active');
+    // set active pinterest board
+    $('section.pinterest .boards li').click(function () {
+      if (!$(this).hasClass('active')) {
+        $('section.pinterest .boards li').removeClass('active');
+        $(this).addClass('active');
 
-    //     if ($(this).attr('id') === 'itsYourSpace') {
-    //       Pinterest.getBoardPins('490329546869188172').then(function (response) {
-    //         $scope.currentBoard = response.data;
-    //       });
-    //     } else if ($(this).attr('id') === 'repurposeIt') {
-    //       Pinterest.getBoardPins('490329546869301849').then(function (response) {
-    //         $scope.currentBoard = response.data;
-    //       });
-    //     } else if ($(this).attr('id') === 'redecorate') {
-    //       Pinterest.getBoardPins('490329546869301857').then(function (response) {
-    //         $scope.currentBoard = response.data;
-    //       });
-    //     }
-    //   } else {
-    //     return;
-    //   }
-    // });
+        if ($(this).attr('id') === 'itsYourSpace') {
+          Pinterest.getBoardPins('490329546869188172').then(function (response) {
+            $scope.currentBoard = response.data;
+          });
+        } else if ($(this).attr('id') === 'repurposeIt') {
+          Pinterest.getBoardPins('490329546869301849').then(function (response) {
+            $scope.currentBoard = response.data;
+          });
+        } else if ($(this).attr('id') === 'redecorate') {
+          Pinterest.getBoardPins('490329546869301857').then(function (response) {
+            $scope.currentBoard = response.data;
+          });
+        }
+      } else {
+        return;
+      }
+    });
   }]);
