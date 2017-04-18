@@ -1,14 +1,22 @@
 angular
   .module('simply-put-your-way')
-  .controller('ContactCtrl', ['$scope', '$http', 'parallaxHelper', function ($scope, $http, parallaxHelper) {
+  .controller('ContactCtrl', ['$scope', '$http', '$mdToast', 'parallaxHelper', function ($scope, $http, $mdToast, parallaxHelper) {
     // parallax
     $scope.background = parallaxHelper.createAnimator(-0.3,150,0);
+
+    // success flash message
+    var successMsg = $mdToast.simple()
+      .content('message sent!')
+      .hideDelay(4000);
+
+    // success flash message
+    var errorMsg = $mdToast.simple()
+      .content('something went wrong..')
+      .hideDelay(4000);
 
     // send message
     $scope.sendMessage = function (form) {
       if (form.$valid) {
-        // console.log('form is valid');
-        
         var data = ({
           name: this.cf.name,
           email: this.cf.email,
@@ -16,19 +24,22 @@ angular
           message: this.cf.message
         });
 
-        // console.log(data);
-
         $http.post('/api/contact-form', data)
           .then(
             function (data, status, headers, config) {
               // show material design toast here on success
               console.log('success');
+
+              $mdToast.show(successMsg);
+              
               $scope.cf = {};
               form.$setPristine();
               form.$setUntouched();
             },
             function (data, status, headers, config) {
               console.log('something went wrong');
+
+              $mdToast.show(errorMsg);
             }
           );
       } else {

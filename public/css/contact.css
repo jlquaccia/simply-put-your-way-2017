@@ -198,3 +198,19 @@
 #contact .contact .btn-1c:hover:after, .btn-1c:active:after {
   width: 100%;
 }
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* material design toast (flash message) */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+md-toast {
+  position: fixed;
+  width: 304px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 50%;
+}
+
+md-toast .md-toast-content {
+  font-size: 20px;
+}
