@@ -11,11 +11,6 @@ angular
     // parallax
     $scope.background = parallaxHelper.createAnimator(-0.3,150,0);
 
-    // success flash message
-    var errorMsg = $mdToast.simple()
-      .content('something went wrong..')
-      .hideDelay(4000);
-
     // send message
     $scope.sendMessage = function (form) {
       if (form.$valid) {
@@ -40,7 +35,7 @@ angular
 
                 // success flash message
                 var successMsg = $mdToast.simple()
-                  .content('thanks ' + data.data.name + '! message sent. we\'ll be in touch!')
+                  .content('Thanks ' + data.data.name + ', message sent!')
                   .hideDelay(4000);
 
                 $mdToast.show(successMsg);
@@ -59,6 +54,11 @@ angular
             function (data, status, headers, config) {
               console.log('something went wrong');
               console.log('error: ', data);
+
+              // error flash message
+              var errorMsg = $mdToast.simple()
+                .content('something went wrong..')
+                .hideDelay(4000);
 
               $mdToast.show(errorMsg);
             }
