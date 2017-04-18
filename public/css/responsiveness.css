@@ -304,7 +304,12 @@
   #whatIsAnOrganizer h1.title,
   #donations h1.title,
   #resources h1.title,
-  #contact h1.title {
+  #contact h1.title,
+  #about h1.title,
+  #home h1.title,
+  #portfolio h1.title,
+  #rates h1.title,
+  #services h1.title {
     font-size: 36px;
   }
 }
@@ -406,7 +411,6 @@
 @media screen and (max-width: 400px) {
   #home h1.title {
     top: 35%;
-    font-size: 4em;
   }
 
   #home .companies img {
