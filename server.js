@@ -1,6 +1,8 @@
 // modules =================================================
 require('dotenv').config();
 var express = require('express');
+var favicon = require('serve-favicon');
+var path = require('path');
 var validator = require('express-validator');
 var app = express();
 var bodyParser = require('body-parser');
@@ -17,6 +19,7 @@ var port = process.env.PORT || 3000;
 // connect to our mongoDB database
 mongoose.connect(process.env.MONGODB_URI || db.url);
 
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 // get all data/stuff of the body (POST) parameters
 // parse application/json
 app.use(bodyParser.json());
