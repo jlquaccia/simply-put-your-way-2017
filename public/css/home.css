@@ -15,7 +15,6 @@
   position: absolute;
   top: 30%;
   left: 3%;
-  /* right: 7%; */
   text-align: center;
   color: #fff;
   text-transform: uppercase;
@@ -553,11 +552,6 @@
   }
 }
 
-section.pinterest .item:hover::before {
-  -webkit-animation: tapAnimation 0.25s cubic-bezier(0.31, 1, 0.34, 1) forwards;
-  animation: tapAnimation 0.25s cubic-bezier(0.31, 1, 0.34, 1) forwards;
-}
-
 section.pinterest .item::before {
   background: rgba(0, 0, 0, 0.05);
   border-radius: 8px;
@@ -599,10 +593,6 @@ section.pinterest .boards li {
   border-radius: 8px;
 }
 
-section.pinterest .boards li:hover {
-  background: rgba(0, 0, 0, 0.1);
-}
-
 @keyframes tapAnimation {
   0% {
     opacity: 1;
@@ -614,5 +604,19 @@ section.pinterest .boards li:hover {
     opacity: 1;
     -webkit-transform: scale(1);
     transform: scale(1);
+  }
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* hover responsiveness */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+@media all and (min-width: 900px) {
+  section.pinterest .item:hover::before {
+    -webkit-animation: tapAnimation 0.25s cubic-bezier(0.31, 1, 0.34, 1) forwards;
+    animation: tapAnimation 0.25s cubic-bezier(0.31, 1, 0.34, 1) forwards;
+  }
+
+  section.pinterest .boards li:hover {
+    background: rgba(0, 0, 0, 0.1);
   }
 }

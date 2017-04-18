@@ -144,11 +144,6 @@
   z-index: -1;
 }
 
-#portfolio .storageIdeas .grid-item:hover::before {
-  -webkit-animation: tapAnimation 0.25s cubic-bezier(0.31, 1, 0.34, 1) forwards;
-  animation: tapAnimation 0.25s cubic-bezier(0.31, 1, 0.34, 1) forwards;
-}
-
 #portfolio .storageIdeas .grid-item::before {
   background: rgba(0, 0, 0, 0.05);
   border-radius: 8px;
@@ -280,4 +275,14 @@
 #portfolio .overlay-scale .innerWrapper {
   position: relative;
   top: 12%;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* hover responsiveness */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+@media all and (min-width: 900px) {
+  #portfolio .storageIdeas .grid-item:hover::before {
+    -webkit-animation: tapAnimation 0.25s cubic-bezier(0.31, 1, 0.34, 1) forwards;
+    animation: tapAnimation 0.25s cubic-bezier(0.31, 1, 0.34, 1) forwards;
+  }
 }

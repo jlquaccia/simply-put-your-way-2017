@@ -19,7 +19,6 @@
   color: #000;
 }
 
-.navigationBar .navbar-header a.navLogo:hover,
 .navigationBar .navbar-header a.navLogo:active,
 .navigationBar .navbar-header a.navLogo:visited,
 .navigationBar .navbar-header a.navLogo:focus {
@@ -78,17 +77,9 @@ span.way {
   font-family: "FontAwesome";
 }
 
-.navigationBar .btn-open:hover:after {
-  color: #9c9999;
-}
-
 .navigationBar .btn-close:after {
   content: "\f00d";
   font-family: "FontAwesome";
-}
-
-.navigationBar .btn-close:hover:after {
-  color: #34B484;
 }
 
 .navWrapper .overlay {
@@ -128,10 +119,6 @@ span.way {
   text-decoration: none;
 }
 
-.navWrapper .overlay .wrap ul.wrap-nav li a:hover {
-  color:#f0f0f0;
-}
-
 .navWrapper .overlay .wrap ul.wrap-nav ul {
   padding: 20px 0;
 }
@@ -153,11 +140,6 @@ span.way {
   display: inline-block;
 }
 
-.navWrapper .overlay .wrap ul.wrap-nav ul li a:hover,
-.navWrapper .overlay .wrap ul.wrap-nav li .contactInfo a.email:hover {
-  color: #9c9999;
-}
-
 .navWrapper .overlay .social {
   font-size: 25px;
   padding: 20px;
@@ -177,10 +159,6 @@ span.way {
   padding: 0;
 }
 
-.navWrapper .overlay .social a:hover {
-  text-decoration: none;
-}
-
 .navWrapper .overlay .social .social-icon {
   width: 80px;
   height: 50px;
@@ -188,11 +166,6 @@ span.way {
   color: #333;
   display: inline-block;
   margin: 0 20px;
-}
-
-.navWrapper .overlay .social .social-icon:hover {
-  background: rgba(145,56,63,1);
-  color:#f0f0f0;
 }
 
 .navWrapper .overlay .social .social-icon i {
@@ -234,16 +207,6 @@ a.navLogo img.img-responsive {
   -ms-transition: color .14s 0s ease-in-out;
   -o-transition: color .14s 0s ease-in-out;
   transition: color .14s 0s ease-in-out;
-}
-
-.navWrapper .navLinks a:hover,
-.navWrapper .folder .subnav > div a:hover {
-  text-decoration: none;
-  color: #9c9999;
-}
-
-.navWrapper .overlay .closeOverlay:hover {
-  color: #9c9999;
 }
 
 .navWrapper .navigationBar .navLogo span.name {
@@ -409,23 +372,6 @@ a.navLogo img.img-responsive {
   transition: transform .14s 0s ease-in-out;
 }
 
-.navWrapper .folder:hover .subnav {
-  -webkit-transform: scale(1, 1);
-  -moz-transform: scale(1, 1);
-  -ms-transform: scale(1, 1);
-  -o-transform: scale(1, 1);
-  transform: scale(1, 1);
-}
-
-.navWrapper .folder:hover .subnav > div {
-  opacity: 1;
-  -webkit-transition: opacity .14s .14s ease-in-out;
-  -moz-transition: opacity .14s .14s ease-in-out;
-  -ms-transition: opacity .14s .14s ease-in-out;
-  -o-transition: opacity .14s .14s ease-in-out;
-  transition: opacity .14s .14s ease-in-out;
-}
-
 .navWrapper .folder .subnav > div {
   opacity: 0;
   padding: 0;
@@ -453,4 +399,66 @@ a.navLogo img.img-responsive {
   line-height: 1em;
   color: #fff;
   white-space: nowrap;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* hover responsiveness */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+@media all and (min-width: 900px) {
+  .navigationBar .navbar-header a.navLogo:hover {
+    text-decoration: none;
+  }
+
+  .navigationBar .btn-open:hover:after {
+    color: #9c9999;
+  }
+
+  .navigationBar .btn-close:hover:after {
+    color: #34B484;
+  }
+
+  .navWrapper .overlay .wrap ul.wrap-nav li a:hover {
+    color:#f0f0f0;
+  }
+
+  .navWrapper .overlay .wrap ul.wrap-nav ul li a:hover,
+  .navWrapper .overlay .wrap ul.wrap-nav li .contactInfo a.email:hover {
+    color: #9c9999;
+  }
+
+  .navWrapper .overlay .social a:hover {
+    text-decoration: none;
+  }
+
+  .navWrapper .overlay .social .social-icon:hover {
+    background: rgba(145,56,63,1);
+    color:#f0f0f0;
+  }
+
+  .navWrapper .navLinks a:hover,
+  .navWrapper .folder .subnav > div a:hover {
+    text-decoration: none;
+    color: #9c9999;
+  }
+
+  .navWrapper .overlay .closeOverlay:hover {
+    color: #9c9999;
+  }
+
+  .navWrapper .folder:hover .subnav {
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+
+  .navWrapper .folder:hover .subnav > div {
+    opacity: 1;
+    -webkit-transition: opacity .14s .14s ease-in-out;
+    -moz-transition: opacity .14s .14s ease-in-out;
+    -ms-transition: opacity .14s .14s ease-in-out;
+    -o-transition: opacity .14s .14s ease-in-out;
+    transition: opacity .14s .14s ease-in-out;
+  }
 }

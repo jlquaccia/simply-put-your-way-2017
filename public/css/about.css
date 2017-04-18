@@ -71,10 +71,6 @@
   font-size: 25px;
 }
 
-#about .about .social a:hover {
-  text-decoration: none;
-}
-
 #about .about .social .social-icon {
   width: 80px;
   height: 50px;
@@ -89,16 +85,6 @@
   transition: transform .14s 0s ease-in-out;
 }
 
-#about .about .social .social-icon:hover {
-  background: rgba(145,56,63,1);
-  color: #fff;
-  -webkit-transform: translateY(5px);
-  -moz-transform: translateY(5px);
-  -ms-transform: translateY(5px);
-  -o-transform: translateY(5px);
-  transform: translateY(5px);
-}
-
 #about .about .social a:focus {
   text-decoration: none;
 }
@@ -110,4 +96,23 @@
 #about .separator.small {
   margin: 25px 0 45px;
   width: 50%;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* hover responsiveness */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+@media all and (min-width: 900px) {
+  #about .about .social a:hover {
+    text-decoration: none;
+  }
+
+  #about .about .social .social-icon:hover {
+    background: rgba(145,56,63,1);
+    color: #fff;
+    -webkit-transform: translateY(5px);
+    -moz-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    -o-transform: translateY(5px);
+    transform: translateY(5px);
+  }
 }

@@ -64,11 +64,6 @@ footer .overlay .wrap ul.wrap-nav li .contactInfo a.email {
   display: inline-block;
 }
 
-footer .overlay .wrap ul.wrap-nav ul li a:hover,
-footer .overlay .wrap ul.wrap-nav li .contactInfo a.email:hover {
-  color: #9c9999;
-}
-
 footer .overlay .social {
   font-size: 25px;
   float: left;
@@ -88,10 +83,6 @@ footer .overlay .social p a {
   padding: 0;
 }
 
-footer .overlay .social a:hover {
-  text-decoration: none;
-}
-
 footer .overlay .social .social-icon {
   width: 80px;
   height: 50px;
@@ -99,11 +90,6 @@ footer .overlay .social .social-icon {
   color: #333;
   display: inline-block;
   margin: 0 20px 0 0;
-}
-
-footer .overlay .social .social-icon:hover {
-  background: rgba(145,56,63,1);
-  color:#fff;
 }
 
 footer .overlay .social .social-icon i {
@@ -209,5 +195,24 @@ footer .overlay .wrap ul.wrap-nav li span.phoneMobile a {
 
   #home {
     margin-bottom: 0;
+  }
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* hover responsiveness */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+@media all and (min-width: 900px) {
+  footer .overlay .wrap ul.wrap-nav ul li a:hover,
+  footer .overlay .wrap ul.wrap-nav li .contactInfo a.email:hover {
+    color: #9c9999;
+  }
+
+  footer .overlay .social a:hover {
+    text-decoration: none;
+  }
+
+  footer .overlay .social .social-icon:hover {
+    background: rgba(145,56,63,1);
+    color:#fff;
   }
 }
