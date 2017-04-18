@@ -1,3 +1,3 @@
 module.exports = {
-  url: 'mongodb://localhost/simply-put-your-way'
+  url: process.env.DB_URL
 };
