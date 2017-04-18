@@ -404,7 +404,7 @@ a.navLogo img.img-responsive {
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 /* hover responsiveness */
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
-@media all and (min-width: 900px) {
+@media all and (min-width: 800px) {
   .navigationBar .navbar-header a.navLogo:hover {
     text-decoration: none;
   }

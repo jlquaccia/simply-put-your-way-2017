@@ -610,7 +610,7 @@ section.pinterest .boards li {
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 /* hover responsiveness */
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
-@media all and (min-width: 900px) {
+@media all and (min-width: 800px) {
   section.pinterest .item:hover::before {
     -webkit-animation: tapAnimation 0.25s cubic-bezier(0.31, 1, 0.34, 1) forwards;
     animation: tapAnimation 0.25s cubic-bezier(0.31, 1, 0.34, 1) forwards;

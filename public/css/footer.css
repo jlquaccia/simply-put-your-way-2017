@@ -201,7 +201,7 @@ footer .overlay .wrap ul.wrap-nav li span.phoneMobile a {
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 /* hover responsiveness */
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
-@media all and (min-width: 900px) {
+@media all and (min-width: 800px) {
   footer .overlay .wrap ul.wrap-nav ul li a:hover,
   footer .overlay .wrap ul.wrap-nav li .contactInfo a.email:hover {
     color: #9c9999;
