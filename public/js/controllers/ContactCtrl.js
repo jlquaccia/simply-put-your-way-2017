@@ -2,7 +2,8 @@ angular
   .module('simply-put-your-way')
   .controller('ContactCtrl', ['$scope', '$http', '$mdToast', 'parallaxHelper', function ($scope, $http, $mdToast, parallaxHelper) {
     $scope.cf = {
-      name: '',
+      firstName: '',
+      lastName: '',
       email: '',
       subject: '',
       message: ''
@@ -15,7 +16,8 @@ angular
     $scope.sendMessage = function (form) {
       if (form.$valid) {
         var data = ({
-          name: this.cf.name,
+          firstName: this.cf.firstName,
+          lastName: this.cf.lastName,
           email: this.cf.email,
           subject: this.cf.subject,
           message: this.cf.message
@@ -35,13 +37,14 @@ angular
 
                 // success flash message
                 var successMsg = $mdToast.simple()
-                  .content('Thanks ' + data.data.name + ', message sent!')
+                  .content('Thanks ' + data.data.firstName + ', message sent!')
                   .hideDelay(4000);
 
                 $mdToast.show(successMsg);
                 
                 $scope.cf = {
-                  name: '',
+                  firstName: '',
+                  lastName: '',
                   email: '',
                   subject: '',
                   message: ''

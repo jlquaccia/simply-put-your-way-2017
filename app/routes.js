@@ -98,7 +98,8 @@ module.exports = function (app) {
   // contact form ==========================================================
   // ======================================================================
   app.post('/api/contact-form', function (req, res) {
-    req.checkBody('name', 'please enter your name').notEmpty();
+    req.checkBody('firstName', 'please enter your first name').notEmpty();
+    req.checkBody('lastName', 'please enter your last name').notEmpty();
     req.checkBody('email', 'please enter a valid email').notEmpty().isEmail();
     req.checkBody('subject', 'you must leave a subject line').notEmpty();
     req.checkBody('message', 'you must leave a message').notEmpty();
@@ -113,8 +114,8 @@ module.exports = function (app) {
       let mailOptions = {
         from: req.body.email,
         to: 'jlquaccia@gmail.com',
-        subject: req.body.name + ': ' + req.body.subject,
-        text: req.body.message
+        subject: 'Simply Put Your Way: ' + req.body.subject,
+        text: 'New message from ' + req.body.firstName + ' ' + req.body.lastName + '\n\n' + req.body.message
       };
 
       transporter.sendMail(mailOptions, (error, info) => {
@@ -125,7 +126,7 @@ module.exports = function (app) {
         console.log('message %s sent: %s', info.messageId, info.response);
       });
 
-      res.json({name: req.body.name});
+      res.json({firstName: req.body.firstName});
     }
   });
 
