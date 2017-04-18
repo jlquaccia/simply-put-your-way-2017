@@ -458,4 +458,8 @@
   #contact h1 {
     font-size: 26px;
   }
+
+  #about .about .social .social-icon {
+    width: 70px;
+  }
 }
