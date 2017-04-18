@@ -16,3 +16,39 @@ body {
 .overflowHidden {
   overflow: hidden;
 }
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* blog: coming soon */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+.navWrapper a.blog,
+.navWrapper a.blog:hover,
+footer a.blog,
+footer a.blog:hover {
+  text-decoration: line-through !important;
+}
+
+.navWrapper a.blog:after {
+  content: 'coming soon';
+  position: absolute;
+  bottom: 6px;
+  right: 114px;
+  color: rgba(145,56,63,1);
+  font-weight: 600;
+}
+
+footer a.blog:after {
+  content: 'coming soon';
+  color: #fff;
+  position: absolute;
+  right: 180px;
+  font-weight: 600;
+}
+
+.navWrapper a.blog.olay:after {
+  content: 'coming soon';
+  color: #fff;
+  top: initial;
+  left: 30px;
+  bottom: initial;
+  right: initial;
+}
