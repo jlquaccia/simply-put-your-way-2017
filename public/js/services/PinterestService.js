@@ -23,12 +23,28 @@ angular
     function getBoardPins (id) {
       // wrap request in an angular promise so you make sure the response has resolved before passing it over (ex. to a controller etc.)
       return $q(function (resolve, reject) {
-        PDK.request('/v1/boards/' + id + '/pins/', 'GET', {fields: 'id,link,url,creator,board,created_at,note,color,counts,media,attribution,image,metadata'}, function (response) {
-          if (response) {
-            resolve(response);
-          }
+        // PDK.request('/v1/boards/' + id + '/pins/', 'GET', {fields: 'id,link,url,creator,board,created_at,note,color,counts,media,attribution,image,metadata'}, function (response) {
+        //   if (response) {
+        //     resolve(response);
+        //   }
 
-          reject();
+        //   reject();
+        // });
+
+        $(document).ready(function () {
+          $.ajax({
+            url: 'https://api.pinterest.com/v1/boards/' + id + '/pins/?access_token=Ab4vEhaeP4dJH2XupAk0Vaity67NFLZpzqnEkfZD8Yps72AuWwAAAAA&fields=id%2Clink%2Cnote%2Curl%2Cboard%2Cimage%2Ccreator%2Ccreated_at%2Ccolor%2Ccounts%2Cmedia%2Cattribution%2Cmetadata',
+            type: 'GET',
+            data: {},
+            datatype: 'json',
+            success: function (response) {
+              resolve(response);
+            },
+            error: function (err) {
+              console.log(err);
+              reject();
+            }
+          });
         });
       });
     }

@@ -18,22 +18,29 @@ angular
     $scope.testimonials = Testimonials;
 
     // getting pinterest data
-    if (Pinterest.isLoggedIn()) {
-      // default board: its your space
-      Pinterest.getBoardPins('490329546869188172').then(function (response) {
-        console.log(response.data);
-        $scope.currentBoard = response.data;
-      });
-    } else {
-      Pinterest.login(function (response) {
-        console.log('logged into pinterest');
+    // default board: its your space
+    Pinterest.getBoardPins('490329546869188172').then(function (response) {
+      console.log(response.data);
+      $scope.currentBoard = response.data;
+    });
 
-        // default board: its your space
-        Pinterest.getBoardPins('490329546869188172').then(function (response) {
-          $scope.currentBoard = response.data;
-        });
-      });
-    }
+    // // getting pinterest data
+    // if (Pinterest.isLoggedIn()) {
+    //   // default board: its your space
+    //   Pinterest.getBoardPins('490329546869188172').then(function (response) {
+    //     console.log(response.data);
+    //     $scope.currentBoard = response.data;
+    //   });
+    // } else {
+    //   Pinterest.login(function (response) {
+    //     console.log('logged into pinterest');
+
+    //     // default board: its your space
+    //     Pinterest.getBoardPins('490329546869188172').then(function (response) {
+    //       $scope.currentBoard = response.data;
+    //     });
+    //   });
+    // }
 
     // set active pinterest board
     $('section.pinterest .boards li').click(function () {
