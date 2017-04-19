@@ -119,6 +119,7 @@ footer .linkCategoryTitle {
 
 footer .overlay .wrap ul.wrap-nav li a.linkCategoryTitle {
   text-decoration: underline;
+  cursor: text;
 }
 
 /*footer .overlay .wrap ul.wrap-nav li,
