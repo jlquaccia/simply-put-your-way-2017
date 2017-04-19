@@ -54,7 +54,7 @@ angular
         image: './images/Comfy Cozy.jpg',
         date: '7/21/16',
         name: 'Judy M.',
-        city: 'St. George, UT',
+        city: 'Redwood City, CA',
         title: '',
         review: 'Within the first five minutes of being in my home Wendy had one bedroom closet completely emptied out and sorted into different piles. The feeling of being stressed out had vanished and I was feeling much better about how to manage our things and to have less clutter. Wendy’s knowledge of organization and time management is so valuable.'
       },
