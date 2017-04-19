@@ -113,7 +113,7 @@ module.exports = function (app) {
       // setup email data with unicode symbols
       let mailOptions = {
         from: req.body.email,
-        to: 'jlquaccia@gmail.com',
+        to: 'info@simplyputyourway.net',
         subject: 'Simply Put Your Way: ' + req.body.subject,
         text: 'New message from ' + req.body.firstName + ' ' + req.body.lastName + '\n\n' + req.body.message
       };
