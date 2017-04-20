@@ -11,7 +11,7 @@ angular
       cellAlign: 'left',
       contain: true,
       wrapAround: true,
-      prevNextButtons: false,
+      prevNextButtons: true,
       autoPlay: 10000,
       pauseAutoPlayOnHover: false
     };
