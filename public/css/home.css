@@ -233,6 +233,10 @@
   position: relative;
 }
 
+#home section.testimonials h1 {
+  margin-top: 45px;
+}
+
 #home .card {
   background-color: #fff;
   display: inline-block;
@@ -307,6 +311,7 @@
     border-radius: 10px;
     position: relative;
     top: 10px;
+    margin-bottom: 10px;
   }
   
   section.pinterest .masonry .item .textWrapper {

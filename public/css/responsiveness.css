@@ -494,7 +494,7 @@
 
   #home h1 {
     width: 80%;
-    margin: 0 auto;
+    margin: 45px auto 0;
   }
 
   #services .services ul li {
@@ -503,5 +503,17 @@
 
   #rates h1 {
     width: 70%;
+  }
+
+  #home .contentWrapper {
+    padding: 0;
+  }
+
+  section.pinterest .boards {
+    margin: 0 0 45px 0;
+  }
+
+  section.pinterest .boards li {
+    margin-right: 10px;
   }
 }

@@ -1,6 +1,6 @@
 angular
   .module('simply-put-your-way')
-  .controller('HomeCtrl', ['$scope', 'parallaxHelper', 'Pinterest', 'Testimonials', function ($scope, parallaxHelper, Pinterest, Testimonials ) {
+  .controller('HomeCtrl', ['$scope', 'parallaxHelper', 'Pinterest', 'Testimonials', 'FlickityService', function ($scope, parallaxHelper, Pinterest, Testimonials, FlickityService) {
     // parallax
     $scope.background = parallaxHelper.createAnimator(-0.3,150,0);
     $scope.spacerImage = parallaxHelper.createAnimator(-0.3,150,-150);
@@ -12,8 +12,19 @@ angular
       contain: true,
       wrapAround: true,
       prevNextButtons: false,
-      autoPlay: 5000
+      autoPlay: 10000,
+      pauseAutoPlayOnHover: false
     };
+
+    var testimonialsFlickity = document.getElementById('myCustomId');
+    
+    // make sure carousel will pause on click only and will resume autoplay next time the carousel is visible (ex. user scrolls/mouseleaves away and then comes back)
+    testimonialsFlickity.addEventListener('mouseleave', function (e) {
+      // console.log(FlickityService.instances[0].instance);
+      if (FlickityService.instances[0].instance.player.state === 'stopped') {
+        FlickityService.instances[0].instance.player.onVisibilityPlay();
+      }
+    });
 
     $scope.testimonials = Testimonials;
 
