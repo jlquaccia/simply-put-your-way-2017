@@ -16,15 +16,15 @@ angular
       pauseAutoPlayOnHover: false
     };
 
-    var testimonialsFlickity = document.getElementById('myCustomId');
+    // var testimonialsFlickity = document.getElementById('myCustomId');
     
-    // make sure carousel will pause on click only and will resume autoplay next time the carousel is visible (ex. user scrolls/mouseleaves away and then comes back)
-    testimonialsFlickity.addEventListener('mouseleave', function (e) {
-      // console.log(FlickityService.instances[0].instance);
-      if (FlickityService.instances[0].instance.player.state === 'stopped') {
-        FlickityService.instances[0].instance.player.onVisibilityPlay();
-      }
-    });
+    // // make sure carousel will pause on click only and will resume autoplay next time the carousel is visible (ex. user scrolls/mouseleaves away and then comes back)
+    // testimonialsFlickity.addEventListener('mouseleave', function (e) {
+    //   // console.log(FlickityService.instances[0].instance);
+    //   if (FlickityService.instances[0].instance.player.state === 'stopped') {
+    //     FlickityService.instances[0].instance.player.onVisibilityPlay();
+    //   }
+    // });
 
     $scope.testimonials = Testimonials;
 
