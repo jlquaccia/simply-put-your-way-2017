@@ -163,6 +163,7 @@
 
   #rates .rates img.img-responsive.hangers {
     margin: 25px auto 0;
+    width: 100%;
   }
 
   #donations .whereToDonate p {
