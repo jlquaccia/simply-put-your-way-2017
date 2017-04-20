@@ -182,6 +182,7 @@
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 #home .main-gallery {
   background: #fff;
+  touch-action: pan-x pan-y pan-left pan-right pan-up pan-down pinch-zoom;
 }
 
 #home .gallery-cell {
