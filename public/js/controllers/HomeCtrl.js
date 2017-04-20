@@ -11,7 +11,7 @@ angular
       cellAlign: 'left',
       contain: true,
       wrapAround: true,
-      prevNextButtons: true,
+      prevNextButtons: false,
       autoPlay: 10000,
       pauseAutoPlayOnHover: false
     };
@@ -20,12 +20,14 @@ angular
     
     // make sure carousel will pause on click only and will resume autoplay next time the carousel is visible (ex. user scrolls/mouseleaves away and then comes back)
     testimonialsFlickity.addEventListener('mouseleave', function (e) {
-      // console.log(FlickityService.instances[0].instance);
       if (FlickityService.instances[0].instance.player.state === 'stopped') {
         FlickityService.instances[0].instance.player.onVisibilityPlay();
       }
     });
 
+    testimonialsFlickity.addEventListener("touchstart", function () {
+      console.log('blah blah blah');
+    }, {passive:false});
     $scope.testimonials = Testimonials;
 
     // getting pinterest data
