@@ -29,8 +29,12 @@
   #services h1.title span.thin,
   #donations h1.title span.thin,
   #resources h1.title span.thin,
-  #contact h1.title span.thin {
-    background-color: rgba(189,189,189,0.7);
+  #contact h1.title span.thin,
+  #portfolio h1.title span.thin,
+  #whatIsAnOrganizer h1.title span.thin,
+  #whatIsAnOrganizer h1.title span.fat,
+  #rates h1.title span.thin {
+    background-color: rgba(189,189,189,0.9);
   }
 }
 
