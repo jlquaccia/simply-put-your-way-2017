@@ -22,11 +22,11 @@
 /* header */
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 #rates .headerImage {
-  background: url("http://lorempixel.com/1000/600/animals"), url("../images/subtle patterns/crossword.png");
+  background: url("../images/new/Yarn.jpg"), url("../images/subtle patterns/crossword.png");
   min-height: 40em;
   background-position: 0 0, 0px 0;
   background-repeat: no-repeat, repeat;
-  background-size: contain;
+  background-size: 65%;
 }
 
 #rates h1.title {
@@ -61,6 +61,6 @@
 /* rates */
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 #rates .rates img.img-responsive.hangers {
-  width: 555px;
+  width: 100%;
   margin: 0 auto;
 }

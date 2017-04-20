@@ -18,11 +18,11 @@
 /* header */
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 #contact .headerImage {
-  background: url("http://lorempixel.com/1000/600/animals"), url("../images/subtle patterns/crossword.png");
+  background: url("../images/new/Fun Old Kitchen Items.jpg"), url("../images/subtle patterns/crossword.png");
   min-height: 40em;
   background-position: 0 0, 0px 0;
   background-repeat: no-repeat, repeat;
-  background-size: contain;
+  background-size: 65%;
 }
 
 #contact h1.title {
@@ -65,8 +65,8 @@
 
 #contact .contact img.img-responsive.gardenUtencils {
   margin: 0 auto;
-  -webkit-clip-path: circle(39% at 50% 50%);
-  clip-path: circle(39% at 50% 50%);
+  -webkit-clip-path: circle(34% at 50% 50%);
+  clip-path: circle(34% at 50% 50%);
   width: 25%;
 }
 
