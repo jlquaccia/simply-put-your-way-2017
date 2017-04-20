@@ -12,8 +12,8 @@ angular
       contain: true,
       wrapAround: true,
       prevNextButtons: false,
-      autoPlay: 10000,
-      pauseAutoPlayOnHover: false
+      autoPlay: 10000
+      // pauseAutoPlayOnHover: false
     };
 
     // var testimonialsFlickity = document.getElementById('myCustomId');
