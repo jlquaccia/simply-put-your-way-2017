@@ -26,6 +26,17 @@ angular
       }
     });
 
+    (function () {
+      if (global.navigator.pointerEnabled) {
+        crossvent[op](el, pointers[type], fn, { passive: false });
+      } else if (global.navigator.msPointerEnabled) {
+        crossvent[op](el, microsoft[type], fn, { passive: false });
+      } else {
+        crossvent[op](el, touch[type], fn, { passive: false });
+        crossvent[op](el, type, fn, { passive: false });
+      }
+    })();
+
     $scope.testimonials = Testimonials;
 
     // getting pinterest data

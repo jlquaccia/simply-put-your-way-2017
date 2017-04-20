@@ -182,11 +182,6 @@
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 #home .main-gallery {
   background: #fff;
-  -webkit-touch-action: pan-x;
-  -moz-touch-action: pan-x;
-  -ms-touch-action: pan-x;
-  -o-touch-action: pan-x;
-  touch-action: pan-x;
 }
 
 #home .gallery-cell {
