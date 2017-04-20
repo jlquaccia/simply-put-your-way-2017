@@ -496,9 +496,8 @@
     font-size: 16px;
   }
 
-  #rates h1 {
+  #rates h1.letMeMotivate {
     width: 70%;
-    margin: 0 auto;
   }
 
   #home .contentWrapper {
