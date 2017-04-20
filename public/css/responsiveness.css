@@ -82,6 +82,12 @@
   }
 }
 
+@media screen and (max-width: 1172px) {
+  #resources .helpfulBooks .booksWrapper .transform.longTitle {
+    transform: translateY(18%);
+  }
+}
+
 @media screen and (max-width: 1100px) {
   #home .spacerImage {
     min-height: 40em;
@@ -89,6 +95,12 @@
 
   footer img.img-responsive.remoov {
     width: 75%;
+  }
+}
+
+@media screen and (max-width: 1028px) {
+  #resources .helpfulBooks .booksWrapper .transform {
+    transform: translateY(30%);
   }
 }
 
@@ -123,11 +135,13 @@
     margin-top: 45px;
   }
 
-  #portfolio .portfolio .mobile {
+  #portfolio .portfolio .mobile,
+  #services .timeAndProjectManagement .mobile {
     display: block;
   }
 
-  #portfolio .portfolio .desktop {
+  #portfolio .portfolio .desktop,
+  #services .timeAndProjectManagement .desktop {
     display: none;
   }
 
@@ -195,6 +209,18 @@
 
   #contact .contact .bottomHalf {
     width: 100%;
+  }
+
+  #home,
+  #services,
+  #about,
+  #portfolio,
+  #whatIsAnOrganizer,
+  #rates,
+  #donations,
+  #resources,
+  #contact {
+    margin-bottom: 367px;
   }
 }
 
@@ -294,6 +320,12 @@
   }
 }
 
+@media screen and (max-width: 48em) {
+  #home {
+    margin-bottom: 0;
+  }
+}
+
 /*@media screen and (max-width: 650px) {
   #home section.services .flowerWrapper img {
     width: 40%;
@@ -350,12 +382,13 @@
 }
 
 @media screen and (max-width: 500px) {
-  #home h1 {
-    font-size: 25px;
+  #home h1,
+  body h1 {
+    font-size: 30px;
   }
 
   #home .about p {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   h1 + h4 {
@@ -367,10 +400,6 @@
     min-height: 40em;
     background-repeat: no-repeat; 
     background-size: cover;
-  }
-
-  #home .testimonial-quote {
-    font-size: 20px;
   }
 
   /*footer .overlay .wrap ul.wrap-nav li a.linkCategoryTitle {
@@ -461,5 +490,18 @@
 
   #about .about .social .social-icon {
     width: 70px;
+  }
+
+  #home h1 {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #services .services ul li {
+    font-size: 16px;
+  }
+
+  #rates h1 {
+    width: 70%;
   }
 }

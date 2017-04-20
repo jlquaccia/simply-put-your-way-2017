@@ -61,6 +61,7 @@
 #about .about img.maaam {
   -webkit-clip-path: circle(46% at 50% 50%);
   clip-path: circle(46% at 50% 50%);
+  margin: 0 auto;
 }
 
 #about .about b {

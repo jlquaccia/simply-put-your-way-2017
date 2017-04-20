@@ -106,3 +106,20 @@
 #services img {
   margin: 25px 0;
 }
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* time and project management */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+#services .timeAndProjectManagement .headerWrapper h1,
+#services .timeAndProjectManagement .headerWrapper h4,
+#services .timeAndProjectManagement .headerWrapper .separator.small {
+  float: right;
+}
+
+#services .timeAndProjectManagement .headerWrapper h4 {
+  margin: 0;
+}
+
+#services .timeAndProjectManagement .mobile {
+  display: none;
+}
