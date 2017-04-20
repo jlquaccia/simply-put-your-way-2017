@@ -67,6 +67,10 @@
   color: rgba(145,56,63,1);
 }
 
+#about .about .socialAndSelfie b {
+  font-size: 18px;
+}
+
 #about .about .social {
   font-size: 25px;
 }

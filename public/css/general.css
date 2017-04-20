@@ -4,6 +4,10 @@ body {
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
+p {
+  font-size: 18px;
+}
+
 .separator.small {
   background-color: #000;
   height: 2px;
@@ -40,8 +44,9 @@ footer a.blog:after {
   content: 'coming soon';
   color: #fff;
   position: absolute;
-  right: 180px;
+  right: 150px;
   font-weight: 600;
+  top: 1px;
 }
 
 .navWrapper a.blog.olay:after {

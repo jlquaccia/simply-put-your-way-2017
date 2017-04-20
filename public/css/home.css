@@ -130,7 +130,7 @@
   background-color: rgba(145,56,63,1);
   margin: 0 10px 10px 0;
   padding: 9px 23px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 #home section.services img.remoov {
@@ -202,7 +202,7 @@
 
 #home .testimonial-quote {
   display: block;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 300;
   padding: 10px 0;
   white-space: pre-wrap;
@@ -591,6 +591,7 @@ section.pinterest .boards li {
   transition: all 0.25s cubic-bezier(0.31, 1, 0.34, 1);
   padding: 10px;
   border-radius: 8px;
+  font-size: 18px;
 }
 
 @keyframes tapAnimation {
