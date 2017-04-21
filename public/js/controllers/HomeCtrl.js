@@ -1,6 +1,12 @@
 angular
   .module('simply-put-your-way')
   .controller('HomeCtrl', ['$scope', 'parallaxHelper', 'Pinterest', 'Testimonials', 'FlickityService', function ($scope, parallaxHelper, Pinterest, Testimonials, FlickityService) {
+    // preloading header image
+    $('<img/>').attr('src', '../images/Fun Decor.jpg').on('load', function () {
+      $(this).remove();
+      $('.headerImage').css('background-image', 'url("../images/Fun Decor.jpg"), url("../images/subtle patterns/crossword.png")');
+    });
+
     // parallax
     $scope.background = parallaxHelper.createAnimator(-0.3,150,0);
     $scope.spacerImage = parallaxHelper.createAnimator(-0.3,150,-150);

@@ -38,7 +38,7 @@
 }
 
 #home .headerImage {
-  background: url("../images/Fun Decor.jpg"), url("../images/subtle patterns/crossword.png");
+  /*background-image: url("../images/Fun Decor.jpg"), url("../images/subtle patterns/crossword.png");*/
   min-height: 40em;
   background-position: 100% 0, 0px 0;
   background-repeat: no-repeat, repeat;
