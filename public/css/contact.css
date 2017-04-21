@@ -18,7 +18,7 @@
 /* header */
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 #contact .headerImage {
-  background: url("../images/new/Fun Old Kitchen Items.jpg"), url("../images/subtle patterns/crossword.png");
+  /*background: url("../images/new/Fun Old Kitchen Items.jpg"), url("../images/subtle patterns/crossword.png");*/
   min-height: 40em;
   background-position: 0 0, 0px 0;
   background-repeat: no-repeat, repeat;

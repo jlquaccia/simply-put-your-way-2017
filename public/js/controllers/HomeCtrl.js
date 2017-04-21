@@ -4,7 +4,7 @@ angular
     // preloading header image
     $('<img/>').attr('src', '../images/Fun Decor.jpg').on('load', function () {
       $(this).remove();
-      $('.headerImage').css('background-image', 'url("../images/Fun Decor.jpg"), url("../images/subtle patterns/crossword.png")');
+      $('#home .headerImage').css('background-image', 'url("../images/Fun Decor.jpg"), url("../images/subtle patterns/crossword.png")');
     });
 
     // parallax

@@ -1,6 +1,12 @@
 angular
   .module('simply-put-your-way')
   .controller('ContactCtrl', ['$scope', '$http', '$mdToast', 'parallaxHelper', function ($scope, $http, $mdToast, parallaxHelper) {
+    // preloading header image
+    $('<img/>').attr('src', '../images/new/Fun Old Kitchen Items.jpg').on('load', function () {
+      $(this).remove();
+      $('#contact .headerImage').css('background-image', 'url("../images/new/Fun Old Kitchen Items.jpg"), url("../images/subtle patterns/crossword.png")');
+    });
+
     $scope.cf = {
       firstName: '',
       lastName: '',
