@@ -1,20 +1,6 @@
 angular
   .module('simply-put-your-way')
-  .controller('PortfolioCtrl', ['$scope', 'parallaxHelper', 'StorageIdeas', 'imagePreloader', function ($scope, parallaxHelper, StorageIdeas, imagePreloader) {
-    // preloading header image
-    var images = [
-      '../images/new/Art on a Shelf Mirrored.png',
-      '../images/subtle patterns/crossword.png'];
-
-    var status_cb = function(status_pct, img) { console.log('Done percent:', status_pct, img );};
-
-    var finish_cb = function() {
-      $('#portfolio .headerImage').css('background-image', 'url("../images/new/Art on a Shelf Mirrored.png"), url("../images/subtle patterns/crossword.png")');
-      console.log("All done!");
-    };
-
-    imagePreloader.preLoadImages(images, 'linear', finish_cb, status_cb);
-
+  .controller('PortfolioCtrl', ['$scope', 'parallaxHelper', 'StorageIdeas', function ($scope, parallaxHelper, StorageIdeas) {
     var currentStorageIdeaIndex = null;
 
     // parallax

@@ -1,25 +1,11 @@
 angular
   .module('simply-put-your-way')
-  .controller('ContactCtrl', ['$scope', '$http', '$mdToast', 'parallaxHelper', 'imagePreloader', function ($scope, $http, $mdToast, parallaxHelper, imagePreloader) {
+  .controller('ContactCtrl', ['$scope', '$http', '$mdToast', 'parallaxHelper', function ($scope, $http, $mdToast, parallaxHelper) {
     // preloading header image
-    // $('<img/>').attr('src', '../images/new/Fun Old Kitchen Items.jpg').on('load', function () {
-    //   $(this).remove();
-    //   $('#contact .headerImage').css('background-image', 'url("../images/new/Fun Old Kitchen Items.jpg"), url("../images/subtle patterns/crossword.png")');
-    // });
-
-    // preloading header image
-    var images = [
-      '../images/new/Fun Old Kitchen Items.jpg',
-      '../images/subtle patterns/crossword.png'];
-
-    var status_cb = function(status_pct, img) { console.log('Done percent:', status_pct, img );};
-
-    var finish_cb = function() {
+    $('<img/>').attr('src', '../images/new/Fun Old Kitchen Items.jpg').on('load', function () {
+      $(this).remove();
       $('#contact .headerImage').css('background-image', 'url("../images/new/Fun Old Kitchen Items.jpg"), url("../images/subtle patterns/crossword.png")');
-      console.log("All done!");
-    };
-
-    imagePreloader.preLoadImages(images, 'linear', finish_cb, status_cb);
+    });
 
     $scope.cf = {
       firstName: '',
