@@ -1,11 +1,25 @@
 angular
   .module('simply-put-your-way')
-  .controller('HomeCtrl', ['$scope', 'parallaxHelper', 'Pinterest', 'Testimonials', 'FlickityService', function ($scope, parallaxHelper, Pinterest, Testimonials, FlickityService) {
+  .controller('HomeCtrl', ['$scope', 'parallaxHelper', 'Pinterest', 'Testimonials', 'FlickityService', 'imagePreloader', function ($scope, parallaxHelper, Pinterest, Testimonials, FlickityService, imagePreloader) {
     // preloading header image
-    $('<img/>').attr('src', '../images/Fun Decor.jpg').on('load', function () {
-      $(this).remove();
+    // $('<img/>').attr('src', '../images/Fun Decor.jpg').on('load', function () {
+    //   $(this).remove();
+    //   $('#home .headerImage').css('background-image', 'url("../images/Fun Decor.jpg"), url("../images/subtle patterns/crossword.png")');
+    // });
+
+    // preloading header image
+    var images = [
+      '../images/Fun Decor.jpg',
+      '../images/subtle patterns/crossword.png'];
+
+    var status_cb = function(status_pct, img) { console.log('Done percent:', status_pct, img );};
+
+    var finish_cb = function() {
       $('#home .headerImage').css('background-image', 'url("../images/Fun Decor.jpg"), url("../images/subtle patterns/crossword.png")');
-    });
+      console.log("All done!");
+    };
+
+    imagePreloader.preLoadImages(images, 'linear', finish_cb, status_cb);
 
     // parallax
     $scope.background = parallaxHelper.createAnimator(-0.3,150,0);
