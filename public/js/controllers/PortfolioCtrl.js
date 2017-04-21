@@ -1,6 +1,8 @@
 angular
   .module('simply-put-your-way')
-  .controller('PortfolioCtrl', ['$scope', 'parallaxHelper', 'StorageIdeas', function ($scope, parallaxHelper, StorageIdeas) {
+  .controller('PortfolioCtrl', ['$scope', 'parallaxHelper', 'StorageIdeas', 'imagePreloader', function ($scope, parallaxHelper, StorageIdeas, imagePreloader) {
+    imagePreloader.headStart();
+
     var currentStorageIdeaIndex = null;
 
     // parallax
