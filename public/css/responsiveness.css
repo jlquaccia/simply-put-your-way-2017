@@ -4,13 +4,18 @@
   #about .headerImage,
   #portfolio .headerImage,
   #whatIsAnOrganizer .headerImage,
-  #rates .headerImage,
   #donations .headerImage,
   #resources .headerImage,
-  #contact .headerImage {
-    background-position: center;
+  #contact .headerImage,
+  #rates .headerImage {
+    background-position: center 40px;
     background-size: cover;
   }
+
+  /*#rates .headerImage {
+    background-position: center 40px;
+    background-size: cover;
+  }*/
 
   #home h1.title,
   #services h1.title,
@@ -98,6 +103,10 @@
     display: block;
     width: 100%;
   }
+
+  #rates .rates img.img-responsive.hangers {
+    width: 86%;
+  }
 }
 
 @media screen and (max-width: 1172px) {
@@ -182,7 +191,7 @@
 
   #rates .rates img.img-responsive.hangers {
     margin: 25px auto 0;
-    width: 100%;
+    width: 50%;
   }
 
   #donations .whereToDonate p {
@@ -346,6 +355,10 @@
 
   #resources .organizingResources img.drawer {
     width: 50%;
+  }
+
+  #rates .rates img.img-responsive.hangers {
+    width: 100%;
   }
 }
 

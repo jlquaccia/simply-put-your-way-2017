@@ -24,7 +24,7 @@
 #rates .headerImage {
   /*background: url("../images/new/Yarn.jpg"), url("../images/subtle patterns/crossword.png");*/
   min-height: 40em;
-  background-position: 0 0, 0px 0;
+  background-position: 0 40px, 0px 0;
   background-repeat: no-repeat, repeat;
   background-size: 65%;
 }
@@ -61,6 +61,6 @@
 /* rates */
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 #rates .rates img.img-responsive.hangers {
-  width: 100%;
+  width: 63%;
   margin: 0 auto;
 }
