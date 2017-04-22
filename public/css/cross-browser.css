@@ -25,3 +25,61 @@ _::-webkit-full-page-media, _:future, :root .navigationBar .navbar-header {
 _::-webkit-full-page-media, _:future, :root #whatIsAnOrganizer ul.safariOnly {
   list-style-type: none;
 }
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* internet explorer only */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #home section.services .flowerWrapper img {
+    position: relative;
+    width: 212px;
+    height: 202px;
+    border-radius: 60%;
+    overflow: hidden;
+    margin: 50px auto 20px;
+    left: 5px;
+  }
+
+  #about .about img.maaam {
+    position: relative;
+    width: 232px;
+    height: 252px;
+    border-radius: 60%;
+    overflow: hidden;
+    margin: 50px auto 20px;
+    left: 5px;
+  }
+
+  #whatIsAnOrganizer .whiteFlower {
+    position: relative;
+    width: 272px;
+    height: 252px;
+    border-radius: 60%;
+    overflow: hidden;
+    margin: 50px auto 20px;
+    left: 5px;
+  }
+
+  #contact .contact img.img-responsive.gardenUtencils {
+    position: relative;
+    width: 212px;
+    height: 202px;
+    border-radius: 60%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+  }
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* firefox only */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+@-moz-document url-prefix() {
+  #contact .contact img.img-responsive.gardenUtencils.moz {
+    position: relative;
+    width: 212px;
+    height: 202px;
+    border-radius: 60%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+  }
+}
