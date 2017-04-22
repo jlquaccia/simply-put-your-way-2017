@@ -16,12 +16,12 @@ angular
     // testimonials
     // tesimonials carousel
     $scope.flickityOptions = {
-      cellAlign: 'left',
-      contain: true,
-      wrapAround: true,
-      prevNextButtons: false,
-      autoPlay: 10000,
-      pauseAutoPlayOnHover: false
+      cellSelector: '.gallery-cell',
+      resize: false,
+      setGallerySize: false,
+      friction: .4,
+      selectedAttraction: .1,
+      wrapAround: true
     };
 
     var testimonialsFlickity = document.getElementById('myCustomId');
