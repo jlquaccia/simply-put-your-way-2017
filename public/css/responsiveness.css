@@ -547,4 +547,13 @@
   section.pinterest .boards li {
     margin-right: 10px;
   }
+
+  #home .gallery-cell,
+  .flickity-slider,
+  .flickity-enabled.is-draggable .flickity-viewport,
+  #home .main-gallery,
+  .flickity-enabled.is-draggable,
+  .flickity-enabled {
+    touch-action: manipulation;
+  }
 }
