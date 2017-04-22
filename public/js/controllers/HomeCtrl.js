@@ -2,6 +2,7 @@ angular
   .module('simply-put-your-way')
   .controller('HomeCtrl', ['$scope', 'parallaxHelper', 'Pinterest', 'Testimonials', 'FlickityService', 'imagePreloader', function ($scope, parallaxHelper, Pinterest, Testimonials, FlickityService, imagePreloader) {    
     imagePreloader.headStart();
+    imagePreloader.testimonialImages();
 
     // parallax
     $scope.background = parallaxHelper.createAnimator(-0.3,150,0);

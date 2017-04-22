@@ -26,7 +26,29 @@ angular
       });
     }
 
+    function testimonialImages () {
+      var imgArray = [
+        {img: '../images/Cat.Bookshelf.jpg'},
+        {img: '../images/Comfy Cozy.jpg'},
+        {img: '../images/In Place.jpg'},
+        {img: '../images/Open Concept.jpg'},
+        {img: '../images/Open Storage.2.jpg'}
+      ];
+
+      function preloadImage (img) {
+        $('<img/>').attr('src', img).on('load', function () {
+          $(this).remove();
+          // $(pageId + ' .headerImage').css('background-image', img2);
+        });
+      }
+
+      imgArray.forEach(function (img) {
+        preloadImage(img.img);
+      });
+    }
+
     return {
-      headStart: headStart
+      headStart: headStart,
+      testimonialImages: testimonialImages
     };
   }]);
