@@ -1,0 +1,74 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: Lucida Console, Monaco, DejaVu Sans Mono, Bitstream Vera Sans Mono, monospace;
+  height: 100%;
+  min-width: 100%;
+}
+
+body {
+  min-height: 100%;
+  padding: 1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.demo {
+  background-color: #cce5f6;
+  color: #555;
+  height: 100%;
+  min-height: 10rem;
+  padding: 2rem 3rem;
+}
+.demo__card {
+  background-color: #fcfcfc;
+  padding: 1rem 1rem 3rem;
+  text-align: center;
+}
+.demo__title small {
+  display: block;
+  font-size: 70%;
+}
+.demo__slides {
+  margin-top: 2rem;
+  height: 20rem;
+}
+.demo__slide {
+  height: 100%;
+  text-align: center;
+  width: 100%;
+}
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  20%,
+    60% {
+    transform: rotate(-25deg);
+  }
+  40%,
+    80% {
+    transform: rotate(10deg);
+  }
+}
+@media (max-width: 500px) {
+  .github-corner:hover .octo-arm {
+    animation: none;
+  }
+
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
+}

@@ -8,6 +8,11 @@ angular
       });
 
     $stateProvider
+      .state('test', {
+        url: '/test',
+        controller: 'TestCtrl as test',
+        templateUrl: '/views/test.html'
+      })
       .state('home', {
         url: '/',
         controller: 'HomeCtrl as home',

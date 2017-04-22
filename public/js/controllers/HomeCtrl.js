@@ -16,12 +16,7 @@ angular
     // testimonials
     // tesimonials carousel
     $scope.flickityOptions = {
-      cellSelector: '.gallery-cell',
       cellAlign: 'left',
-      resize: false,
-      setGallerySize: false,
-      friction: .4,
-      selectedAttraction: .1,
       contain: true,
       wrapAround: true,
       prevNextButtons: false,
