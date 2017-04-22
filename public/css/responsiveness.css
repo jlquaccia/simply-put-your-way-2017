@@ -547,4 +547,12 @@
   section.pinterest .boards li {
     margin-right: 10px;
   }
+
+  #home .mobileNoFlickity {
+    display: block;
+  }
+
+  #home .desktopYesFlickity {
+    display: none;
+  }
 }
