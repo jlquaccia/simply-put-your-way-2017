@@ -21,7 +21,8 @@
 
 .navigationBar .navbar-header a.navLogo:active,
 .navigationBar .navbar-header a.navLogo:visited,
-.navigationBar .navbar-header a.navLogo:focus {
+.navigationBar .navbar-header a.navLogo:focus,
+.navigationBar .navbar-header a.navLogo:hover {
   text-decoration: none;
 }
 
