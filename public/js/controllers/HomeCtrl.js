@@ -37,7 +37,7 @@ angular
       console.log(e.defaultPrevented);  // will be false
       e.preventDefault();   // does nothing since the listener is passive
       console.log(e.defaultPrevented);  // still false
-    }, Modernizr.passiveeventlisteners ? {passive: true} : false);
+    }, Modernizr.passiveeventlisteners ? {passive: false} : true);
 
     $scope.testimonials = Testimonials;
 
