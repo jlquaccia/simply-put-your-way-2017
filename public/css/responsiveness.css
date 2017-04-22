@@ -84,6 +84,20 @@
     right: initial;
     margin-left: 5px;
   }
+
+  #home .spacerImage {
+    margin: 0;
+    background-position: center;
+  }
+
+  #home .spacerImage.desktop {
+    display: none;
+  }
+
+  #home .img-responsive.forMobile {
+    display: block;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 1172px) {
@@ -251,22 +265,6 @@
   }
 }
 
-@media screen and (max-width: 950px) {
-  #home .spacerImage {
-    margin: 0;
-    background-position: center;
-  }
-
-  #home .spacerImage.desktop {
-    display: none;
-  }
-
-  #home .img-responsive.forMobile {
-    display: block;
-    width: 100%;
-  }
-}
-
 @media screen and (max-width: 850px) {
   #portfolio .portfolio .container .row {
     margin: 0 5px 30px;
@@ -357,11 +355,15 @@
   }
 }
 
-/*@media screen and (max-width: 650px) {
-  #home section.services .flowerWrapper img {
-    width: 40%;
+@media screen and (max-width: 650px) {
+  div.flickity-viewport {
+    height: 450px !important;
   }
-}*/
+
+  #home .testimonial-quote {
+    font-size: 16px;
+  }
+}
 
 @media screen and (max-width: 600px) {
   #whatIsAnOrganizer h1.title,

@@ -1,0 +1,26 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* safari only */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+_::-webkit-full-page-media, _:future, :root #home,
+_::-webkit-full-page-media, _:future, :root #about,
+_::-webkit-full-page-media, _:future, :root #contact,
+_::-webkit-full-page-media, _:future, :root #donations,
+_::-webkit-full-page-media, _:future, :root #portfolio,
+_::-webkit-full-page-media, _:future, :root #rates,
+_::-webkit-full-page-media, _:future, :root #resources,
+_::-webkit-full-page-media, _:future, :root #services,
+_::-webkit-full-page-media, _:future, :root #whatIsAnOrganizer {
+  margin-bottom: 0;
+}
+
+_::-webkit-full-page-media, _:future, :root footer {
+  position: relative;
+}
+
+_::-webkit-full-page-media, _:future, :root .navigationBar .navbar-header {
+  float: left;
+}
+
+_::-webkit-full-page-media, _:future, :root #whatIsAnOrganizer ul.safariOnly {
+  list-style-type: none;
+}

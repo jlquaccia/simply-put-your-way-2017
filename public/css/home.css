@@ -51,7 +51,7 @@
   background-position: 0 150px;
   background-repeat: no-repeat;
   background-size: contain;
-  margin: -10% 0;
+  margin: -11% 0;
 }
 
 #home .companies {
@@ -273,6 +273,10 @@
 
 #home .testimonial-title {
   font-weight: 600;
+}
+
+div.flickity-viewport {
+  height: 425px !important;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
