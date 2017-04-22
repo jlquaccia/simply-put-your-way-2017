@@ -204,8 +204,9 @@
 #home .testimonial {
   text-align: center;
   max-width: 850px;
-  margin: 70px auto 130px auto;
+  margin: 70px auto 50px auto;
   padding: 0 20px;
+  min-height: 332px;
 }
 
 #home .testimonial-avatar {
@@ -282,17 +283,26 @@ div.flickity-viewport {
 #home .testimonials .ion-ios-arrow-left,
 #home .testimonials .ion-ios-arrow-right {
   position: absolute;
-  top: 50%;
+  top: 150px;
   z-index: 99;
-  font-size: 30px;
+  font-size: 50px;
+}
+
+#home .testimonials .ion-ios-arrow-left:active,
+#home .testimonials .ion-ios-arrow-right:active,
+#home .testimonials .ion-ios-arrow-left:focus,
+#home .testimonials .ion-ios-arrow-right:focus,
+#home .testimonials .ion-ios-arrow-left:visited,
+#home .testimonials .ion-ios-arrow-right:visited {
+  outline: none;
 }
 
 #home .testimonials .ion-ios-arrow-left {
-  left: 100px;
+  left: 50px;
 }
 
 #home .testimonials .ion-ios-arrow-right {
-  right: 100px;
+  right: 50px;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
