@@ -117,7 +117,8 @@
     </div>
     
     <!-- testimonials -->
-    <div class="container-fluid spacerImageWrapper">
+    <!-- desktop -->
+    <!-- <div class="container-fluid spacerImageWrapper">
       <section class="testimonials">
         <div class="row">
           <div class="col-md-12">
@@ -132,6 +133,34 @@
                   <h3 class="testimonial-title">{{testimonial.title}}</h3>
                   <q class="testimonial-quote">{{testimonial.review}}</q>
                   <span class="testimonial-author">{{testimonial.name}}, {{testimonial.city}}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div> -->
+
+    <!-- testimonials -->
+    <!-- mobile -->
+    <div class="container-fluid spacerImageWrapper">
+      <section class="testimonials">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center">Five Star Testimonials</h1>
+
+            <div class="separator small"></div>
+
+            <i class="ion-ios-arrow-left" ng-click="prev();"></i>
+            <i class="ion-ios-arrow-right" ng-click="next();"></i>
+
+            <div class="main-gallery" id="myCustomId">
+              <div class="gallery-cell">
+                <div class="testimonial">
+                  <img src="{{mobileTestimonial.image}}" alt="" class="testimonial-avatar" />
+                  <h3 class="testimonial-title">{{mobileTestimonial.title}}</h3>
+                  <q class="testimonial-quote">{{mobileTestimonial.review}}</q>
+                  <span class="testimonial-author">{{mobileTestimonial.name}}, {{mobileTestimonial.city}}</span>
                 </div>
               </div>
             </div>

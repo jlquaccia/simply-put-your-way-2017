@@ -21,13 +21,40 @@ angular
     var testimonialsFlickity = document.getElementById('myCustomId');
     
     // make sure carousel will pause on click only and will resume autoplay next time the carousel is visible (ex. user scrolls/mouseleaves away and then comes back)
-    testimonialsFlickity.addEventListener('mouseleave', function (e) {
-      if (FlickityService.instances[0].instance.player.state === 'stopped') {
-        FlickityService.instances[0].instance.player.onVisibilityPlay();
-      }
-    });
+    // testimonialsFlickity.addEventListener('mouseleave', function (e) {
+    //   if (FlickityService.instances[0].instance.player.state === 'stopped') {
+    //     FlickityService.instances[0].instance.player.onVisibilityPlay();
+    //   }
+    // });
 
     $scope.testimonials = Testimonials;
+
+    // mobile only
+    var currentTestimonialIndex = 0;
+    $scope.mobileTestimonial = Testimonials[currentTestimonialIndex];
+
+    $scope.next = function () {
+      if (currentTestimonialIndex < Testimonials.length - 1) {
+        currentTestimonialIndex++;
+        console.log(currentTestimonialIndex);
+        $scope.mobileTestimonial = Testimonials[currentTestimonialIndex];
+      } else {
+        currentTestimonialIndex = 0;
+        $scope.mobileTestimonial = Testimonials[currentTestimonialIndex];
+      }
+    };
+
+    $scope.prev = function () {
+      if (currentTestimonialIndex > 0) {
+        currentTestimonialIndex--;
+        console.log(currentTestimonialIndex);
+        $scope.mobileTestimonial = Testimonials[currentTestimonialIndex];
+      } else {
+        currentTestimonialIndex = Testimonials.length - 1;
+        $scope.mobileTestimonial = Testimonials[currentTestimonialIndex];
+      }
+    };
+    // end mobile only
 
     // getting pinterest data
     // default board: its your space

@@ -279,6 +279,22 @@ div.flickity-viewport {
   height: 425px !important;
 }
 
+#home .testimonials .ion-ios-arrow-left,
+#home .testimonials .ion-ios-arrow-right {
+  position: absolute;
+  top: 50%;
+  z-index: 99;
+  font-size: 30px;
+}
+
+#home .testimonials .ion-ios-arrow-left {
+  left: 100px;
+}
+
+#home .testimonials .ion-ios-arrow-right {
+  right: 100px;
+}
+
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 /* pinterest masonry */
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
