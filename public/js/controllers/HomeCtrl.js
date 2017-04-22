@@ -16,22 +16,22 @@ angular
     // testimonials
     // tesimonials carousel
     $scope.flickityOptions = {
-      cellSelector: '.gallery-cell',
-      resize: false,
-      setGallerySize: false,
-      friction: .4,
-      selectedAttraction: .1,
-      wrapAround: true
+      cellAlign: 'left',
+      contain: true,
+      wrapAround: true,
+      prevNextButtons: true,
+      autoPlay: 10000,
+      pauseAutoPlayOnHover: false
     };
 
     var testimonialsFlickity = document.getElementById('myCustomId');
     
     // make sure carousel will pause on click only and will resume autoplay next time the carousel is visible (ex. user scrolls/mouseleaves away and then comes back)
-    testimonialsFlickity.addEventListener('mouseleave', function (e) {
-      if (FlickityService.instances[0].instance.player.state === 'stopped') {
-        FlickityService.instances[0].instance.player.onVisibilityPlay();
-      }
-    });
+    // testimonialsFlickity.addEventListener('mouseleave', function (e) {
+    //   if (FlickityService.instances[0].instance.player.state === 'stopped') {
+    //     FlickityService.instances[0].instance.player.onVisibilityPlay();
+    //   }
+    // });
 
     $scope.testimonials = Testimonials;
 
