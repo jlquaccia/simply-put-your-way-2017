@@ -1,23 +1,6 @@
 angular
   .module('simply-put-your-way')
   .controller('TestCtrl', ['$scope', function ($scope) {
-    // constructor(); {
-    //   'ngInject';
-
-    //   this._activate();
-
-    // }
-
-    // this.$inject = _activate
-
-    // _activate(); {
-      
-      
-    // }
-
-    $scope.projectName = 'angular-flickity';
-    $scope.demoDetail = 'simple demo';
-
     $scope.slides = [
       'http://bnj.bz/2p2S1X471H38/one.jpg',
       'http://bnj.bz/352I0q311A23/two.jpg',

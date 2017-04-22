@@ -1,12 +1,6 @@
 angular
   .module('simply-put-your-way')
-  .controller('HomeCtrl', ['$scope', 'parallaxHelper', 'Pinterest', 'Testimonials', 'FlickityService', 'imagePreloader', function ($scope, parallaxHelper, Pinterest, Testimonials, FlickityService, imagePreloader) {
-    // preloading header image
-    // $('<img/>').attr('src', '../images/Fun Decor.jpg').on('load', function () {
-    //   $(this).remove();
-    //   $('#home .headerImage').css('background-image', 'url("../images/Fun Decor.jpg"), url("../images/subtle patterns/crossword.png")');
-    // });
-    
+  .controller('HomeCtrl', ['$scope', 'parallaxHelper', 'Pinterest', 'Testimonials', 'FlickityService', 'imagePreloader', function ($scope, parallaxHelper, Pinterest, Testimonials, FlickityService, imagePreloader) {    
     imagePreloader.headStart();
 
     // parallax
@@ -19,7 +13,7 @@ angular
       cellAlign: 'left',
       contain: true,
       wrapAround: true,
-      prevNextButtons: true,
+      prevNextButtons: false,
       autoPlay: 10000,
       pauseAutoPlayOnHover: false
     };
@@ -27,11 +21,11 @@ angular
     var testimonialsFlickity = document.getElementById('myCustomId');
     
     // make sure carousel will pause on click only and will resume autoplay next time the carousel is visible (ex. user scrolls/mouseleaves away and then comes back)
-    // testimonialsFlickity.addEventListener('mouseleave', function (e) {
-    //   if (FlickityService.instances[0].instance.player.state === 'stopped') {
-    //     FlickityService.instances[0].instance.player.onVisibilityPlay();
-    //   }
-    // });
+    testimonialsFlickity.addEventListener('mouseleave', function (e) {
+      if (FlickityService.instances[0].instance.player.state === 'stopped') {
+        FlickityService.instances[0].instance.player.onVisibilityPlay();
+      }
+    });
 
     $scope.testimonials = Testimonials;
 
@@ -41,24 +35,6 @@ angular
       console.log(response.data);
       $scope.currentBoard = response.data;
     });
-
-    // // getting pinterest data
-    // if (Pinterest.isLoggedIn()) {
-    //   // default board: its your space
-    //   Pinterest.getBoardPins('490329546869188172').then(function (response) {
-    //     console.log(response.data);
-    //     $scope.currentBoard = response.data;
-    //   });
-    // } else {
-    //   Pinterest.login(function (response) {
-    //     console.log('logged into pinterest');
-
-    //     // default board: its your space
-    //     Pinterest.getBoardPins('490329546869188172').then(function (response) {
-    //       $scope.currentBoard = response.data;
-    //     });
-    //   });
-    // }
 
     // set active pinterest board
     $('section.pinterest .boards li').click(function () {
