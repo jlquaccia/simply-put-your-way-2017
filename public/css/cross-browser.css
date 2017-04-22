@@ -14,6 +14,7 @@ _::-webkit-full-page-media, _:future, :root #whatIsAnOrganizer {
 }
 
 _::-webkit-full-page-media, _:future, :root footer {
+  z-index: 1;
   position: relative;
 }
 
