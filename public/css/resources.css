@@ -65,6 +65,7 @@
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 #resources .organizingResources img.drawer {
   margin: 0 auto;
+  width: 30%;
 }
 
 #resources .organizingResources img.remoov {

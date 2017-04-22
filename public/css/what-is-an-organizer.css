@@ -62,6 +62,18 @@
   -webkit-clip-path: circle(38.5% at 50% 50%);
   clip-path: circle(38.5% at 50% 50%);
   margin: 0 auto;
+  width: 35%;
+}
+
+@-moz-document url-prefix() {
+  #whatIsAnOrganizer .whiteFlower {
+    position: relative;
+    width: 265px;
+    height: 245px;
+    border-radius: 60%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+  }
 }
 
 #whatIsAnOrganizer .separator.small {

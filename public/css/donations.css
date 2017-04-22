@@ -71,6 +71,15 @@
 
 #donations .whereToDonate img {
   margin: 0 auto;
+  width: 20%;
+}
+
+#donations .whereToDonate img.salvationArmy {
+  width: 15%;
+}
+
+#donations .whereToDonate img.marissasCloset {
+  width: 40%;
 }
 
 #donations .whereToDonate p {

@@ -60,8 +60,26 @@
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 #about .about img.maaam {
   -webkit-clip-path: circle(46% at 50% 50%);
+  -moz-clip-path: circle(46% at 50% 50%);
   clip-path: circle(46% at 50% 50%);
   margin: 0 auto;
+  width: 80%;
+}
+
+@-moz-document url-prefix() {
+  #about .about img.maaam {
+    position: relative;
+    width: 80%;
+    border-radius: 60%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+  }
+
+  @media screen and (max-width: 992px) {
+    #about .about img.maaam {
+      margin-bottom: 20px !important;
+    }
+  }
 }
 
 #about .about b {

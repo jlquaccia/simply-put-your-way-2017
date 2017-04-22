@@ -162,14 +162,25 @@
 #home section.services .flowerWrapper img {
   max-width: 70%;
   -webkit-mask-image: url(../images/house-silhouette.svg);
+  -moz-mask-image: url(../images/house-silhouette.svg);
   mask-image: url(../images/house-silhouette.svg);
   -webkit-mask-size: 185%;
+  -moz-mask-size: 185%;
   mask-size: cover;
-  -webkit-mask-position: 30% -270%;
+  -webkit-mask-position: 30% -60px;
+  -moz-mask-position: 30% -60px;
   -webkit-mask-repeat: no-repeat;
+  -moz-mask-repeat: no-repeat;
   position: relative;
   left: -12px;
   top: -40px;
+}
+
+@-moz-document url-prefix() {
+  #home section.services .flowerWrapper img {
+    -webkit-mask-position: 32% -60px;
+    -moz-mask-position: 32% -60px;
+  }
 }
 
 #home section.services .flowerWrapper {

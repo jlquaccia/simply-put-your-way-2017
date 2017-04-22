@@ -133,6 +133,7 @@
 
   #about .about img.maaam {
     margin: 0 auto;
+    width: 50%;
   }
 
   #about h1.jill {
@@ -226,6 +227,27 @@
   #resources,
   #contact {
     margin-bottom: 367px;
+  }
+
+  #portfolio .portfolio img.img-responsive.beepi {
+    position: relative;
+    top: 12px;
+  }
+
+  #donations .whereToDonate img {
+    width: 55%;
+  }
+
+  #donations .whereToDonate img.salvationArmy {
+    width: 30%;
+  }
+
+  #donations .whereToDonate img.marissasCloset {
+    width: 70%;
+  }
+
+  #whatIsAnOrganizer .whiteFlower {
+    width: 60%;
   }
 }
 
@@ -323,6 +345,10 @@
   #home section.services .flowerWrapper img {
     width: 45%;
   }
+
+  #resources .organizingResources img.drawer {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 48em) {
@@ -348,6 +374,10 @@
   #rates h1.title,
   #services h1.title {
     font-size: 36px;
+  }
+
+  #portfolio .portfolio img.img-responsive.beepi {
+    width: 50%;
   }
 }
 
