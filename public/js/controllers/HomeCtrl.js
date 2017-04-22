@@ -33,14 +33,11 @@ angular
       }
     });
 
-    // window.addEventListener("touchstart", function (e) {
-    //   console.log('setting passive to false');
-    //   e.preventDefault();
-    // }, {passive: false} );
-
-    // testimonialsFlickity.addEventListener("touchstart", function () {
-    //   console.log('blah blah blah');
-    // }, {passive:false});
+    window.addEventListener("touchstart", function(e) {
+      console.log(e.defaultPrevented);  // will be false
+      e.preventDefault();   // does nothing since the listener is passive
+      console.log(e.defaultPrevented);  // still false
+    }, Modernizr.passiveeventlisteners ? {passive: true} : false);
 
     $scope.testimonials = Testimonials;
 
