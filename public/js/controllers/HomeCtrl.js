@@ -33,9 +33,15 @@ angular
       }
     });
 
-    testimonialsFlickity.addEventListener("touchstart", function () {
-      console.log('blah blah blah');
-    }, {passive:false});
+    // window.addEventListener("touchstart", function (e) {
+    //   console.log('setting passive to false');
+    //   e.preventDefault();
+    // }, {passive: false} );
+
+    // testimonialsFlickity.addEventListener("touchstart", function () {
+    //   console.log('blah blah blah');
+    // }, {passive:false});
+
     $scope.testimonials = Testimonials;
 
     // getting pinterest data

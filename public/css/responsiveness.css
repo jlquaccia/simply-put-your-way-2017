@@ -548,5 +548,7 @@
     margin-right: 10px;
   }
 
-  
+  #home .gallery-cell {
+    touch-action: none;
+  }
 }
