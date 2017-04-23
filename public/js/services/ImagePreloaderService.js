@@ -9,7 +9,7 @@ angular
         {img: '../images/Fun Decor.jpg', img2: 'url("../images/Fun Decor.jpg"), url("../images/subtle patterns/crossword.png")', pageId: '#home'},
         {img: '../images/new/Art on a Shelf Mirrored.png', img2: 'url("../images/new/Art on a Shelf Mirrored.png"), url("../images/subtle patterns/crossword.png")', pageId: '#portfolio'},
         {img: '../images/new/Coffee Bar.cropped.jpg', img2: 'url("../images/new/Coffee Bar.cropped.jpg"), url("../images/subtle patterns/crossword.png")', pageId: '#rates'},
-        {img: '../images/new/File Folder.jpg', img2: 'url("../images/new/File Folder.jpg"), url("../images/subtle patterns/crossword.png")', pageId: '#resources'},
+        {img: '../images/List.jpg', img2: 'url("../images/List.jpg"), url("../images/subtle patterns/crossword.png")', pageId: '#resources'},
         {img: '../images/new/Living Space.jpg', img2: 'url("../images/new/Living Space.jpg"), url("../images/subtle patterns/crossword.png")', pageId: '#services'},
         {img: '../images/new/Shelves and Storage.jpg', img2: 'url("../images/new/Shelves and Storage.jpg"), url("../images/subtle patterns/crossword.png")', pageId: '#whatIsAnOrganizer'},
       ];
