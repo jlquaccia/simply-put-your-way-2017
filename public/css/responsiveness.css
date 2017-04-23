@@ -568,4 +568,8 @@
   #home .desktopYesFlickity {
     display: none;
   }
+
+  #rates .rates .ratesMobile p {
+    font-size: 14px;
+  }
 }
