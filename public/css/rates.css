@@ -64,3 +64,11 @@
   width: 63%;
   margin: 0 auto;
 }
+
+#rates .rates p.paddingz {
+  margin: 25px 0;
+}
+
+#rates .rates td {
+  width: 250px;
+}
