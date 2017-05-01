@@ -72,3 +72,7 @@
 #rates .rates td {
   font-size: 18px;
 }
+
+#rates .rates ul li {
+  font-size: 20px;
+}
