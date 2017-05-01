@@ -76,3 +76,7 @@
 #rates .rates ul li {
   font-size: 20px;
 }
+
+#rates .rates ul {
+  margin-bottom: 25px;
+}
