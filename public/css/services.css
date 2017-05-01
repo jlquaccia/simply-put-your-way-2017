@@ -1,6 +1,6 @@
 /* for footer on desktop */
 #services {
-  margin-bottom: 347px;
+  /*margin-bottom: 347px;*/
   padding-bottom: 25px;
   background-color: #fff;
 }
@@ -122,4 +122,8 @@
 
 #services .timeAndProjectManagement .mobile {
   display: none;
+}
+
+#services section.timeAndProjectManagement ul li {
+  font-size: 18px;
 }

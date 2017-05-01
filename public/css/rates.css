@@ -1,5 +1,5 @@
 #rates {
-  margin-bottom: 347px;
+  /*margin-bottom: 347px;*/
 }
 
 #rates h1 {
@@ -70,5 +70,5 @@
 }
 
 #rates .rates td {
-  width: 250px;
+  font-size: 18px;
 }

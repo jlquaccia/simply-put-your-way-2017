@@ -4,8 +4,9 @@ body {
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
-p {
-  font-size: 18px;
+p,
+h4 {
+  font-size: 20px;
 }
 
 .separator.small {
@@ -25,6 +26,26 @@ a:active,
 a:visited,
 a:focus {
   outline: none;
+}
+
+#home,
+#about,
+#portfolio,
+#whatIsAnOrganizer,
+#services,
+#rates,
+#donations,
+#resources,
+#contact {
+  margin-bottom: 357px;
+}
+
+a {
+  word-break: break-all;
+}
+
+h6 {
+  font-size: 16px;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
@@ -50,7 +71,7 @@ footer a.blog:after {
   content: 'coming soon';
   color: #fff;
   position: absolute;
-  right: 150px;
+  right: 130px;
   font-weight: 600;
   top: 1px;
 }
@@ -59,7 +80,7 @@ footer a.blog:after {
   content: 'coming soon';
   color: #fff;
   top: initial;
-  left: 30px;
+  left: 40px;
   bottom: initial;
   right: initial;
 }

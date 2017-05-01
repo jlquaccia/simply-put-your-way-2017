@@ -1,3 +1,9 @@
+@media screen and (max-width: 1415px) {
+  #resources .helpfulBooks .booksWrapper .karen {
+    transform: translateY(25%);
+  }
+}
+
 @media screen and (max-width: 1315px) {
   #home .headerImage,
   #services .headerImage,
@@ -43,9 +49,9 @@
   }
 }
 
-@media screen and (max-width: 1278px) {
-  #resources .helpfulBooks .booksWrapper .transform.longTitle {
-    transform: translateY(43%);
+@media screen and (max-width: 1297px) {
+  #resources .helpfulBooks .booksWrapper .karen {
+    transform: translateY(15%);
   }
 }
 
@@ -115,6 +121,12 @@
   }
 }
 
+@media screen and (max-width: 1126px) {
+  #resources .helpfulBooks .booksWrapper .transform {
+    transform: translateY(25%);
+  }
+}
+
 @media screen and (max-width: 1100px) {
   #home .spacerImage {
     min-height: 40em;
@@ -125,9 +137,15 @@
   }
 }
 
-@media screen and (max-width: 1028px) {
+@media screen and (max-width: 1079px) {
   #resources .helpfulBooks .booksWrapper .transform {
-    transform: translateY(30%);
+    transform: translateY(15%);
+  }
+}
+
+@media screen and (max-width: 1043px) {
+  #resources .helpfulBooks .booksWrapper .transform.longTitle {
+    transform: translateY(7%);
   }
 }
 
@@ -442,7 +460,7 @@
   }
 
   h1 + h4 {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   #home .headerImage {
@@ -571,5 +589,13 @@
 
   #rates .rates .ratesMobile p {
     font-size: 14px;
+  }
+
+  #rates .rates td {
+    font-size: 16px;
+  }
+
+  #whatIsAnOrganizer ul.safariOnly {
+    font-size: 18px;
   }
 }

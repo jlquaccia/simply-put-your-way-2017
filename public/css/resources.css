@@ -1,6 +1,6 @@
 /* for footer on desktop */
 #resources {
-  margin-bottom: 347px;
+  /*margin-bottom: 347px;*/
   background-color: #fff;
 }
 
@@ -90,7 +90,7 @@
 }
 
 #resources .helpfulBooks .booksWrapper .transform {
-  transform: translateY(50%);
+  transform: translateY(35%);
 }
 
 #resources .helpfulBooks .booksWrapper b.white {

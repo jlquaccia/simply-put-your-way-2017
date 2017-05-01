@@ -1,5 +1,5 @@
 #home {
-  margin-bottom: 347px;
+  /*margin-bottom: 347px;*/
 }
 
 #home .contentWrapper {
@@ -91,9 +91,9 @@
   background-color: #fff;
 }
 
-#home .about p {
+/*#home .about p {
   font-size: 18px;
-}
+}*/
 
 #home .testimonials .separator.small {
   margin-bottom: 0;
@@ -216,7 +216,7 @@
 
 #home .testimonial-quote {
   display: block;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 300;
   padding: 10px 0;
   white-space: pre-wrap;
@@ -643,7 +643,7 @@ section.pinterest .boards li {
   transition: all 0.25s cubic-bezier(0.31, 1, 0.34, 1);
   padding: 10px;
   border-radius: 8px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 @keyframes tapAnimation {

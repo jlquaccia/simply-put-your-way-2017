@@ -1,6 +1,6 @@
 /* for footer on desktop */
 #whatIsAnOrganizer {
-  margin-bottom: 347px;
+  /*margin-bottom: 347px;*/
   padding-bottom: 25px;
   background-color: #fff;
 }
@@ -91,4 +91,8 @@
 
 #whatIsAnOrganizer .organizeYourStuff .napoBullet {
   width: 20%;
+}
+
+#whatIsAnOrganizer ul.safariOnly {
+  font-size: 15px;
 }
