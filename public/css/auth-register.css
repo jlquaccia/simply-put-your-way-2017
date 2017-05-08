@@ -1,0 +1,6 @@
+#register .contentWrapper {
+  position: relative;
+  background: #fff;
+  z-index: 1;
+  padding: 10em 0 10em;
+}
