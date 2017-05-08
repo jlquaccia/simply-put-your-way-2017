@@ -1,17 +1,21 @@
-<div class="container">
-  <h1>Edit: "{{post.title}}"</h1>
+<div id="blogEdit">
+  <div class="contentWrapper">
+    <div class="container">
+      <h1>Edit: "{{post.title}}"</h1>
 
-  <form ng-submit="updatePost()">
-    <div class="form-group">
-      <label for="post.title">Title</label>
-      <input type="text" class="form-control" placeholder="title" ng-model="post.title">
+      <form ng-submit="updatePost()">
+        <div class="form-group">
+          <label for="post.title">Title</label>
+          <input type="text" class="form-control" placeholder="title" ng-model="post.title">
+        </div>
+        <div class="form-group">
+          <label for="post.body">Body</label>
+          <textarea class="form-control" placeholder="enter some words" ng-model="post.body"></textarea>
+        </div>
+        <button class="btn btn-primary">Update</button>
+      </form>
+      <br>
+      <a ui-sref="blog">back</a>
     </div>
-    <div class="form-group">
-      <label for="post.body">Body</label>
-      <textarea class="form-control" placeholder="enter some words" ng-model="post.body"></textarea>
-    </div>
-    <button class="btn btn-primary">Update</button>
-  </form>
-  <br>
-  <a ui-sref="blog">back</a>
+  </div>  
 </div>

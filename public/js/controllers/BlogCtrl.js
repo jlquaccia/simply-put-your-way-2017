@@ -20,6 +20,7 @@ angular
       });
     };
 
+    // only grab specific post on blog show or blog edit pages
     if ($state.current.name === 'blogShow' || $state.current.name === 'blogEdit') {
       $scope.getPost($stateParams.id);
     }
@@ -63,7 +64,10 @@ angular
       }
     };
 
-    $scope.getPosts();
+    // only grab all posts on blog index page
+    if ($state.current.name === 'blog') {
+      $scope.getPosts();
+    }
 
     $scope.edit = 'blog edit';
     $scope.show = 'blog show';

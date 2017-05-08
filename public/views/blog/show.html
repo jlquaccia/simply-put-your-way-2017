@@ -1,7 +1,11 @@
-<div class="container">
-  <h1>{{post.title}}</h1>
-  <small>created on: {{post.created_at | date:'MM/dd/yyyy'}}</small>
-  <p>{{post.body}}</p>
-  <br>
-  <a ui-sref="blog">back</a>
+<div id="blogShow">
+  <div class="contentWrapper">
+    <div class="container">
+      <h1>{{post.title}}</h1>
+      <small>created on: {{post.created_at | date:'MM/dd/yyyy'}}</small>
+      <p>{{post.body}}</p>
+      <br>
+      <a ui-sref="blog">back</a>
+    </div>
+  </div>
 </div>
