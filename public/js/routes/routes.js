@@ -3,8 +3,7 @@ angular
   .config(['$stateProvider', '$locationProvider', '$urlRouterProvider', function ($stateProvider, $locationProvider, $urlRouterProvider) {
     $locationProvider
       .html5Mode({
-        enabled: true,
-        requireBase: false
+        enabled: true
       });
 
     $stateProvider
