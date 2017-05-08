@@ -1,12 +1,27 @@
-<div class="container">
-  <h1>Blog Index:</h1>
-  <a ui-sref="blogNew">new</a>
+<div id="blogIndex">
+  <!-- header -->
+  <header class="animated fadeIn">
+    <div du-parallax y="background" class="headerImage" />
+      <div class="secondBg"></div>
+    </div>
 
-  <ul>
-    <li ng-repeat="post in posts | orderBy:created_at:true">
-      <h4><a ui-sref="blogShow({id: post._id})">{{post.title}}</a> - {{post.created_at | date:'MM/dd/yyyy'}}</h4>
-      <a ui-sref="blogEdit({id: post._id})">edit</a> | <a href="#" ng-click="deletePost(post._id)">delete</a>
-      <p>{{post.body}}</p>
-    </li>
-  </ul>
+    <div class="titleWrapper">
+      <h1 class="title"><span class="thin">Blog</span></h1>
+    </div>
+  </header>
+
+  <div class="contentWrapper">
+    <div class="container">
+      <h1>Blog Index:</h1>
+      <a ui-sref="blogNew">new</a>
+
+      <ul>
+        <li ng-repeat="post in posts | orderBy:created_at:true">
+          <h4><a ui-sref="blogShow({id: post._id})">{{post.title}}</a> - {{post.created_at | date:'MM/dd/yyyy'}}</h4>
+          <a ui-sref="blogEdit({id: post._id})">edit</a> | <a href="#" ng-click="deletePost(post._id)">delete</a>
+          <p>{{post.body}}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
