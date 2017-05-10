@@ -64,10 +64,7 @@ angular
       .state('blog', {
         url: '/blog',
         controller: 'BlogCtrl as blog',
-        templateUrl: '/views/blog/index.html',
-        resolve: {
-          loggedin: checkCurrentUser
-        }
+        templateUrl: '/views/blog/index.html'
       })
       .state('blogNew', {
         url: '/blog/new',
