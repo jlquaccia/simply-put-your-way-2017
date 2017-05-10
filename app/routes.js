@@ -190,6 +190,12 @@ module.exports = function (app) {
     res.send(200);
   });
 
+  app.post('/api/login', passport.authenticate('local'), function (req, res) {
+    var user = req.user;
+
+    res.json(user);
+  });
+
   // ======================================================================
   // angular =========================================================
   // ======================================================================

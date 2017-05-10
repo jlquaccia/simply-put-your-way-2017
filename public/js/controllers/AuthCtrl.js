@@ -15,16 +15,33 @@ angular
 
               if (user !== null) {
                 $rootScope.currentUser = user;
-                console.log('user: ', $rootScope.currentUser);
                 $state.go('blog');
               } else {
-                console.log('user: ', user);
-                $scope.errorMessage = user;
+                console.log('User already exists');
+                $scope.errorMessage = 'User already exists';
               }
             },
             function (err) {
               console.log(err);
               $scope.errorMessage = err;
+            }
+          );
+      }
+    };
+
+    $scope.login = function (user) {
+      $scope.errorMessage = null;
+
+      if (user) {
+        Auth
+          .login(user)
+          .then(
+            function (response) {
+              $rootScope.currentUser = response.data;
+              $state.go('blog');
+            },
+            function (err) {
+              $scope.errorMessage = err.data;
             }
           );
       }

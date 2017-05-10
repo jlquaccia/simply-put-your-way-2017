@@ -11,7 +11,8 @@ module.exports = function () {
   var api = {
     findUserByUsername: findUserByUsername,
     createUser: createUser,
-    findUserById: findUserById
+    findUserById: findUserById,
+    findUserByCredentials: findUserByCredentials
   };
 
   return api;
@@ -26,5 +27,9 @@ module.exports = function () {
 
   function findUserById (userId) {
     return UserModel.findById(userId);
+  }
+
+  function findUserByCredentials (credentials) {
+    return UserModel.findOne({username: credentials.username, password: credentials.password});
   }
 };

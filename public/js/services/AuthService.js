@@ -3,7 +3,8 @@ angular
   .factory('Auth', ['$http', function ($http) {
     var api = {
       register: register,
-      logout: logout
+      logout: logout,
+      login: login
     };
 
     return api;
@@ -14,5 +15,9 @@ angular
 
     function logout () {
       return $http.post('/api/logout');
+    }
+
+    function login (user) {
+      return $http.post('/api/login', user);
     }
   }]);
