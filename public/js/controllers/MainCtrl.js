@@ -9,14 +9,10 @@ angular
     });
 
     $rootScope.$on('$stateChangeSuccess', function (e, toState, toParams, fromState, fromParams) {
-      console.log($state.current.name);
-
       if ($state.current.name === 'blogShow') {
         $('body, html').css('height', 'inherit');
-        console.log('current state is blogShow');
       } else {
         $('body, html').css('height', '100%');
-        console.log('current state is not blogShow');
       }
     });
 

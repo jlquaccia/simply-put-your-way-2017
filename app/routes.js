@@ -1,3 +1,11 @@
+var Post = require('./models/Post');
+var User = require('./models/User')();
+var auth = require('./middleware/authMiddleware')();
+var passport = require('passport');
+var LocalStrategy = require('passport-local').Strategy;
+var passportApi = require('./passport/passport')(User);
+var mongoose = require('mongoose');
+
 const nodemailer = require('nodemailer');
 // create reusable transporter object using the default SMTP transport
 let transporter = nodemailer.createTransport({
@@ -11,8 +19,6 @@ let transporter = nodemailer.createTransport({
     accessToken: process.env.GMAIL_ACCESS_TOKEN
   }
 });
-
-var Post = require('./models/Post');
 
 module.exports = function (app) {
   // ======================================================================
@@ -129,6 +135,53 @@ module.exports = function (app) {
       res.json({firstName: req.body.firstName});
     }
   });
+
+  // ======================================================================
+  // authentication ==========================================================
+  // ======================================================================
+  passport.use(new LocalStrategy(passportApi.localStrategy));
+  passport.serializeUser(passportApi.serializeUser);
+  passport.deserializeUser(passportApi.deserializeUser);
+
+  app.post('/api/register', function (req, res) {
+    var newUser = req.body;
+
+    User
+      .findUserByUsername(newUser.username)
+      .then(
+        function (user) {
+          // determine if there is already an existing user by the provided credentials
+          if (user) {
+            // user already exists
+            res.json(null);
+          } else {
+            // user does not exist, create a new one
+            return User.createUser(newUser);
+          }
+        },
+        function (err) {
+          res.status(400).send(err);
+        }
+      )
+      .then(
+        function (user) {
+          if (user) {
+            req.login(user, function (err) {
+              if (err) {
+                res.status(400).send(err);
+              } else {
+                res.json(user);
+              }
+            });
+          }
+        },
+        function (err) {
+          res.status(400).send(err);
+        }
+      );
+  });
+
+
 
   // ======================================================================
   // angular =========================================================

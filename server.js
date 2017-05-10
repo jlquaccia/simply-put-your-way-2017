@@ -8,6 +8,10 @@ var app = express();
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var mongoose = require('mongoose');
+var multer = require('multer');
+var passport = require('passport');
+var cookieParser = require('cookie-parser');
+var session = require('express-session');
 
 // configuration ===========================================
 // config files
@@ -29,6 +33,15 @@ app.use(bodyParser.json({type: 'application/vnd.api+json'}));
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({extended: true}));
+multer();
+app.use(session({
+  secret: 'this is the secret',
+  resave: true,
+  saveUninitialized: true
+}));
+app.use(cookieParser());
+app.use(passport.initialize());
+app.use(passport.session());
 app.use(validator());
 
 // override with the X-HTTP-Method-Override header in the request. simulate DELETE/PUT
