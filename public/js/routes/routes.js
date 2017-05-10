@@ -1,6 +1,8 @@
 angular
   .module('simply-put-your-way')
-  .config(['$stateProvider', '$locationProvider', '$urlRouterProvider', function ($stateProvider, $locationProvider, $urlRouterProvider) {
+  .config(['$stateProvider', '$locationProvider', '$urlRouterProvider', '$qProvider', function ($stateProvider, $locationProvider, $urlRouterProvider, $qProvider) {
+    $qProvider.errorOnUnhandledRejections(false);
+
     $locationProvider
       .html5Mode({
         enabled: true
@@ -15,74 +17,47 @@ angular
       .state('home', {
         url: '/',
         controller: 'HomeCtrl as home',
-        templateUrl: '/views/home.html',
-        resolve: {
-          loggedin: checkCurrentUser
-        }
+        templateUrl: '/views/home.html'
       })
       .state('about', {
         url: '/about',
         controller: 'AboutCtrl as about',
-        templateUrl: '/views/about.html',
-        resolve: {
-          loggedin: checkCurrentUser
-        }
+        templateUrl: '/views/about.html'
       })
       .state('contact', {
         url: '/contact',
         controller: 'ContactCtrl as contact',
-        templateUrl: '/views/contact.html',
-        resolve: {
-          loggedin: checkCurrentUser
-        }
+        templateUrl: '/views/contact.html'
       })
       .state('donations', {
         url: '/donations',
         controller: 'DonationsCtrl as donations',
-        templateUrl: '/views/donations.html',
-        resolve: {
-          loggedin: checkCurrentUser
-        }
+        templateUrl: '/views/donations.html'
       })
       .state('portfolio', {
         url: '/portfolio',
         controller: 'PortfolioCtrl as portfolio',
-        templateUrl: '/views/portfolio.html',
-        resolve: {
-          loggedin: checkCurrentUser
-        }
+        templateUrl: '/views/portfolio.html'
       })
       .state('rates', {
         url: '/rates',
         controller: 'RatesCtrl as rates',
-        templateUrl: '/views/rates.html',
-        resolve: {
-          loggedin: checkCurrentUser
-        }
+        templateUrl: '/views/rates.html'
       })
       .state('resources', {
         url: '/resources',
         controller: 'ResourcesCtrl as resources',
-        templateUrl: '/views/resources.html',
-        resolve: {
-          loggedin: checkCurrentUser
-        }
+        templateUrl: '/views/resources.html'
       })
       .state('services', {
         url: '/services',
         controller: 'ServicesCtrl as services',
-        templateUrl: '/views/services.html',
-        resolve: {
-          loggedin: checkCurrentUser
-        }
+        templateUrl: '/views/services.html'
       })
       .state('what-is-an-organizer', {
         url: '/what-is-an-organizer',
         controller: 'WhatIsAnOrganizerCtrl as whatIsAnOrganizer',
-        templateUrl: '/views/what-is-an-organizer.html',
-        resolve: {
-          loggedin: checkCurrentUser
-        }
+        templateUrl: '/views/what-is-an-organizer.html'
       })
 
       // blog
@@ -97,26 +72,17 @@ angular
       .state('blogNew', {
         url: '/blog/new',
         controller: 'BlogCtrl as blog',
-        templateUrl: '/views/blog/new.html',
-        resolve: {
-          loggedin: checkCurrentUser
-        }
+        templateUrl: '/views/blog/new.html'
       })
       .state('blogEdit', {
         url: '/blog/edit/:id',
         controller: 'BlogCtrl as blog',
-        templateUrl: '/views/blog/edit.html',
-        resolve: {
-          loggedin: checkCurrentUser
-        }
+        templateUrl: '/views/blog/edit.html'
       })
       .state('blogShow', {
         url: '/blog/:id',
         controller: 'BlogCtrl as blog',
-        templateUrl: '/views/blog/show.html',
-        resolve: {
-          loggedin: checkCurrentUser
-        }
+        templateUrl: '/views/blog/show.html'
       })
 
       // auth
@@ -133,33 +99,32 @@ angular
 
     $urlRouterProvider
       .otherwise('/');
-  }]);
+  }])
+  .run(function ($q, $http, $rootScope) {
+    var deferred = $q.defer();
 
-var checkCurrentUser = function ($q, $http, $rootScope) {
-  var deferred = $q.defer();
-
-  $http.get('/api/loggedin')
-    .then(
-      function (user) {
-        $rootScope.errorMessage = null;
-        console.log(user);
-        if (user !== '0') {
-          // User is Authenticated
-          $rootScope.currentUser = user;
-          console.log('user is logged in');
-          deferred.resolve();
-        } else {
-          // User is not Authenticated
-          $rootScope.errorMessage = 'You need to log in.';
-          console.log('user is not logged in');
+    $http.get('/api/loggedin')
+      .then(
+        function (user) {
+          $rootScope.errorMessage = null;
+          console.log(user.data);
+          if (user.data !== '0') {
+            // User is Authenticated
+            $rootScope.currentUser = user;
+            console.log('user is logged in');
+            deferred.resolve();
+          } else {
+            // User is not Authenticated
+            deferred.reject();
+            // $rootScope.errorMessage = 'You need to log in.';
+            console.log('user is not logged in');
+          }
+        },
+        function (err) {
+          console.log(err);
           deferred.reject();
         }
-      },
-      function (err) {
-        console.log(err);
-        deferred.reject();
-      }
-    );
+      );
 
-    return deferred.promise;
-};
+      return deferred.promise;
+  });

@@ -1,6 +1,6 @@
 angular
   .module('simply-put-your-way')
-  .controller('NavbarCtrl', ['$scope', function ($scope) {
+  .controller('NavbarCtrl', ['$scope', '$rootScope', '$state', 'Auth', function ($scope, $rootScope, $state, Auth) {
     // handles events on scroll
     var lastScrollTop = 0;
 
@@ -39,5 +39,19 @@ angular
       $('html, body').animate({
         scrollTop: 0
       }, 600);
+    };
+
+    $scope.logout = function () {
+      Auth
+        .logout()
+        .then(
+          function (response) {
+            $rootScope.currentUser = null;
+            $state.go('home');
+          },
+          function (err) {
+            console.log(err);
+          }
+        );
     };
   }]);
