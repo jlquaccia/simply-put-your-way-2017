@@ -15,47 +15,74 @@ angular
       .state('home', {
         url: '/',
         controller: 'HomeCtrl as home',
-        templateUrl: '/views/home.html'
+        templateUrl: '/views/home.html',
+        resolve: {
+          loggedin: checkCurrentUser
+        }
       })
       .state('about', {
         url: '/about',
         controller: 'AboutCtrl as about',
-        templateUrl: '/views/about.html'
+        templateUrl: '/views/about.html',
+        resolve: {
+          loggedin: checkCurrentUser
+        }
       })
       .state('contact', {
         url: '/contact',
         controller: 'ContactCtrl as contact',
-        templateUrl: '/views/contact.html'
+        templateUrl: '/views/contact.html',
+        resolve: {
+          loggedin: checkCurrentUser
+        }
       })
       .state('donations', {
         url: '/donations',
         controller: 'DonationsCtrl as donations',
-        templateUrl: '/views/donations.html'
+        templateUrl: '/views/donations.html',
+        resolve: {
+          loggedin: checkCurrentUser
+        }
       })
       .state('portfolio', {
         url: '/portfolio',
         controller: 'PortfolioCtrl as portfolio',
-        templateUrl: '/views/portfolio.html'
+        templateUrl: '/views/portfolio.html',
+        resolve: {
+          loggedin: checkCurrentUser
+        }
       })
       .state('rates', {
         url: '/rates',
         controller: 'RatesCtrl as rates',
-        templateUrl: '/views/rates.html'
+        templateUrl: '/views/rates.html',
+        resolve: {
+          loggedin: checkCurrentUser
+        }
       })
       .state('resources', {
         url: '/resources',
         controller: 'ResourcesCtrl as resources',
-        templateUrl: '/views/resources.html'
+        templateUrl: '/views/resources.html',
+        resolve: {
+          loggedin: checkCurrentUser
+        }
       })
       .state('services', {
         url: '/services',
         controller: 'ServicesCtrl as services',
-        templateUrl: '/views/services.html'
+        templateUrl: '/views/services.html',
+        resolve: {
+          loggedin: checkCurrentUser
+        }
       })
       .state('what-is-an-organizer', {
         url: '/what-is-an-organizer',
         controller: 'WhatIsAnOrganizerCtrl as whatIsAnOrganizer',
-        templateUrl: '/views/what-is-an-organizer.html'
+        templateUrl: '/views/what-is-an-organizer.html',
+        resolve: {
+          loggedin: checkCurrentUser
+        }
       })
 
       // blog
