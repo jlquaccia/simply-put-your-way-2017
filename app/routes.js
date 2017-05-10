@@ -181,7 +181,9 @@ module.exports = function (app) {
       );
   });
 
-
+  app.get('/api/loggedin', function (req, res) {
+    res.send(req.isAuthenticated() ? req.user : '0');
+  });
 
   // ======================================================================
   // angular =========================================================

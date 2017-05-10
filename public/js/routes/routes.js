@@ -62,22 +62,34 @@ angular
       .state('blog', {
         url: '/blog',
         controller: 'BlogCtrl as blog',
-        templateUrl: '/views/blog/index.html'
+        templateUrl: '/views/blog/index.html',
+        resolve: {
+          loggedin: checkCurrentUser
+        }
       })
       .state('blogNew', {
         url: '/blog/new',
         controller: 'BlogCtrl as blog',
-        templateUrl: '/views/blog/new.html'
+        templateUrl: '/views/blog/new.html',
+        resolve: {
+          loggedin: checkCurrentUser
+        }
       })
       .state('blogEdit', {
         url: '/blog/edit/:id',
         controller: 'BlogCtrl as blog',
-        templateUrl: '/views/blog/edit.html'
+        templateUrl: '/views/blog/edit.html',
+        resolve: {
+          loggedin: checkCurrentUser
+        }
       })
       .state('blogShow', {
         url: '/blog/:id',
         controller: 'BlogCtrl as blog',
-        templateUrl: '/views/blog/show.html'
+        templateUrl: '/views/blog/show.html',
+        resolve: {
+          loggedin: checkCurrentUser
+        }
       })
 
       // auth
@@ -95,3 +107,32 @@ angular
     $urlRouterProvider
       .otherwise('/');
   }]);
+
+var checkCurrentUser = function ($q, $http, $rootScope) {
+  var deferred = $q.defer();
+
+  $http.get('/api/loggedin')
+    .then(
+      function (user) {
+        $rootScope.errorMessage = null;
+        console.log(user);
+        if (user !== '0') {
+          // User is Authenticated
+          $rootScope.currentUser = user;
+          console.log('user is logged in');
+          deferred.resolve();
+        } else {
+          // User is not Authenticated
+          $rootScope.errorMessage = 'You need to log in.';
+          console.log('user is not logged in');
+          deferred.reject();
+        }
+      },
+      function (err) {
+        console.log(err);
+        deferred.reject();
+      }
+    );
+
+    return deferred.promise;
+};
