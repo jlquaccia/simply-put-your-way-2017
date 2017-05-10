@@ -43,8 +43,16 @@
                 <a ui-sref="resources">Resources</a>
               </div>
             </div>
-          </li>          
-          <li><a class="blog" href="#">Blog</a></li>
+          </li>
+          <li ng-show="currentUser" class="folder">
+            <a class="folder-toggle" href="#">Blog</a>
+            <div class="subnav">
+              <div class="external">
+                <a>Logout</a>
+              </div>
+            </div>
+          </li>
+          <li ng-hide="currentUser"><a class="blog" href="#">Blog</a></li>
           <li><a ui-sref="contact">Contact</a></li>
         </div>
         <li class="button"><a href="#" class="btn-open"></a></li>
