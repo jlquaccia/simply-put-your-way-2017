@@ -1,6 +1,6 @@
 angular
   .module('simply-put-your-way')
-  .controller('NavbarCtrl', ['$scope', '$rootScope', '$state', '$timeout', 'Auth', function ($scope, $rootScope, $state, $timeout, Auth) {
+  .controller('NavbarCtrl', ['$scope', '$rootScope', '$state', '$timeout', '$mdToast', 'Auth', function ($scope, $rootScope, $state, $timeout, $mdToast, Auth) {
     // handles events on scroll
     var lastScrollTop = 0;
 
@@ -50,6 +50,14 @@ angular
         .then(
           function (response) {
             $rootScope.currentUser = null;
+
+            // success flash message
+            var successMsg = $mdToast.simple()
+              .content('You are now logged out.')
+              .hideDelay(4000);
+
+            $mdToast.show(successMsg);
+
             $state.go('home');
           },
           function (err) {
