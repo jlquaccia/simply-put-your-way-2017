@@ -107,7 +107,7 @@ angular
           console.log(user.data);
           if (user.data !== '0') {
             // User is Authenticated
-            $rootScope.currentUser = user;
+            $rootScope.currentUser = user.data;
             console.log('user is logged in');
             deferred.resolve();
           } else {

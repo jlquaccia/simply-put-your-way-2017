@@ -1,6 +1,5 @@
 var Post = require('./models/Post');
 var User = require('./models/User')();
-var auth = require('./middleware/authMiddleware')();
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var passportApi = require('./passport/passport')(User);

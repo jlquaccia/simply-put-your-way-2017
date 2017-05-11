@@ -1,6 +1,6 @@
 angular
   .module('simply-put-your-way')
-  .controller('NavbarCtrl', ['$scope', '$rootScope', '$state', 'Auth', function ($scope, $rootScope, $state, Auth) {
+  .controller('NavbarCtrl', ['$scope', '$rootScope', '$state', '$timeout', 'Auth', function ($scope, $rootScope, $state, $timeout, Auth) {
     // handles events on scroll
     var lastScrollTop = 0;
 
@@ -42,7 +42,10 @@ angular
     };
 
     $scope.logout = function () {
-      Auth
+      $('.navWrapper .currentUser').addClass('fadeOutUp');
+
+      $timeout(function () {
+        Auth
         .logout()
         .then(
           function (response) {
@@ -53,5 +56,6 @@ angular
             console.log(err);
           }
         );
+      }, 700);
     };
   }]);

@@ -1,6 +1,6 @@
 <div id="blogIndex">
   <!-- header -->
-  <header class="animated fadeIn">
+  <header>
     <div du-parallax y="background" class="headerImage" />
       <div class="secondBg"></div>
     </div>
@@ -13,12 +13,14 @@
   <div class="contentWrapper">
     <div class="container">
       <h1>Blog Index:</h1>
-      <a ui-sref="blogNew">new</a>
+      <a ng-show="currentUser" ui-sref="blogNew">new</a>
 
       <ul>
         <li ng-repeat="post in posts | orderBy:created_at:true">
           <h4><a ui-sref="blogShow({id: post._id})">{{post.title}}</a> - {{post.created_at | date:'MM/dd/yyyy'}}</h4>
-          <a ui-sref="blogEdit({id: post._id})">edit</a> | <a href="#" ng-click="deletePost(post._id)">delete</a>
+          <div ng-show="currentUser">
+            <a ui-sref="blogEdit({id: post._id})">edit</a> | <a href="#" ng-click="deletePost(post._id)">delete</a>
+          </div>
           <p>{{post.body}}</p>
         </li>
       </ul>
