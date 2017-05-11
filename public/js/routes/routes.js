@@ -69,12 +69,18 @@ angular
       .state('blogNew', {
         url: '/blog/new',
         controller: 'BlogCtrl as blog',
-        templateUrl: '/views/blog/new.html'
+        templateUrl: '/views/blog/new.html',
+        resolve: {
+          isCurrentUser: isCurrentUser
+        }
       })
       .state('blogEdit', {
         url: '/blog/edit/:id',
         controller: 'BlogCtrl as blog',
-        templateUrl: '/views/blog/edit.html'
+        templateUrl: '/views/blog/edit.html',
+        resolve: {
+          isCurrentUser: isCurrentUser
+        }
       })
       .state('blogShow', {
         url: '/blog/:id',
@@ -125,3 +131,27 @@ angular
 
       return deferred.promise;
   });
+
+function isCurrentUser ($q, $http, $rootScope, $state) {
+  var deferred = $q.defer();
+
+  $http.get('/api/loggedin')
+    .then(
+      function (user) {
+        if (user.data !== '0') {
+          // User is Authenticated
+          deferred.resolve();
+        } else {
+          // User is not Authenticated
+          $state.go('login');
+          deferred.reject();
+        }
+      },
+      function (err) {
+        console.log(err);
+        deferred.reject();
+      }
+    );
+
+    return deferred.promise;
+}
