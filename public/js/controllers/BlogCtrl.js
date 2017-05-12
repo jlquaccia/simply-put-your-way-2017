@@ -1,6 +1,6 @@
 angular
   .module('simply-put-your-way')
-  .controller('BlogCtrl', ['$scope', '$state', '$stateParams', 'Post', function ($scope, $state, $stateParams, Post) {
+  .controller('BlogCtrl', ['$scope', '$state', '$stateParams', '$sce', 'Post', function ($scope, $state, $stateParams, $sce, Post) {
     // get all posts
     $scope.getPosts = function () {
       Post.getAll().then(function (response) {
@@ -14,7 +14,9 @@ angular
     // get one post
     $scope.getPost = function (id) {
       Post.getOne(id).then(function (response) {
+        console.log(response.data.body);
         $scope.post = response.data;
+        $scope.body = $sce.trustAsHtml(response.data.body);
       }, function (error) {
         console.log(error);
       });

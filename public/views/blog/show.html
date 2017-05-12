@@ -3,7 +3,7 @@
     <div class="container">
       <h1>{{post.title}}</h1>
       <small>created on: {{post.created_at | date:'MM/dd/yyyy'}}</small>
-      <p>{{post.body}}</p>
+      <div ng-bind-html="body"></div>
       <br>
       <a ui-sref="blog">back</a>
     </div>
