@@ -106,18 +106,21 @@ angular
     $provide.decorator('taOptions', ['taRegisterTool', '$delegate', function (taRegisterTool, taOptions) {
       // $delegate is the taOptions we are decorating
       // register the tool with textAngular
-      taRegisterTool('backgroundColor', {
-        display: "<input id='backgroundColor' type='color'></input>",
-        action: function(){
-          var color;
-          var me = this;
+      
+      // BACKGROUNDCOLOR DOESN'T WORK, WORKS WITH EDITOR BUT DOESN'T PRESERVE WHEN SAVING TO MONGODB. THINK IT IS A BUG WITH TEXTANGULAR
 
-          $('#backgroundColor').change(function () {
-            color = $('#backgroundColor').val();
-            me.$editor().wrapSelection('backcolor', color);
-          });
-        }
-      });
+      // taRegisterTool('backgroundColor', {
+      //   display: "<input id='backgroundColor' type='color'></input>",
+      //   action: function(){
+      //     var color;
+      //     var me = this;
+
+      //     $('#backgroundColor').change(function () {
+      //       color = $('#backgroundColor').val();
+      //       me.$editor().wrapSelection('backcolor', color);
+      //     });
+      //   }
+      // });
 
       taRegisterTool('fontColor', {
         display: "<input id='foregroundColor' type='color'></input>",
