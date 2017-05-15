@@ -41,3 +41,49 @@
   position: relative;
   top: 25px;
 }
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* pill buttons */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+#blogIndex a.newPost,
+#blogIndex .editPost,
+#blogIndex .deletePost {
+  border-radius: 40px;
+  border: 1px solid rgba(145,56,63,1);
+  color: rgba(145,56,63,1);
+  background-color: #fff;
+  margin: 0 10px 10px 0;
+  padding: 5px 20px;
+  font-size: 18px;
+  -webkit-transition: all 0.25s cubic-bezier(0.31, 1, 0.34, 1);
+  -moz-transition: all 0.25s cubic-bezier(0.31, 1, 0.34, 1);
+  transition: all 0.25s cubic-bezier(0.31, 1, 0.34, 1);
+}
+
+#blogIndex .editPost,
+#blogIndex .deletePost {
+  padding: 3px 17px;
+  font-size: 15px;
+}
+
+#blogIndex a.newPost:hover,
+#blogIndex .editPost:hover,
+#blogIndex .deletePost:hover {
+  background-color: rgba(145,57,64,1);
+  color: #fff;
+  text-decoration: none;
+}
+
+#blogIndex .btnWrapper {
+  text-align: center;
+  margin: 25px 0;
+}
+
+#blogIndex span.bar {
+  position: relative;
+  right: 4px;
+}
+
+#blogIndex .editDeleteBtns {
+  margin: 25px 0;
+}

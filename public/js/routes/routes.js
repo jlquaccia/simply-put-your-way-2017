@@ -93,12 +93,12 @@ angular
         url: '/login',
         controller: 'AuthCtrl as auth',
         templateUrl: 'views/auth/login.html'
-      })
-      .state('register', {
-        url: '/register',
-        controller: 'AuthCtrl as auth',
-        templateUrl: 'views/auth/register.html'
       });
+      // .state('register', {
+      //   url: '/register',
+      //   controller: 'AuthCtrl as auth',
+      //   templateUrl: 'views/auth/register.html'
+      // });
 
     $urlRouterProvider
       .otherwise('/');
