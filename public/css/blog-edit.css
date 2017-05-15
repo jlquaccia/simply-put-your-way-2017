@@ -4,3 +4,36 @@
   z-index: 1;
   padding: 10em 0 0;
 }
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* pill buttons */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+#blogEdit .updateBtn {
+  border-radius: 40px;
+  border: 1px solid rgba(145,56,63,1);
+  color: rgba(145,56,63,1);
+  background-color: #fff;
+  margin: 0 10px 10px 0;
+  padding: 5px 20px;
+  font-size: 18px;
+  -webkit-transition: all 0.25s cubic-bezier(0.31, 1, 0.34, 1);
+  -moz-transition: all 0.25s cubic-bezier(0.31, 1, 0.34, 1);
+  transition: all 0.25s cubic-bezier(0.31, 1, 0.34, 1);
+  font-weight: 300;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#blogEdit .updateBtn:hover {
+  background-color: rgba(145,57,64,1);
+  color: #fff;
+  text-decoration: none;
+}
+
+#blogEdit .backBtn {
+  color: rgba(52,52,52,1);
+}
+
+#blogEdit .backBtn:hover {
+  text-decoration: none;
+  color: rgba(52,52,52,1);
+}
