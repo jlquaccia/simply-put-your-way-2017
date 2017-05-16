@@ -49,6 +49,7 @@ module.exports = function (app) {
   app.post('/api/posts', function (req, res) {
     var newData = {
       title: req.body.title,
+      description: req.body.description,
       body: req.body.body
     };
 
@@ -70,6 +71,7 @@ module.exports = function (app) {
   app.put('/api/posts/:id', function (req, res) {
     var updateData = {
       title: req.body.title,
+      description: req.body.description,
       body: req.body.body
     };
 

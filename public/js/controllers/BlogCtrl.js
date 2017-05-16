@@ -14,7 +14,7 @@ angular
     // get one post
     $scope.getPost = function (id) {
       Post.getOne(id).then(function (response) {
-        console.log(response.data.body);
+        console.log(response.data);
         $scope.post = response.data;
         $scope.body = $sce.trustAsHtml(response.data.body);
       }, function (error) {
@@ -31,6 +31,7 @@ angular
     $scope.createPost = function () {
       var newPost = {
         title: $scope.post.title,
+        description: $scope.post.description,
         body: $scope.post.body
       };
 
@@ -46,6 +47,7 @@ angular
     $scope.updatePost = function () {
       var updatedPost = {
         title: $scope.post.title,
+        description: $scope.post.description,
         body: $scope.post.body
       };
 
