@@ -9,9 +9,6 @@ angular
     });
 
     $rootScope.$on('$stateChangeSuccess', function (e, toState, toParams, fromState, fromParams) {
-      // console.log($state);
-      $rootScope.blogId = $state.params.id;
-
       if ($state.current.name === 'blogShow') {
         $('body, html').css('height', 'inherit');
       } else {

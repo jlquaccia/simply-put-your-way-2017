@@ -1,6 +1,6 @@
 angular
   .module('simply-put-your-way')
-  .controller('BlogCtrl', ['$scope', '$state', '$stateParams', '$sce', '$rootScope', 'Post', 'imagePreloader', function ($scope, $state, $stateParams, $sce, $rootScope, Post, imagePreloader) {
+  .controller('BlogCtrl', ['$scope', '$state', '$stateParams', '$sce', 'Post', 'imagePreloader', function ($scope, $state, $stateParams, $sce, Post, imagePreloader) {
     imagePreloader.headStart();
 
     // form init
