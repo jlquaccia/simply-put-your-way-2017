@@ -14,7 +14,7 @@ angular
     // get one post
     $scope.getPost = function (id) {
       Post.getOne(id).then(function (response) {
-        console.log(response.data);
+        // console.log(response.data);
         $scope.post = response.data;
         $scope.body = $sce.trustAsHtml(response.data.body);
       }, function (error) {
@@ -72,6 +72,40 @@ angular
     if ($state.current.name === 'blog') {
       $scope.getPosts();
     }
+
+    // $(window).on('load', function () {
+    //   if ($state.current.name === 'blogShow') {
+    //     $('img').each(function () {
+    //       if (!$(this).hasClass('img-responsive remoov')) {
+    //         console.log($(this));
+    //         var percent = ($(this).width()) / ($('body').width()) * 100;
+
+    //         $(this).css('width', percent + '%');
+    //         $(this).css('height', 'auto');
+    //       }
+    //     });
+    //   }
+    // });
+
+    // if ($state.current.name === 'blogShow') {
+    //   angular.element (function () {
+    //     $('img').each(function () {
+    //       if (!$(this).hasClass('img-responsive remoov')) {
+    //         console.log($(this));
+    //         var percent = ($(this).width()) / ($('body').width()) * 100;
+
+    //         $(this).css('width', percent + '%');
+    //         $(this).css('height', 'auto');
+    //       }
+    //     });
+    //   });
+    // }
+
+    // if ($state.current.name === 'blogShow') {
+    //   $('iframe').each(function () {
+    //     console.log($(this));
+    //   });
+    // }
 
     $scope.edit = 'blog edit';
     $scope.show = 'blog show';

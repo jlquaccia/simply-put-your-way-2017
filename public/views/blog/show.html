@@ -1,11 +1,15 @@
 <div id="blogShow">
   <div class="contentWrapper">
     <div class="container">
-      <h1>{{post.title}}</h1>
-      <small>created on: {{post.created_at | date:'MM/dd/yyyy'}}</small>
+      <div class="titleWrapper text-center">
+        <h1>{{post.title}}</h1>
+        <small>created on: {{post.created_at | date:'MM/dd/yyyy'}}</small>
+      </div>
       <div ta-bind ng-model="body"></div>
       <br>
-      <a class="backBtn" ui-sref="blog"><i class="ion-ios-arrow-thin-left"></i> back</a>
+      <div class="backBtnWrapper text-center">
+        <a class="backBtn" ui-sref="blog"><i class="ion-ios-arrow-thin-left"></i> back</a>
+      </div>
     </div>
   </div>
 </div>
