@@ -29,8 +29,8 @@ angular
     // get one post
     $scope.getPost = function (id) {
       Post.getOne(id).then(function (response) {
-        $rootScope.post = response.data;
-        console.log($rootScope.post);
+        // console.log(response.data);
+        $scope.post = response.data;
         $scope.body = $sce.trustAsHtml(response.data.body);
       }, function (error) {
         console.log(error);
