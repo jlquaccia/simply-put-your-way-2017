@@ -2,11 +2,15 @@
   <div class="contentWrapper">
     <div class="container">
       <h1>Create New Post:</h1>
-
+      <div ng-show="errorMessage" class="alert alert-danger">{{errorMessage}}</div>
       <form ng-submit="createPost()">
         <div class="form-group">
           <label for="post.title">Title</label>
           <input type="text" class="form-control" placeholder="title" ng-model="post.title">
+        </div>
+        <div class="form-group">
+          <label for="post.preview_img_url">Preview Image Url</label>
+          <input type="text" class="form-control" placeholder="preview image url" ng-model="post.preview_img_url">
         </div>
         <div class="form-group">
           <label for="post.description">Description</label>

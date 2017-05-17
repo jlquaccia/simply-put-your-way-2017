@@ -5,6 +5,7 @@ var mongoose = require('mongoose');
 // module.exports allows us to pass this to other files when it is called
 module.exports = mongoose.model('Post', {
   title: {type: String, default: ''},
+  preview_img_url: {type: String},
   description: {type: String},
   body: {type: String},
   created_at: {type: Date, default: Date.now()}

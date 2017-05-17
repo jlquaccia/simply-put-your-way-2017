@@ -87,3 +87,45 @@
 #blogIndex .editDeleteBtns {
   margin: 25px 0;
 }
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* blog posts */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+#blogIndex .odd {
+  float: right;
+}
+
+#blogIndex .posts li {
+  list-style-type: none;
+}
+
+#blogIndex .posts .row {
+  padding: 50px 0;
+}
+
+#blogIndex .posts .row h4 {
+  font-weight: 400;
+  opacity: 0.5;
+  text-transform: uppercase;
+  font-size: 17px;
+  letter-spacing: .25em;
+}
+
+#blogIndex .posts .row h1 {
+  letter-spacing: .4em;
+  line-height: 1.8em;
+  font-size: 56px;
+}
+
+#blogIndex .posts .row h1 a {
+  color: rgba(52,52,52,1);
+}
+
+#blogIndex .posts .row h1 a:hover {
+  text-decoration: none;
+  color: rgba(52,52,52,1);
+}
+
+#blogIndex .posts .row .description {
+  opacity: 0.5;
+}

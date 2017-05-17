@@ -3,6 +3,19 @@ angular
   .controller('BlogCtrl', ['$scope', '$state', '$stateParams', '$sce', 'Post', 'imagePreloader', function ($scope, $state, $stateParams, $sce, Post, imagePreloader) {
     imagePreloader.headStart();
 
+    // form init
+    $scope.post = {
+      title: '',
+      preview_img_url: '',
+      description: ''
+    };
+
+    // validations
+    $scope.descriptionMaxLength = 350;
+
+    // error message
+    $scope.errorMessage = null;
+
     // get all posts
     $scope.getPosts = function () {
       Post.getAll().then(function (response) {
@@ -31,8 +44,29 @@ angular
 
     // create a new post
     $scope.createPost = function () {
+      if ($scope.post.title === '') {
+        $scope.errorMessage = 'Title can\'t be blank.';
+        return;
+      }
+
+      if ($scope.post.preview_img_url === '') {
+        $scope.errorMessage = 'Must provide an preview image url.';
+        return;
+      }
+
+      if ($scope.post.description === '') {
+        $scope.errorMessage = 'Description can\'t be blank.';
+        return;
+      }
+
+      if ($scope.post.description.length > $scope.descriptionMaxLength) {
+        $scope.errorMessage = 'Descriptions can be no more than 350 characters.';
+        return;
+      }
+
       var newPost = {
         title: $scope.post.title,
+        preview_img_url: $scope.post.preview_img_url,
         description: $scope.post.description,
         body: $scope.post.body
       };
@@ -47,8 +81,29 @@ angular
 
     // update a post
     $scope.updatePost = function () {
+      if ($scope.post.title === '') {
+        $scope.errorMessage = 'Title can\'t be blank.';
+        return;
+      }
+
+      if ($scope.post.preview_img_url === '') {
+        $scope.errorMessage = 'Must provide an preview image url.';
+        return;
+      }
+
+      if ($scope.post.description === '') {
+        $scope.errorMessage = 'Description can\'t be blank.';
+        return;
+      }
+
+      if ($scope.post.description.length > $scope.descriptionMaxLength) {
+        $scope.errorMessage = 'Descriptions can be no more than 350 characters.';
+        return;
+      }
+
       var updatedPost = {
         title: $scope.post.title,
+        preview_img_url: $scope.post.preview_img_url,
         description: $scope.post.description,
         body: $scope.post.body
       };
@@ -74,40 +129,6 @@ angular
     if ($state.current.name === 'blog') {
       $scope.getPosts();
     }
-
-    // $(window).on('load', function () {
-    //   if ($state.current.name === 'blogShow') {
-    //     $('img').each(function () {
-    //       if (!$(this).hasClass('img-responsive remoov')) {
-    //         console.log($(this));
-    //         var percent = ($(this).width()) / ($('body').width()) * 100;
-
-    //         $(this).css('width', percent + '%');
-    //         $(this).css('height', 'auto');
-    //       }
-    //     });
-    //   }
-    // });
-
-    // if ($state.current.name === 'blogShow') {
-    //   angular.element (function () {
-    //     $('img').each(function () {
-    //       if (!$(this).hasClass('img-responsive remoov')) {
-    //         console.log($(this));
-    //         var percent = ($(this).width()) / ($('body').width()) * 100;
-
-    //         $(this).css('width', percent + '%');
-    //         $(this).css('height', 'auto');
-    //       }
-    //     });
-    //   });
-    // }
-
-    // if ($state.current.name === 'blogShow') {
-    //   $('iframe').each(function () {
-    //     console.log($(this));
-    //   });
-    // }
 
     $scope.edit = 'blog edit';
     $scope.show = 'blog show';

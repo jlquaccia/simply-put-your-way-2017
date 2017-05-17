@@ -49,6 +49,7 @@ module.exports = function (app) {
   app.post('/api/posts', function (req, res) {
     var newData = {
       title: req.body.title,
+      preview_img_url: req.body.preview_img_url,
       description: req.body.description,
       body: req.body.body
     };
@@ -71,6 +72,7 @@ module.exports = function (app) {
   app.put('/api/posts/:id', function (req, res) {
     var updateData = {
       title: req.body.title,
+      preview_img_url: req.body.preview_img_url,
       description: req.body.description,
       body: req.body.body
     };
