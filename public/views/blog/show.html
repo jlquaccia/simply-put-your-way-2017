@@ -3,7 +3,7 @@
     <div class="container">
       <div class="titleWrapper text-center">
         <h1>{{post.title}}</h1>
-        <small>created on: {{post.created_at | date:'MM/dd/yyyy'}}</small>
+        <h4>posted: {{post.created_at | date:'MM/dd/yyyy'}}</h4>
       </div>
       <div ta-bind ng-model="body"></div>
       <br>

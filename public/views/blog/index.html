@@ -31,7 +31,9 @@
                   <p class="description">{{post.description}}</p>
                 </div>
                 <div class="col-md-7">
-                  <img src="../images/loaders/loader-spinner.gif" lazy-img="{{post.preview_img_url}}" class="loader img-responsive" alt="">
+                  <a ui-sref="blogShow({id: post._id})">
+                    <img src="../images/loaders/loader-spinner.gif" lazy-img="{{post.preview_img_url}}" class="img-responsive" alt="">
+                  </a>
                 </div>
               </div>
             </li>

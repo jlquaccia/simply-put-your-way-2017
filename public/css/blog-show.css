@@ -6,14 +6,24 @@
 }
 
 #blogShow .titleWrapper {
-  padding-bottom: 10em;
+  padding-bottom: 5em;
+}
+
+#blogShow .titleWrapper h1 {
+  font-size: 8em;
+  color: rgba(145,57,64,1);
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 /* pill buttons */
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
+#blogShow .backBtnWrapper {
+  padding-top: 5em;
+}
+
 #blogShow .backBtn {
   color: rgba(52,52,52,1);
+  font-size: 20px;
 }
 
 #blogShow .backBtn:hover {
