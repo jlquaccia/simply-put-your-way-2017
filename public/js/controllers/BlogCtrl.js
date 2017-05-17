@@ -130,6 +130,16 @@ angular
       $scope.getPosts();
     }
 
+    // waypoints
+    $scope.animateElementIn = function ($el) {
+      $el.removeClass('not-visible');
+      $el.addClass('animated fadeInUp');
+    };
+
+    $scope.animateElementOut = function ($el) {
+      
+    };
+
     $scope.edit = 'blog edit';
     $scope.show = 'blog show';
     $scope.new = 'blog new';

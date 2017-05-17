@@ -34,6 +34,7 @@
     "masonry": "^4.1.1",
     "angular-material": "^1.1.3",
     "textAngular": "^1.5.16",
-    "JSColor": "^1.4.2"
+    "JSColor": "^1.4.2",
+    "angular-scroll-animate": "^0.9.9"
   }
 }

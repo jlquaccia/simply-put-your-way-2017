@@ -20,7 +20,7 @@
           </div>
 
           <ul class="posts">
-            <li ng-repeat="post in posts | orderBy:created_at:true">
+            <li ng-repeat="post in posts | orderBy:created_at:true" when-visible="animateElementIn" when-not-visible="animateElementOut" class="not-visible">
               <div class="row">
                 <div class="col-md-5" ng-class-odd="'odd'">
                   <h4>{{post.created_at | date:'MM/dd/yyyy'}}</h4>
