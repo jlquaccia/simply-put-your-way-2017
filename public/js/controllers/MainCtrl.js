@@ -16,6 +16,5 @@ angular
       }
     });
 
-    // preloader all header images
-    // imagePreloader.headStart();
+    $rootScope.currentUrl = window.location.href;
   }]);
