@@ -12,7 +12,7 @@ angular
         {img: '../images/List.jpg', img2: 'url("../images/List.jpg"), url("../images/subtle patterns/crossword.png")', pageId: '#resources'},
         {img: '../images/new/Living Space.jpg', img2: 'url("../images/new/Living Space.jpg"), url("../images/subtle patterns/crossword.png")', pageId: '#services'},
         {img: '../images/new/Shelves and Storage.jpg', img2: 'url("../images/new/Shelves and Storage.jpg"), url("../images/subtle patterns/crossword.png")', pageId: '#whatIsAnOrganizer'},
-        {img: '../images/blog/Old Fashioned Typewriter.Cropped.jpg', img2: 'url("../images/blog/Old Fashioned Typewriter.Cropped.jpg")', pageId: '#blogIndex'}
+        {img: '../images/blog/Old Fashioned Typewriter.Cropped-shrunk.jpg', img2: 'url("../images/blog/Old Fashioned Typewriter.Cropped-shrunk.jpg")', pageId: '#blogIndex'}
       ];
 
       function preloadImage (img, img2, pageId) {
