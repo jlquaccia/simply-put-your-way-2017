@@ -1,6 +1,6 @@
 angular
   .module('simply-put-your-way')
-  .controller('BlogCtrl', ['$scope', '$state', '$stateParams', '$sce', 'Post', 'imagePreloader', function ($scope, $state, $stateParams, $sce, Post, imagePreloader) {
+  .controller('BlogCtrl', ['$scope', '$state', '$stateParams', '$sce', '$rootScope', 'Post', 'imagePreloader', function ($scope, $state, $stateParams, $sce, $rootScope, Post, imagePreloader) {
     imagePreloader.headStart();
 
     // form init
@@ -29,8 +29,8 @@ angular
     // get one post
     $scope.getPost = function (id) {
       Post.getOne(id).then(function (response) {
-        // console.log(response.data);
-        $scope.post = response.data;
+        $rootScope.post = response.data;
+        console.log($rootScope.post);
         $scope.body = $sce.trustAsHtml(response.data.body);
       }, function (error) {
         console.log(error);
