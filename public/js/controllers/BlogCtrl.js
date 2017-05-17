@@ -1,6 +1,8 @@
 angular
   .module('simply-put-your-way')
-  .controller('BlogCtrl', ['$scope', '$state', '$stateParams', '$sce', 'Post', function ($scope, $state, $stateParams, $sce, Post) {
+  .controller('BlogCtrl', ['$scope', '$state', '$stateParams', '$sce', 'Post', 'imagePreloader', function ($scope, $state, $stateParams, $sce, Post, imagePreloader) {
+    imagePreloader.headStart();
+
     // get all posts
     $scope.getPosts = function () {
       Post.getAll().then(function (response) {
