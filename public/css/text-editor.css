@@ -1,7 +1,7 @@
 .btn-blue {
-  background-color: #6acaff;
-  color:#fff;
-  border-color: #4c7889;
+  background-color: #fff;
+  color: #000;
+  border-color: #000;
 }
 
 .btn-blue:hover,
@@ -40,10 +40,9 @@ fieldset[disabled] .btn-blue.active {
   border-color: #4c7889;
 }
 
-
 [ta-button] {
   height: 44px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 .red{ color: red; }
@@ -55,4 +54,32 @@ fieldset[disabled] .btn-blue.active {
 #toolbarWC,
 #toolbarCC {
   line-height: 35px;
+}
+
+.ta-scroll-window > .ta-bind:focus,
+.ta-root.focussed > .ta-scroll-window.form-control {
+  outline: none;
+  border-color: rgba(145,57,64,1);
+  box-shadow: none;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border-radius: 4px;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
 }
