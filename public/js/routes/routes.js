@@ -199,7 +199,9 @@ angular
       return taOptions;
     }]);
   }])
-  .run(function ($q, $http, $rootScope) {
+  .run(function ($q, $http, $rootScope, $FB) {
+    $FB.init('1199346513410372', 'US');
+
     var deferred = $q.defer();
 
     $http.get('/api/loggedin')
