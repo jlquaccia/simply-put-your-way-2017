@@ -200,7 +200,7 @@ angular
     }]);
   }])
   .run(function ($q, $http, $rootScope, $FB) {
-    $FB.init('1307168012671236', 'US');
+    $FB.init('1199346513410372', 'US');
 
     var deferred = $q.defer();
 
