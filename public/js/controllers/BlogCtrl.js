@@ -42,6 +42,11 @@ angular
       $scope.getPost($stateParams.id);
     }
 
+    // grab url of current blog post
+    if ($state.current.name === 'blogShow') {
+      $scope.currentPostId = $stateParams.id;
+    }
+
     // create a new post
     $scope.createPost = function () {
       if ($scope.post.title === '') {

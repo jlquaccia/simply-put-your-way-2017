@@ -6,7 +6,23 @@
         <h4>posted: {{post.created_at | date:'MM/dd/yyyy'}}</h4>
       </div>
       <div ta-bind ng-model="body"></div>
-      <br>
+      <ul class="socialShares">
+        <li>
+          <a href="#" socialshare socialshare-provider="facebook" socialshare-description="{{post.title}}" socialshare-title="Simply Put Your Way" socialshare-url="http://www.simplyputyourway.net/blog/{{currentPostId}}" socialshare-media="http://www.simplyputyourway.net/blog/{{currentPostId}}" socialshare-quote="This is the social share quote" socialshare-hashtags="#socialshare #hashtags" socialshare-caption="social share caption">
+            <i class="ion-social-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" socialshare socialshare-provider="twitter" socialshare-text="Simply Put Your Way Blog: {{post.title}}" socialshare-hashtags="homeorganizing, simplyputyourway" socialshare-url="http://www.simplyputyourway.net/blog/{{currentPostId}}" socialshare-via="SmplyPutYourWay">
+            <i class="ion-social-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" socialshare socialshare-provider="email" socialshare-subject="Simply Put Your Way Blog: {{post.title}}" socialshare-body="Check out the following blog post from Simply Put Your Way: {{post.title}} http://www.simplyputyourway.net/blog/{{currentPostId}}">
+            <i class="ion-ios-email"></i>
+          </a>
+        </li>
+      </ul>
       <div class="backBtnWrapper text-center">
         <a class="backBtn" ui-sref="blog"><i class="ion-ios-arrow-thin-left"></i> back</a>
       </div>

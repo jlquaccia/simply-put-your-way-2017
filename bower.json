@@ -36,6 +36,7 @@
     "textAngular": "^1.5.16",
     "JSColor": "^1.4.2",
     "angular-scroll-animate": "^0.9.9",
-    "angular-lazy-img": "^1.2.2"
+    "angular-lazy-img": "^1.2.2",
+    "angular-socialshare": "angularjs-socialshare#^2.3.8"
   }
 }
