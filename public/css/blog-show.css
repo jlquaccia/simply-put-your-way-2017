@@ -50,3 +50,7 @@ iframe {
     height: auto !important;
   }
 }
+
+.pluginButtonContainer {
+  display: none;
+}

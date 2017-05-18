@@ -7,7 +7,11 @@
       </div>
       <div ta-bind ng-model="body"></div>
       <ul class="socialShares">
-        <a facebook-feed-share class="facebookShare" data-url='http://www.simplyputyourway.net/blog/{{currentPostId}}' data-shares='shares', data-caption='{{post.description}}' data-picture='{{post.preview_img_url}}' data-description="{{post.title}}" data-callback='callback'>{{ shares }}</a>
+        <li>
+          <a facebook-feed-share data-url='http://www.simplyputyourway.net/blog/{{currentPostId}}' data-shares='shares', data-caption='{{post.description}}' data-picture='{{post.preview_img_url}}' data-description="{{post.title}}" data-callback='callback'>
+            <i class="ion-social-facebook"></i>
+          </a>
+        </li>
         <!-- <a facebook class="facebookShare" data-url='http://www.simplyputyourway.net/blog/{{currentPostId}}' data-picture-url='http://i.imgur.com/WACv9Cl.jpg' data-shares='shares'>{{ shares }}</a> -->
         <!-- <li>
           <a href="#" socialshare socialshare-provider="facebook" socialshare-url="http://www.simplyputyourway.net/blog/{{currentPostId}}" socialshare-title="Test" socialshare-description="{{post.title}}">
