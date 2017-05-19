@@ -20,7 +20,24 @@ angular
     $scope.getPosts = function () {
       Post.getAll().then(function (response) {
         $scope.posts = response.data;
-        console.log(response.data);
+        // console.log(response.data);
+        // console.log('$scope.posts.length', $scope.posts.length);
+        $scope.currentPage = 0;
+        $scope.pageSize = 10;
+
+        $scope.numberOfPages = function () {
+          return Math.ceil($scope.posts.length / $scope.pageSize);
+        };
+
+        $scope.nextPage = function () {
+          $scope.currentPage = $scope.currentPage + 1;
+          window.scrollTo(0, 0);
+        };
+
+        $scope.prevPage = function () {
+          $scope.currentPage = $scope.currentPage - 1;
+          window.scrollTo(0, 0);
+        };
       }, function (error) {
         console.log(error);
       });
