@@ -6,29 +6,26 @@
         <h4>posted: {{post.created_at | date:'MM/dd/yyyy'}}</h4>
       </div>
       <div ta-bind ng-model="body"></div>
-      <ul class="socialShares">
-        <li>
-          <a facebook-feed-share data-url='http://www.simplyputyourway.net/blog/{{currentPostId}}' data-shares='shares', data-caption='{{post.description}}' data-picture='{{post.preview_img_url}}' data-description="{{post.title}}" data-callback='callback'>
-            <i class="ion-social-facebook"></i>
-          </a>
-        </li>
-        <!-- <a facebook class="facebookShare" data-url='http://www.simplyputyourway.net/blog/{{currentPostId}}' data-picture-url='http://i.imgur.com/WACv9Cl.jpg' data-shares='shares'>{{ shares }}</a> -->
-        <!-- <li>
-          <a href="#" socialshare socialshare-provider="facebook" socialshare-url="http://www.simplyputyourway.net/blog/{{currentPostId}}" socialshare-title="Test" socialshare-description="{{post.title}}">
-            <i class="ion-social-facebook"></i>
-          </a>
-        </li> -->
-        <li>
-          <a href="#" socialshare socialshare-provider="twitter" socialshare-text="Simply Put Your Way Blog: {{post.title}}" socialshare-hashtags="homeorganizing, simplyputyourway" socialshare-url="http://www.simplyputyourway.net/blog/{{currentPostId}}" socialshare-via="SmplyPutYourWay">
-            <i class="ion-social-twitter"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#" socialshare socialshare-provider="email" socialshare-subject="Simply Put Your Way Blog: {{post.title}}" socialshare-body="Check out the following blog post from Simply Put Your Way: {{post.title}} http://www.simplyputyourway.net/blog/{{currentPostId}}">
-            <i class="ion-ios-email"></i>
-          </a>
-        </li>
-      </ul>
+      <div class="shareWrapper">
+        <h6 class="text-center">Share</h6>
+        <ul class="socialShares">
+          <li>
+            <a facebook-feed-share data-url='http://www.simplyputyourway.net/blog/{{currentPostId}}' data-shares='shares', data-caption='{{post.description}}' data-picture='{{post.preview_img_url}}' data-description="{{post.title}}" data-callback='callback'>
+              <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a socialshare socialshare-provider="twitter" socialshare-text="Simply Put Your Way Blog: {{post.title}}" socialshare-hashtags="homeorganizing, simplyputyourway" socialshare-url="http://www.simplyputyourway.net/blog/{{currentPostId}}" socialshare-via="SmplyPutYourWay">
+              <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a socialshare socialshare-provider="email" socialshare-subject="Simply Put Your Way Blog: {{post.title}}" socialshare-body="Check out the following blog post from Simply Put Your Way: {{post.title}} http://www.simplyputyourway.net/blog/{{currentPostId}}">
+              <i class="fa fa-envelope-square" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
       <div class="backBtnWrapper text-center">
         <a class="backBtn" ui-sref="blog"><i class="ion-ios-arrow-thin-left"></i> back</a>
       </div>
