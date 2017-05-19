@@ -25,7 +25,9 @@ module.exports = function (app) {
   // ======================================================================
   // get all posts
   app.get('/api/posts', function (req, res) {
-    Post.find(function (err, posts) {
+    var query = Post.find().sort({$natural: -1}).limit(5);
+
+    query.exec(function (err, posts) {
       if (err) {
         res.send(err);
       } else {
