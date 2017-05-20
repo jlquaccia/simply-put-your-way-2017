@@ -66,6 +66,10 @@ angular
 
     // create a new post
     $scope.createPost = function () {
+      function checkImageUrl (url) {
+        return(url.match(/\.(jpeg|jpg|gif|png)$/) !== null);
+      }
+
       if ($scope.post.title === '') {
         $scope.errorMessage = 'Title can\'t be blank.';
         return;
@@ -73,6 +77,11 @@ angular
 
       if ($scope.post.preview_img_url === '') {
         $scope.errorMessage = 'Must provide an preview image url.';
+        return;
+      }
+
+      if (!checkImageUrl($scope.post.preview_img_url)) {
+        $scope.errorMessage = 'Preview image urls must end in one of the following extensions: jpeg, jpg, gif, png';
         return;
       }
 
