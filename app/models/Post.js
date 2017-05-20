@@ -8,5 +8,6 @@ module.exports = mongoose.model('Post', {
   preview_img_url: {type: String},
   description: {type: String},
   body: {type: String},
+  slug: {type: String},
   created_at: {type: Date, default: Date.now()}
 });

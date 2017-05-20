@@ -38,7 +38,7 @@ module.exports = function (app) {
 
   // get one specific post
   app.get('/api/posts/:id', function (req, res) {
-    Post.findOne({_id: req.params.id}, function (err, post) {
+    Post.findOne({slug: req.params.id}, function (err, post) {
       if (err) {
         res.send(err);
       } else {
@@ -53,7 +53,8 @@ module.exports = function (app) {
       title: req.body.title,
       preview_img_url: req.body.preview_img_url,
       description: req.body.description,
-      body: req.body.body
+      body: req.body.body,
+      slug: req.body.slug
     };
 
     var newPost = new Post(newData);
@@ -76,10 +77,11 @@ module.exports = function (app) {
       title: req.body.title,
       preview_img_url: req.body.preview_img_url,
       description: req.body.description,
-      body: req.body.body
+      body: req.body.body,
+      slug: req.body.slug
     };
 
-    Post.update({_id: req.params.id}, updateData, function (err, post) {
+    Post.update({slug: req.params.id}, updateData, function (err, post) {
       if (err) {
         res.status(500);
         res.json({status: 500, error: err});
@@ -93,7 +95,7 @@ module.exports = function (app) {
 
   // delete one specific post
   app.delete('/api/posts/:id', function (req, res) {
-    Post.remove({_id: req.params.id}, function (err, post) {
+    Post.remove({slug: req.params.id}, function (err, post) {
       if (err) {
         res.status(500);
         res.json({status: 500, error: err});

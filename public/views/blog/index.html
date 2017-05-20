@@ -18,27 +18,29 @@
           <div class="btnWrapper">
             <a class="newPost" ng-show="currentUser" ui-sref="blogNew">new</a>
           </div>
+          
+          <div ng-show="posts.length === 0" class="noPosts"><h1>Nothing has been posted yet.. <br><i class="ion-android-sad"></i></h1></div>
 
           <ul class="posts">
             <li ng-repeat="post in posts | startFrom:currentPage*pageSize | limitTo:pageSize">
               <div class="row">
                 <div class="col-md-7" ng-class-odd="'odd'">
                   <h4>{{post.created_at | date:'MM/dd/yyyy'}}</h4>
-                  <h1><a ui-sref="blogShow({id: post._id})">{{post.title}}</a></h1>
+                  <h1><a ui-sref="blogShow({id: post.slug})">{{post.title}}</a></h1>
                   <div class="editDeleteBtns" ng-show="currentUser">
-                    <a class="editPost" ui-sref="blogEdit({id: post._id})">edit</a> <span class="bar">|</span> <a class="deletePost" href="#" ng-click="deletePost(post._id)">delete</a>
+                    <a class="editPost" ui-sref="blogEdit({id: post.slug})">edit</a> <span class="bar">|</span> <a class="deletePost" href="#" ng-click="deletePost(post.slug)">delete</a>
                   </div>
                   <p class="description">{{post.description}}</p>
                 </div>
                 <div class="col-md-5">
-                  <a ui-sref="blogShow({id: post._id})">
+                  <a ui-sref="blogShow({id: post.slug})">
                     <img src="../images/loaders/loader-spinner.gif" lazy-img="{{post.preview_img_url}}" class="img-responsive" alt="">
                   </a>
                 </div>
               </div>
             </li>
           </ul>
-          <div class="paginationBtnWrapper">
+          <div ng-show="posts.length > 0" class="paginationBtnWrapper">
             <button ng-hide="currentPage === 0" ng-click="prevPage()"><i class="ion-ios-arrow-thin-left"></i></button>
             {{currentPage + 1}} / {{numberOfPages()}}
             <button ng-hide="currentPage >= posts.length / pageSize - 1" ng-click="nextPage()"><i class="ion-ios-arrow-thin-right"></i></button>

@@ -1,6 +1,6 @@
 angular
   .module('simply-put-your-way')
-  .controller('BlogCtrl', ['$scope', '$state', '$stateParams', '$sce', 'Post', 'imagePreloader', function ($scope, $state, $stateParams, $sce, Post, imagePreloader) {
+  .controller('BlogCtrl', ['$scope', '$state', '$stateParams', '$sce', 'Post', 'imagePreloader', 'Slug', function ($scope, $state, $stateParams, $sce, Post, imagePreloader, Slug) {
     imagePreloader.headStart();
 
     // form init
@@ -101,7 +101,8 @@ angular
         title: $scope.post.title,
         preview_img_url: $scope.post.preview_img_url,
         description: $scope.post.description,
-        body: $scope.post.body
+        body: $scope.post.body,
+        slug: Slug.slugify($scope.post.title)
       };
 
       Post.create(newPost).then(function (response) {
@@ -148,7 +149,8 @@ angular
         title: $scope.post.title,
         preview_img_url: $scope.post.preview_img_url,
         description: $scope.post.description,
-        body: $scope.post.body
+        body: $scope.post.body,
+        slug: Slug.slugify($scope.post.title)
       };
 
       Post.update($stateParams.id, updatedPost).then(function (response) {
