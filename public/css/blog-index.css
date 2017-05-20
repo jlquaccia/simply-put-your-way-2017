@@ -112,13 +112,14 @@
 }
 
 #blogIndex .posts .row h1 {
-  letter-spacing: .2em;
+  letter-spacing: 0;
   line-height: 1.2em;
   font-size: 56px;
 }
 
 #blogIndex .posts .row h1 a {
   color: rgba(52,52,52,1);
+  word-break: break-word;
 }
 
 #blogIndex .posts .row h1 a:hover {
@@ -141,4 +142,19 @@
   margin: 0 auto;
   position: relative;
   top: 8em;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* pagination buttons */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+#blogIndex .paginationBtnWrapper {
+  text-align: center;
+}
+
+#blogIndex .paginationBtnWrapper button {
+  background: none;
+  border: none;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: rgba(145,56,63,1);
+  cursor: pointer;
 }

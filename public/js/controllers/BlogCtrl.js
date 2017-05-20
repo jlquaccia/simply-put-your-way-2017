@@ -12,6 +12,7 @@ angular
 
     // validations
     $scope.descriptionMaxLength = 350;
+    $scope.titleMaxLength = 50;
 
     // error message
     $scope.errorMessage = null;
@@ -66,12 +67,13 @@ angular
 
     // create a new post
     $scope.createPost = function () {
-      function checkImageUrl (url) {
-        return(url.match(/\.(jpeg|jpg|gif|png)$/) !== null);
-      }
-
       if ($scope.post.title === '') {
         $scope.errorMessage = 'Title can\'t be blank.';
+        return;
+      }
+
+      if ($scope.post.title.length > $scope.titleMaxLength) {
+        $scope.errorMessage = 'Titles can be no more than 50 characters.';
         return;
       }
 
@@ -117,8 +119,18 @@ angular
         return;
       }
 
+      if ($scope.post.title.length > $scope.titleMaxLength) {
+        $scope.errorMessage = 'Titles can be no more than 50 characters.';
+        return;
+      }
+
       if ($scope.post.preview_img_url === '') {
         $scope.errorMessage = 'Must provide an preview image url.';
+        return;
+      }
+
+      if (!checkImageUrl($scope.post.preview_img_url)) {
+        $scope.errorMessage = 'Preview image urls must end in one of the following extensions: jpeg, jpg, gif, png';
         return;
       }
 
@@ -162,14 +174,18 @@ angular
     }
 
     // waypoints
-    $scope.animateElementIn = function ($el) {
-      $el.removeClass('not-visible');
-      $el.addClass('animated fadeInUp');
-    };
+    // $scope.animateElementIn = function ($el) {
+    //   $el.removeClass('not-visible');
+    //   $el.addClass('animated fadeInUp');
+    // };
 
-    $scope.animateElementOut = function ($el) {
+    // $scope.animateElementOut = function ($el) {
       
-    };
+    // };
+
+    function checkImageUrl (url) {
+      return(url.match(/\.(jpeg|jpg|gif|png)$/) !== null);
+    }
 
     $scope.edit = 'blog edit';
     $scope.show = 'blog show';
