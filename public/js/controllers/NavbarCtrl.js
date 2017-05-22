@@ -28,7 +28,7 @@ angular
     });
       
     // toggle mobile overlay
-    $('.button a, .navWrapper .overlay .closeOverlay, .navWrapper .overlay a').click(function () {
+    $('.button, .navWrapper .overlay .closeOverlay, .navWrapper .overlay a').click(function () {
       $('.overlay').fadeToggle(200);
       $('body').toggleClass('overflowHidden');
       // $(this).toggleClass('btn-open').toggleClass('btn-close');
