@@ -30,8 +30,6 @@
 }
 
 #blogEdit .updateBtn:hover {
-  background-color: rgba(145,57,64,1);
-  color: #fff;
   text-decoration: none;
 }
 
@@ -42,4 +40,14 @@
 #blogEdit .backBtn:hover {
   text-decoration: none;
   color: rgba(52,52,52,1);
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* hover responsiveness */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+@media all and (min-width: 800px) {
+  #blogEdit .updateBtn:hover {
+    background-color: rgba(145,57,64,1);
+    color: #fff;
+  }
 }

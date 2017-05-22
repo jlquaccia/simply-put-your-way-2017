@@ -14,6 +14,11 @@
   color: rgba(145,57,64,1);
 }
 
+#blogShow .backBtn:hover {
+  text-decoration: none;
+  color: rgba(52,52,52,1);
+}
+
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 /* pill buttons */
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
@@ -24,11 +29,6 @@
 #blogShow .backBtn {
   color: rgba(52,52,52,1);
   font-size: 20px;
-}
-
-#blogShow .backBtn:hover {
-  text-decoration: none;
-  color: rgba(52,52,52,1);
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
@@ -80,15 +80,20 @@
   transition: all 0.25s cubic-bezier(0.31, 1, 0.34, 1);
 }
 
-#blogShow .socialShares li i.fa-facebook-square:hover,
-#blogShow .socialShares li i.fa-twitter-square:hover,
-#blogShow .socialShares li i.fa-envelope-square:hover {
-  color: rgba(145,57,64,1);
-  text-decoration: none;
-  cursor: pointer;
-  transform: scale(1.2);
-}
-
 #blogShow .shareWrapper {
   padding-top: 5em;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* hover responsiveness */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+@media all and (min-width: 800px) {
+  #blogShow .socialShares li i.fa-facebook-square:hover,
+  #blogShow .socialShares li i.fa-twitter-square:hover,
+  #blogShow .socialShares li i.fa-envelope-square:hover {
+    color: rgba(145,57,64,1);
+    text-decoration: none;
+    cursor: pointer;
+    transform: scale(1.2);
+  }
 }
