@@ -25,6 +25,7 @@
             <li ng-repeat="post in posts | startFrom:currentPage*pageSize | limitTo:pageSize">
               <div class="row">
                 <div class="col-md-7" ng-class-odd="'odd'">
+                  created_at: {{post.created_at}}
                   <h4>{{post.created_at | date:'MM/dd/yyyy'}}</h4>
                   <h1><a ui-sref="blogShow({id: post.slug})">{{post.title}}</a></h1>
                   <div class="editDeleteBtns" ng-show="currentUser">
