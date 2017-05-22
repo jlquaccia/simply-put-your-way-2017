@@ -239,6 +239,10 @@ a.navLogo img.img-responsive {
   -webkit-animation-delay: .8s;
 }
 
+.navWrapper .overlay .blog ul li a {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 48em) {
   .navWrapper .overlay .wrap ul.wrap-nav > li {
     width: 100%;
@@ -401,6 +405,7 @@ a.navLogo img.img-responsive {
   line-height: 1em;
   color: #fff;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .navWrapper .folder .subnav > div a:focus {
@@ -414,14 +419,17 @@ a.navLogo img.img-responsive {
   position: absolute;
   left: 0;
   right: 0;
-  top: 13px;
+  top: 72px;
   text-align: center;
-  width: 30%;
+  width: 100%;
   margin: 0 auto;
+  background-color: rgba(144,56,63,1);
+  padding: 20px 0;
+  color: #fff;
 }
 
 .navWrapper .currentUser span {
-  color: rgba(145,56,63,1);
+  color: #fff;
   font-weight: 600;
 }
 

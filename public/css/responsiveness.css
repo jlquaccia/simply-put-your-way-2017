@@ -290,6 +290,10 @@
   #whatIsAnOrganizer .whiteFlower {
     width: 60%;
   }
+
+  #blogIndex .odd {
+    float: none;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -345,7 +349,8 @@
   #rates,
   #donations,
   #resources,
-  #contact {
+  #contact,
+  #blogIndex {
     margin-bottom: 0;
   }
 

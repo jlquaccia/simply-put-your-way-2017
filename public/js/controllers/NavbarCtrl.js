@@ -41,7 +41,7 @@ angular
       }, 600);
     };
 
-    $scope.logout = function () {
+    $rootScope.logout = function () {
       $('.navWrapper .currentUser').addClass('fadeOutUp');
 
       $timeout(function () {

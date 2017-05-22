@@ -69,6 +69,14 @@
     <i class="closeOverlay fa fa-times" aria-hidden="true"></i>
     <div class="wrap">
       <ul class="wrap-nav">
+        <li ng-show="currentUser" class="blog animated fadeInUp">
+          <div class="linkTitle" href="#">Blog</div>
+          <ul>
+            <li>
+              <a ng-click="logout()">Logout</a>
+            </li>
+          </ul>
+        </li>
         <li class="about animated fadeInUp">
           <div class="linkTitle" href="#">About</div>
           <ul>
