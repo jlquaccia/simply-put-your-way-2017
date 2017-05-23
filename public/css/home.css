@@ -327,6 +327,10 @@ div.flickity-viewport {
   margin-bottom: 20px;
 }
 
+#home section.pinterest p.pinNote {
+  word-break: break-word;
+}
+
 @media (max-width: 480px) {
   section.pinterest  .masonry {
     margin-left: 2%;
