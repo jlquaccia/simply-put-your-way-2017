@@ -3,6 +3,7 @@ angular
   .controller('NavbarCtrl', ['$scope', '$rootScope', '$state', '$timeout', '$mdToast', 'Auth', function ($scope, $rootScope, $state, $timeout, $mdToast, Auth) {
     // handles events on scroll
     var lastScrollTop = 0;
+    var isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 && navigator.userAgent && !navigator.userAgent.match('CriOS');
 
     $(window).scroll(function () {
       var scrollPos = $(window).scrollTop();
@@ -13,6 +14,11 @@ angular
         $('.navWrapper .scrollTop').addClass('show-button');
       } else {
         $('.navWrapper .scrollTop').removeClass('show-button');
+      }
+
+      // show/hide of navbar in safari is buggy, decided to just disable it
+      if (isSafari) {
+        return;
       }
 
       // show/hide navbar when necessary
