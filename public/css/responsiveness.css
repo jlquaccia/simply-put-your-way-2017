@@ -613,4 +613,24 @@
   #whatIsAnOrganizer ul.safariOnly {
     font-size: 18px;
   }
+
+  #blogIndex .paginationBtnWrapper {
+    font-size: 30px;
+  }
+
+  #blogShow .titleWrapper h1 {
+    font-size: 4em;
+  }
+
+  #blogShow .backBtn,
+  #blogEdit .backBtn,
+  #blogNew .backBtn,
+  #blogShow h6.shareText.text-center {
+    font-size: 30px;
+  }
+
+  #blogShow .socialShares li {
+    margin: 0 10px;
+    font-size: 4em;
+  }
 }
