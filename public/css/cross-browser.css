@@ -9,7 +9,11 @@ _::-webkit-full-page-media, _:future, :root #portfolio,
 _::-webkit-full-page-media, _:future, :root #rates,
 _::-webkit-full-page-media, _:future, :root #resources,
 _::-webkit-full-page-media, _:future, :root #services,
-_::-webkit-full-page-media, _:future, :root #whatIsAnOrganizer {
+_::-webkit-full-page-media, _:future, :root #whatIsAnOrganizer,
+_::-webkit-full-page-media, _:future, :root #blogIndex,
+_::-webkit-full-page-media, _:future, :root #blogShow,
+_::-webkit-full-page-media, _:future, :root #blogNew .contentWrapper,
+_::-webkit-full-page-media, _:future, :root #blogEdit .contentWrapper {
   margin-bottom: 0;
 }
 
