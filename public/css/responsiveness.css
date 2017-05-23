@@ -294,6 +294,10 @@
   #blogIndex .odd {
     float: none;
   }
+
+  #blogNew .contentWrapper {
+    margin-bottom: 407px;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -350,7 +354,8 @@
   #donations,
   #resources,
   #contact,
-  #blogIndex {
+  #blogIndex,
+  #blogNew .contentWrapper {
     margin-bottom: 0;
   }
 
