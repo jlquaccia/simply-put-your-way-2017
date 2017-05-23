@@ -296,7 +296,8 @@
   }
 
   #blogNew .contentWrapper,
-  #blogEdit .contentWrapper {
+  #blogEdit .contentWrapper,
+  #blogShow .contentWrapper {
     margin-bottom: 407px;
   }
 }
@@ -357,7 +358,9 @@
   #contact,
   #blogIndex,
   #blogNew .contentWrapper,
-  #blogEdit .contentWrapper {
+  #blogEdit .contentWrapper,
+  #blogShow,
+  #blogShow .contentWrapper {
     margin-bottom: 0;
   }
 
