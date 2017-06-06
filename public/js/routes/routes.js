@@ -228,7 +228,7 @@ angular
       );
 
     // update site view count
-    $http.post('/api/view-count');
+    $http.put('/api/view-count');
 
       return deferred.promise;
   });
