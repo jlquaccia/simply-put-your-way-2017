@@ -209,7 +209,21 @@ module.exports = function (app) {
   // ======================================================================
   // increment view count up by 1
   app.post('/api/view-count', function (req, res) {
-    ViewCount
+    if (process.env.NODE_ENV) {
+      ViewCount
+      .update({_id: '5937101a734d1d2b1e936288'}, {$inc: {count: 1}, $set: {lastModified: new Date()}})
+      .then(
+        function (response) {
+          console.log('response: ', response);
+          res.json(response);
+        },
+        function (err) {
+          console.error('error: ', err);
+          res.status(500).send(err);
+        }
+      );
+    } else {
+      ViewCount
       .update({_id: '5936f63f283bae267d1298aa'}, {$inc: {count: 1}, $set: {lastModified: new Date()}})
       .then(
         function (response) {
@@ -221,6 +235,7 @@ module.exports = function (app) {
           res.status(500).send(err);
         }
       );
+    }
 
     // ViewCount.update({_id: '5936f63f283bae267d1298aa'}, {$inc: {count: 1}}, function (err, response) {
     //   if (err) {
@@ -235,15 +250,27 @@ module.exports = function (app) {
 
   // get current view count
   app.get('/api/view-count', function (req, res) {
-    ViewCount.find({_id: '5936f63f283bae267d1298aa'}, function (err, viewCount) {
-      if (err) {
-        console.error('error: ', err);
-        res.status(500).send(err);
-      } else {
-        console.log('viewCount: ', viewCount);
-        res.json(viewCount);
-      }
-    });
+    if (process.env.NODE_ENV) {
+      ViewCount.find({_id: '5937101a734d1d2b1e936288'}, function (err, viewCount) {
+        if (err) {
+          console.error('error: ', err);
+          res.status(500).send(err);
+        } else {
+          console.log('viewCount: ', viewCount);
+          res.json(viewCount);
+        }
+      });
+    } else {
+      ViewCount.find({_id: '5936f63f283bae267d1298aa'}, function (err, viewCount) {
+        if (err) {
+          console.error('error: ', err);
+          res.status(500).send(err);
+        } else {
+          console.log('viewCount: ', viewCount);
+          res.json(viewCount);
+        }
+      });
+    }
   });
 
   // initialize page view counter
