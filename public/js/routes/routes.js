@@ -227,6 +227,9 @@ angular
         }
       );
 
+    // update site view count
+    $http.post('/api/view-count');
+
       return deferred.promise;
   });
 

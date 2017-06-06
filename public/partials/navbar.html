@@ -9,7 +9,11 @@
         </a>
       </div>
 
-      <div ng-show="currentUser" class="currentUser animated fadeInDown"><span>Admin Mode</span><br>Logged in as {{currentUser.username}}</div>
+      <div ng-show="currentUser" class="currentUser animated fadeInDown">
+        <span class="adminMode">Admin Mode</span><br>
+        Logged in as {{currentUser.username}}<br>
+        <small><b>Total Site Views:</b> {{viewCount}} <span class="lastView"><b>Last View:</b> {{lastView | date}}</span></small>
+      </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <ul class="navLinks navbar-right">

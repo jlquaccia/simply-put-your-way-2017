@@ -1,5 +1,6 @@
 var Post = require('./models/Post');
 var User = require('./models/User')();
+var ViewCount = require('./models/ViewCount');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var passportApi = require('./passport/passport')(User);
@@ -202,6 +203,56 @@ module.exports = function (app) {
 
     res.json(user);
   });
+
+  // ======================================================================
+  // view count ==========================================================
+  // ======================================================================
+  // increment view count up by 1
+  app.post('/api/view-count', function (req, res) {
+    ViewCount
+      .update({_id: '5936f63f283bae267d1298aa'}, {$inc: {count: 1}, $set: {lastModified: new Date()}})
+      .then(
+        function (response) {
+          console.log('response: ', response);
+          res.json(response);
+        },
+        function (err) {
+          console.error('error: ', err);
+          res.status(500).send(err);
+        }
+      );
+
+    // ViewCount.update({_id: '5936f63f283bae267d1298aa'}, {$inc: {count: 1}}, function (err, response) {
+    //   if (err) {
+    //     console.error('error: ', err);
+    //     res.status(500).send(err);
+    //   } else {
+    //     console.log('response: ', response);
+    //     res.json(response);
+    //   }
+    // });
+  });
+
+  // get current view count
+  app.get('/api/view-count', function (req, res) {
+    ViewCount.find({_id: '5936f63f283bae267d1298aa'}, function (err, viewCount) {
+      if (err) {
+        console.error('error: ', err);
+        res.status(500).send(err);
+      } else {
+        console.log('viewCount: ', viewCount);
+        res.json(viewCount);
+      }
+    });
+  });
+
+  // initialize page view counter
+  // var initCounter = new ViewCount({count: 0});
+
+  // initCounter.save(function (err, response) {
+  //   if (err) return console.error(err);
+  //   console.log('counter initialized');
+  // });
 
   // ======================================================================
   // angular =========================================================

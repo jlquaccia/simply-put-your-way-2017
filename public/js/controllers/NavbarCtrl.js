@@ -1,9 +1,21 @@
 angular
   .module('simply-put-your-way')
-  .controller('NavbarCtrl', ['$scope', '$rootScope', '$state', '$timeout', '$mdToast', 'Auth', function ($scope, $rootScope, $state, $timeout, $mdToast, Auth) {
+  .controller('NavbarCtrl', ['$scope', '$rootScope', '$state', '$timeout', '$mdToast', '$http', 'Auth', function ($scope, $rootScope, $state, $timeout, $mdToast, $http, Auth) {
     // handles events on scroll
     var lastScrollTop = 0;
     var isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 && navigator.userAgent && !navigator.userAgent.match('CriOS');
+
+    $http.get('/api/view-count')
+      .then(
+        function (response) {
+          console.log('response: ', response.data[0]);
+          $scope.viewCount = response.data[0].count;
+          $scope.lastView = response.data[0].lastModified;
+        },
+        function (err) {
+          console.error('error: ', err);
+        }
+      );
 
     $(window).scroll(function () {
       var scrollPos = $(window).scrollTop();

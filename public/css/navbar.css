@@ -243,6 +243,11 @@ a.navLogo img.img-responsive {
   cursor: pointer;
 }
 
+.navWrapper span.lastView {
+  position: relative;
+  left: 10px;
+}
+
 @media screen and (max-width: 48em) {
   .navWrapper .overlay .wrap ul.wrap-nav > li {
     width: 100%;
@@ -424,11 +429,11 @@ a.navLogo img.img-responsive {
   width: 100%;
   margin: 0 auto;
   background-color: rgba(144,56,63,1);
-  padding: 20px 0;
+  padding: 5px 0;
   color: #fff;
 }
 
-.navWrapper .currentUser span {
+.navWrapper .currentUser span.adminMode {
   color: #fff;
   font-weight: 600;
 }
