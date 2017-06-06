@@ -210,18 +210,18 @@ module.exports = function (app) {
   // increment view count up by 1
   app.put('/api/view-count', function (req, res) {
     if (process.env.NODE_ENV) {
-      // ViewCount
-      // .update({_id: '59371581734d1d2b1e9366d9'}, {$inc: {count: 1}, $set: {lastModified: new Date()}})
-      // .then(
-      //   function (response) {
-      //     console.log('response: ', response);
-      //     res.json(response);
-      //   },
-      //   function (err) {
-      //     console.error('error: ', err);
-      //     res.status(500).send(err);
-      //   }
-      // );
+      ViewCount
+      .update({_id: '5937187e0404f00004c9feed'}, {$inc: {count: 1}, $set: {lastModified: new Date()}})
+      .then(
+        function (response) {
+          console.log('response: ', response);
+          res.json(response);
+        },
+        function (err) {
+          console.error('error: ', err);
+          res.status(500).send(err);
+        }
+      );
     } else {
       ViewCount
       .update({_id: '5936f63f283bae267d1298aa'}, {$inc: {count: 1}, $set: {lastModified: new Date()}})
@@ -241,15 +241,15 @@ module.exports = function (app) {
   // get current view count
   app.get('/api/view-count', function (req, res) {
     if (process.env.NODE_ENV) {
-      // ViewCount.find({_id: '59371581734d1d2b1e9366d9'}, function (err, viewCount) {
-      //   if (err) {
-      //     console.error('error: ', err);
-      //     res.status(500).send(err);
-      //   } else {
-      //     console.log('viewCount: ', viewCount);
-      //     res.json(viewCount);
-      //   }
-      // });
+      ViewCount.find({_id: '5937187e0404f00004c9feed'}, function (err, viewCount) {
+        if (err) {
+          console.error('error: ', err);
+          res.status(500).send(err);
+        } else {
+          console.log('viewCount: ', viewCount);
+          res.json(viewCount);
+        }
+      });
     } else {
       ViewCount.find({_id: '5936f63f283bae267d1298aa'}, function (err, viewCount) {
         if (err) {
@@ -264,14 +264,14 @@ module.exports = function (app) {
   });
 
   // initialize page view counter
-  app.post('/api/view-count', function (req, res) {
-    var initCounter = new ViewCount({count: 0});
+  // app.post('/api/view-count', function (req, res) {
+  //   var initCounter = new ViewCount({count: 0});
 
-    initCounter.save(function (err, response) {
-      if (err) return console.error(err);
-      console.log('counter initialized');
-    });
-  });
+  //   initCounter.save(function (err, response) {
+  //     if (err) return console.error(err);
+  //     console.log('counter initialized');
+  //   });
+  // });
 
   // ======================================================================
   // angular =========================================================
