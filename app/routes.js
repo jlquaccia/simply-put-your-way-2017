@@ -274,14 +274,14 @@ module.exports = function (app) {
   });
 
   // initialize page view counter
-  if (process.env.NODE_ENV) {
+  
     var initCounter = new ViewCount({count: 0});
 
     initCounter.save(function (err, response) {
       if (err) return console.error(err);
       console.log('counter initialized');
     });
-  }
+  
 
   // ======================================================================
   // angular =========================================================
