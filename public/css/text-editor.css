@@ -61,6 +61,12 @@ fieldset[disabled] .btn-blue.active {
   outline: none;
   border-color: rgba(145,57,64,1);
   box-shadow: none;
+  overflow-y: scroll;
+}
+
+.ta-editor.ta-html,
+.ta-scroll-window.form-control {
+  height: 550px;
 }
 
 .dropdown-menu {

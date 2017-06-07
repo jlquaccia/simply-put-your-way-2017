@@ -12,7 +12,7 @@
       <div ng-show="currentUser" class="currentUser animated fadeInDown">
         <span class="adminMode">Admin Mode</span><br>
         Logged in as {{currentUser.username}}<br>
-        <small><b>Total Site Views:</b> {{viewCount | numbersWithCommas}} <span class="lastView"><b>Last View:</b> {{lastView | date}}</span></small>
+        <small><b>Total Site Views:</b> {{viewCount | numbersWithCommas}} <span class="lastView"><b>Last View:</b> {{lastView | date : 'MMM d, y h:mm:ss a'}}</span></small>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
