@@ -199,7 +199,7 @@ angular
       return taOptions;
     }]);
   }])
-  .run(function ($q, $http, $rootScope, $FB) {
+  .run(function ($q, $http, $rootScope, $FB, LocalStorage) {
     $FB.init('1199346513410372', 'US');
 
     var deferred = $q.defer();
@@ -208,17 +208,18 @@ angular
       .then(
         function (user) {
           $rootScope.errorMessage = null;
-          console.log(user.data);
+          // console.log(user.data);
+
           if (user.data !== '0') {
             // User is Authenticated
             $rootScope.currentUser = user.data;
-            console.log('user is logged in');
+            // console.log('user is logged in');
             deferred.resolve();
           } else {
             // User is not Authenticated
             deferred.reject();
             // $rootScope.errorMessage = 'You need to log in.';
-            console.log('user is not logged in');
+            // console.log('user is not logged in');
           }
         },
         function (err) {
@@ -227,8 +228,16 @@ angular
         }
       );
 
-    // update site view count
-    $http.put('/api/view-count');
+      // console.log('LocalStorage: ', LocalStorage.get('SPYWSiteHasBeenVisited'));
+      
+      if (!LocalStorage.get('SPYWSiteHasBeenVisited')) {
+        // update site view count
+        // console.log('site has not been visited');
+        $http.put('/api/view-count');
+        LocalStorage.set('SPYWSiteHasBeenVisited', true);
+      } else {
+        // console.log('site has been visited');
+      }
 
       return deferred.promise;
   });
@@ -256,3 +265,31 @@ function isCurrentUser ($q, $http, $rootScope, $state) {
 
     return deferred.promise;
 }
+
+// function hasVisitedSite ($q, LocalStorage) {
+//   var deferred = $q.defer();
+
+//   LocalStorage.get('SPYWSiteHasBeenVisited')
+//     .then(
+//       function () {
+//         console.log('LocalStorage: ', LocalStorage.get('SPYWSiteHasBeenVisited'));
+
+//         if (!LocalStorage.get('SPYWSiteHasBeenVisited')) {
+//           // update site view count
+//           console.log('site has not been visited');
+//           $http.put('/api/view-count');
+//           LocalStorage.set('SPYWSiteHasBeenVisited', true);
+//           deferred.resolve();
+//         } else {
+//           console.log('site has been visited');
+//           deferred.reject();
+//         }
+//       },
+//       function (err) {
+//         console.log(err);
+//         deferred.reject();
+//       }
+//     );
+
+//   return deferred.promise;
+// }
