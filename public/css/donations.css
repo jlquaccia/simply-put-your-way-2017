@@ -72,6 +72,7 @@
 #donations .whereToDonate img {
   margin: 0 auto;
   width: 20%;
+  border: 1px solid #000;
 }
 
 #donations .whereToDonate img.salvationArmy {
