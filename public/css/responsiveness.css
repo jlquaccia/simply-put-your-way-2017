@@ -18,10 +18,11 @@
     background-size: cover;
   }
 
-  /*#rates .headerImage {
-    background-position: center 40px;
-    background-size: cover;
-  }*/
+  #home .home__logo {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
 
   #home h1.title,
   #services h1.title,
@@ -46,6 +47,10 @@
   #whatIsAnOrganizer h1.title span.fat,
   #rates h1.title span.thin {
     background-color: rgba(189,189,189,0.9);
+  }
+
+  #home .headerImage {
+    background-image: url('../images/subtle patterns/crossword.png') !important;
   }
 }
 
@@ -426,6 +431,10 @@
 
   #portfolio .portfolio img.img-responsive.beepi {
     width: 50%;
+  }
+
+  #home .home__logo {
+    width: 90%;
   }
 }
 

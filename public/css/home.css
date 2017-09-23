@@ -45,6 +45,14 @@
   background-size: contain;
 }
 
+#home .home__logo {
+  width: 432px;
+  z-index: 999999;
+  position: absolute;
+  top: 10em;
+  left: 5em;
+}
+
 #home .spacerImage {
   background-image: url("../images/Shelf Life.jpg");
   min-height: 40em;
