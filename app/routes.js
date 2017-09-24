@@ -129,7 +129,9 @@ module.exports = function (app) {
         from: req.body.email,
         to: 'info@simplyputyourway.net',
         subject: 'Simply Put Your Way: ' + req.body.subject,
-        text: 'New message from ' + req.body.firstName + ' ' + req.body.lastName + '\n\n' + req.body.message
+        text: 'Name: ' + req.body.firstName + ' ' + req.body.lastName + '\n\n' +
+          'Email: ' + req.body.email + '\n\n' +
+          'Message: ' + req.body.message
       };
 
       transporter.sendMail(mailOptions, (error, info) => {
