@@ -17,6 +17,8 @@
 
 .navigationBar .navbar-header a.navLogo {
   color: #000;
+  position: relative;
+  left: 7em;
 }
 
 .navigationBar .navbar-header a.navLogo:active,
@@ -436,6 +438,12 @@ a.navLogo img.img-responsive {
 .navWrapper .currentUser span.adminMode {
   color: #fff;
   font-weight: 600;
+}
+
+.home__logo-navbar {
+  width: 85px;
+  position: absolute;
+  top: 8px;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/

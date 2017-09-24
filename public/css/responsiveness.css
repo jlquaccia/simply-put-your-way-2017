@@ -333,6 +333,11 @@
   .navigationBar .navbar-header {
     padding: 11px 0 11px 25px;
   }
+
+  .navigationBar .navbar-header a.navLogo {
+    left: 8em;
+    font-size: .8em;
+  }
 }
 
 @media screen and (max-width: 768px) {
