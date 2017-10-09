@@ -22,7 +22,7 @@ var port = process.env.PORT || 3000;
 
 // connect to our mongoDB database
 // mongoose.connect(process.env.MONGODB_URI || db.url);
-mongoose.connect(process.env.DB_URL_PROD || db.url);
+mongoose.connect(process.env.MONGODB_URL || db.url);
 
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 // get all data/stuff of the body (POST) parameters
