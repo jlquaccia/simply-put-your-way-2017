@@ -69,6 +69,10 @@
   margin: 25px 0;
 }
 
+#rates table.paddingz {
+  margin: 2em 0;
+}
+
 #rates .rates td {
   font-size: 18px;
 }
