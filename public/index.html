@@ -25,9 +25,9 @@
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Simply Put Your Way Blog" />
-  <meta name="twitter:description" content="Simply Put Your Way Blog" />
+  <meta name="twitter:description" content="Professional Organizer. Serving communities along the Peninsula." />
   <meta name="twitter:image" content="http://www.simplyputyourway.net/images/spyw-logo-small.jpg" />
-  
+
   <title>Simply Put Your Way</title>
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
@@ -133,5 +133,8 @@
   <div ng-include="'partials/navbar.html'"></div>
   <div ui-view></div>
   <div ng-include="'partials/footer.html'"></div>
+  <script>
+    $('head').append('<meta name="jitter:card" content="jitter-summary" />');
+  </script>
 </body>
 </html>
