@@ -3,7 +3,8 @@ angular
   .factory('imagePreloader', [function () {
     function headStart () {
       var imgArray = [
-        {img: '../images/new/Closet.jpg', img2: 'url("../images/new/Closet.jpg"), url("../images/subtle patterns/crossword.png")', pageId: '#about'},
+        {img: '../images/better-table-flowers-min.jpg', img2: 'url("../images/better-table-flowers-min.jpg"), url("../images/subtle patterns/crossword.png")', pageId: '#about'},
+        {img: '../images/new/Closet.jpg', img2: 'url("../images/new/Closet.jpg"), url("../images/subtle patterns/crossword.png")', pageId: '#virtualOrganizing'},
         {img: '../images/new/Fun Old Kitchen Items.jpg', img2: 'url("../images/new/Fun Old Kitchen Items.jpg"), url("../images/subtle patterns/crossword.png")', pageId: '#contact'},
         {img: '../images/new/Pink Hues.jpg', img2: 'url("../images/new/Pink Hues.jpg"), url("../images/subtle patterns/crossword.png")', pageId: '#donations'},
         {img: '../images/Fun Decor.jpg', img2: 'url("../images/Fun Decor.jpg"), url("../images/subtle patterns/crossword.png")', pageId: '#home'},

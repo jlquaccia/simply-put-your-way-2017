@@ -1,6 +1,6 @@
 angular
   .module('simply-put-your-way')
-  .controller('AboutCtrl', ['$scope', 'parallaxHelper', 'imagePreloader', function ($scope, parallaxHelper, imagePreloader) {
+  .controller('VirtualOrganizingCtrl', ['$scope', 'parallaxHelper', 'imagePreloader', function ($scope, parallaxHelper, imagePreloader) {
     // // preloading header image
     // $('<img/>').attr('src', '../images/new/Single Wheel Bike.jpg').on('load', function () {
     //   $(this).remove();

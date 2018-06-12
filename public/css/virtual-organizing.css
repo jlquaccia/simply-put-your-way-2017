@@ -1,0 +1,180 @@
+/* for footer on desktop */
+#virtualOrganizing {
+  margin-bottom: 355px;
+  padding-bottom: 25px;
+  background-color: #fff;
+}
+
+#virtualOrganizing .contentWrapper {
+  position: relative;
+  background: #fff;
+  z-index: 1;
+  padding: 25px 0 0;
+}
+
+#virtualOrganizing h1 {
+  color: rgba(145,56,63,1);
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* header */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+#virtualOrganizing .headerImage {
+  /*background: url("../images/new/Single Wheel Bike.jpg"), url("../images/subtle patterns/crossword.png");*/
+  min-height: 40em;
+  background-position: 0 0, 0px 0;
+  background-repeat: no-repeat, repeat;
+  background-size: 70%;
+}
+
+#virtualOrganizing h1.title {
+  display: inline-block;
+  z-index: 9;
+  position: absolute;
+  top: 40%;
+  right: 3%;
+  text-align: center;
+  color: rgba(145,56,63,0.5);
+  text-transform: uppercase;
+  font-size: 5em;
+}
+
+#virtualOrganizing h1.title span.thin {
+  font-weight: 100;
+  background-color: rgba(189,189,189,0.9);
+  padding: 0 10px;
+  letter-spacing: 10px;
+}
+
+#virtualOrganizing h1.title span.fat {
+  font-weight: 100;
+  background-color: rgba(0,0,0,0.3);
+  padding: 0 10px;
+  letter-spacing: 10px;
+  position: relative;
+  top: 25px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* virtual organizing */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+#virtualOrganizing .about img.maaam {
+  -webkit-clip-path: circle(46% at 50% 50%);
+  -moz-clip-path: circle(46% at 50% 50%);
+  clip-path: circle(46% at 50% 50%);
+  margin: 0 auto;
+  width: 80%;
+}
+
+@-moz-document url-prefix() {
+  #virtualOrganizing .about img.maaam {
+    position: relative;
+    width: 80%;
+    border-radius: 60%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+  }
+
+  @media screen and (max-width: 992px) {
+    #virtualOrganizing .about img.maaam {
+      margin-bottom: 20px !important;
+    }
+  }
+}
+
+#virtualOrganizing .about b {
+  color: rgba(145,56,63,1);
+}
+
+#virtualOrganizing .about .socialAndSelfie b {
+  font-size: 18px;
+}
+
+#virtualOrganizing .about .social {
+  font-size: 25px;
+}
+
+#virtualOrganizing .about .social .social-icon {
+  width: 80px;
+  height: 50px;
+  background: rgba(145,56,63,1);
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  -webkit-transition: transform .14s 0s ease-in-out;
+  -moz-transition: transform .14s 0s ease-in-out;
+  -ms-transition: transform .14s 0s ease-in-out;
+  -o-transition: transform .14s 0s ease-in-out;
+  transition: transform .14s 0s ease-in-out;
+}
+
+#virtualOrganizing .about .social a:focus {
+  text-decoration: none;
+}
+
+#virtualOrganizing .about .social .social-icon i {
+  margin-top: 12px;
+}
+
+#virtualOrganizing .separator.small {
+  margin: 25px 0 45px;
+  width: 50%;
+}
+
+#virtualOrganizing .virtualOrgLogo {
+  width: 250px;
+  margin-bottom: 45px;
+}
+
+#virtualOrganizing .virtualOrgLogo.bottom {
+  margin: 0 auto;
+}
+
+#virtualOrganizing ul li {
+  font-size: 18px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* hover responsiveness */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 1000px) {
+  #virtualOrganizing .headerImage {
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+
+  #virtualOrganizing h1.title {
+    font-size: 4em;
+    line-height: 1.5em;
+  }
+
+  #virtualOrganizing {
+    margin-bottom: 405px;
+  }
+}
+
+@media all and (min-width: 800px) {
+  #virtualOrganizing .about .social a:hover {
+    text-decoration: none;
+  }
+
+  #virtualOrganizing .about .social .social-icon:hover {
+    background: rgba(145,56,63,1);
+    color: #fff;
+    -webkit-transform: translateY(5px);
+    -moz-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    -o-transform: translateY(5px);
+    transform: translateY(5px);
+  }
+}
+
+@media (max-width: 768px) {
+  #virtualOrganizing {
+    margin-bottom: 0;
+  }
+
+  #virtualOrganizing .separator.small {
+    width: 100%;
+  }
+}

@@ -59,6 +59,11 @@ angular
         controller: 'WhatIsAnOrganizerCtrl as whatIsAnOrganizer',
         templateUrl: '/views/what-is-an-organizer.html'
       })
+      .state('virtual-organizing', {
+        url: '/virtual-organizing',
+        controller: 'VirtualOrganizingCtrl as virtualOrganizer',
+        templateUrl: '/views/virtual-organizing.html'
+      })
 
       // blog
       .state('blog', {
@@ -106,7 +111,7 @@ angular
     $provide.decorator('taOptions', ['taRegisterTool', '$delegate', function (taRegisterTool, taOptions) {
       // $delegate is the taOptions we are decorating
       // register the tool with textAngular
-      
+
       // BACKGROUNDCOLOR DOESN'T WORK, WORKS WITH EDITOR BUT DOESN'T PRESERVE WHEN SAVING TO MONGODB. THINK IT IS A BUG WITH TEXTANGULAR
 
       // taRegisterTool('backgroundColor', {
@@ -229,7 +234,7 @@ angular
       );
 
       // console.log('LocalStorage: ', LocalStorage.get('SPYWSiteHasBeenVisited'));
-      
+
       if (!LocalStorage.get('SPYWSiteHasBeenVisited')) {
         // update site view count
         // console.log('site has not been visited');
