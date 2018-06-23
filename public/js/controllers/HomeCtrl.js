@@ -1,6 +1,6 @@
 angular
   .module('simply-put-your-way')
-  .controller('HomeCtrl', ['$scope', 'parallaxHelper', 'Pinterest', 'Testimonials', 'FlickityService', 'imagePreloader', function ($scope, parallaxHelper, Pinterest, Testimonials, FlickityService, imagePreloader) {    
+  .controller('HomeCtrl', ['$scope', 'parallaxHelper', 'Pinterest', 'Testimonials', 'FlickityService', 'imagePreloader', function ($scope, parallaxHelper, Pinterest, Testimonials, FlickityService, imagePreloader) {
     imagePreloader.headStart();
     imagePreloader.testimonialImages();
 
@@ -20,7 +20,7 @@ angular
     };
 
     var testimonialsFlickity = document.getElementById('myCustomId');
-    
+
     // make sure carousel will pause on click only and will resume autoplay next time the carousel is visible (ex. user scrolls/mouseleaves away and then comes back)
     // testimonialsFlickity.addEventListener('mouseleave', function (e) {
     //   if (FlickityService.instances[0].instance.player.state === 'stopped') {
@@ -60,7 +60,6 @@ angular
     // getting pinterest data
     // default board: its your space
     Pinterest.getBoardPins('490329546869188172').then(function (response) {
-      console.log(response.data);
       $scope.currentBoard = response.data;
     });
 

@@ -272,7 +272,7 @@
   #donations,
   #resources,
   #contact {
-    margin-bottom: 367px;
+    margin-bottom: 0;
   }
 
   #portfolio .portfolio img.img-responsive.beepi {
@@ -289,7 +289,7 @@
   }
 
   #donations .whereToDonate img.marissasCloset {
-    width: 70%;
+    width: 35%;
   }
 
   #whatIsAnOrganizer .whiteFlower {
@@ -494,8 +494,8 @@
 
   #home .headerImage {
     background-image: url(../images/Single Red Flower.jpg);
-    min-height: 40em;
-    background-repeat: no-repeat; 
+    min-height: 30em;
+    background-repeat: no-repeat;
     background-size: cover;
   }
 

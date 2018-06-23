@@ -80,10 +80,20 @@
 }
 
 #donations .whereToDonate img.marissasCloset {
-  width: 40%;
+  width: 15%;
 }
 
 #donations .whereToDonate p {
-  width: 60%;
+  width: 95%;
   margin: 25px auto;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* charities help in so many ways */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+#donations .whereToDonate .charities a {
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 18px;
+  color: rgba(143,57,64,1);
 }

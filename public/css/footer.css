@@ -151,7 +151,7 @@ footer .overlay .wrap ul.wrap-nav li a.linkCategoryTitle.footerContact {
   cursor: pointer;
 }
 
-@media screen and (max-width: 48em) {
+@media screen and (max-width: 1000px) {
   footer .overlay .wrap ul.wrap-nav > li {
     width: 100%;
     padding: 20px 0;
@@ -169,7 +169,7 @@ footer .overlay .wrap ul.wrap-nav li a.linkCategoryTitle.footerContact {
   }
 
   footer .overlay .social .social-icon {
-    width: 20%;
+    /* width: 20%; */
     height: 50px;
     background: #fff;
     color: #333;

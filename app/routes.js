@@ -115,7 +115,7 @@ module.exports = function (app) {
     req.checkBody('firstName', 'please enter your first name').notEmpty();
     req.checkBody('lastName', 'please enter your last name').notEmpty();
     req.checkBody('email', 'please enter a valid email').notEmpty().isEmail();
-    req.checkBody('subject', 'you must leave a subject line').notEmpty();
+    // req.checkBody('subject', 'you must leave a subject line').notEmpty();
     req.checkBody('message', 'you must leave a message').notEmpty();
 
     var errors = req.validationErrors(true);
@@ -128,7 +128,7 @@ module.exports = function (app) {
       let mailOptions = {
         from: req.body.email,
         to: 'info@simplyputyourway.net',
-        subject: 'Simply Put Your Way: ' + req.body.subject,
+        subject: 'Simply Put Your Way: New Message!',
         text: 'Name: ' + req.body.firstName + ' ' + req.body.lastName + '\n\n' +
           'Email: ' + req.body.email + '\n\n' +
           'Message: ' + req.body.message
