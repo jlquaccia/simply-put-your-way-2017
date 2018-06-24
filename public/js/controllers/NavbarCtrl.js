@@ -34,7 +34,7 @@ angular
       }
 
       // show/hide navbar when necessary
-      if (currentScroll > lastScrollTop) {
+      if (currentScroll >= lastScrollTop) {
         $('.navWrapper .headroom').removeClass('headroom--pinned');
         $('.navWrapper .headroom').addClass('headroom--unpinned');
       } else {
@@ -44,7 +44,7 @@ angular
 
       lastScrollTop = currentScroll;
     });
-      
+
     // toggle mobile overlay
     $('.button, .navWrapper .overlay .closeOverlay, .navWrapper .overlay a').click(function () {
       $('.overlay').fadeToggle(200);
