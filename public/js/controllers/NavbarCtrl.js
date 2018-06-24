@@ -34,13 +34,13 @@ angular
       }
 
       // show/hide navbar when necessary
-      if (currentScroll >= lastScrollTop) {
-        $('.navWrapper .headroom').removeClass('headroom--pinned');
-        $('.navWrapper .headroom').addClass('headroom--unpinned');
-      } else {
-        $('.navWrapper .headroom').removeClass('headroom--unpinned');
-        $('.navWrapper .headroom').addClass('headroom--pinned');
-      }
+      // if (currentScroll > lastScrollTop) {
+      //   $('.navWrapper .headroom').removeClass('headroom--pinned');
+      //   $('.navWrapper .headroom').addClass('headroom--unpinned');
+      // } else {
+      //   $('.navWrapper .headroom').removeClass('headroom--unpinned');
+      //   $('.navWrapper .headroom').addClass('headroom--pinned');
+      // }
 
       lastScrollTop = currentScroll;
     });
