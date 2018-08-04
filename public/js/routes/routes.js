@@ -64,6 +64,11 @@ angular
         controller: 'VirtualOrganizingCtrl as virtualOrganizer',
         templateUrl: '/views/virtual-organizing.html'
       })
+      .state('events', {
+        url: '/events',
+        controller: 'EventsCtrl as events',
+        templateUrl: '/views/events.html'
+      })
 
       // blog
       .state('blog', {

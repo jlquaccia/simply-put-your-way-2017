@@ -38,8 +38,9 @@ a:focus {
 #resources,
 #contact,
 #blogIndex,
-#blogShow {
-  margin-bottom: 357px;
+#blogShow,
+#events {
+  margin-bottom: 375px;
 }
 
 a {
