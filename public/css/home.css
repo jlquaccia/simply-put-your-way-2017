@@ -65,7 +65,7 @@
 #home .companies img {
   display: inline-block;
   max-width: 15%;
-  margin: 0 75px;
+  margin: 25px 75px;
 }
 
 #home .about .titleBlurb {
@@ -338,28 +338,28 @@ div.flickity-viewport {
   section.pinterest  .masonry {
     margin-left: 2%;
   }
-  
+
   section.pinterest .masonry .grid-sizer {
     width: 48.5%;
   }
-  
+
   section.pinterest .masonry .gutter-sizer {
     width: 3%;
   }
-  
+
   section.pinterest .masonry .item {
     width: 48.5%;
     margin-bottom: 3%;
     background-color: #fff;
     text-align: center;
   }
-  
+
   section.pinterest .masonry .item p,
   section.pinterest .masonry .item h3 {
     background: #fff;
     margin: 10px 0 0 0;
   }
-  
+
   section.pinterest .masonry .item img {
     width: 90%;
     border-radius: 10px;
@@ -367,14 +367,14 @@ div.flickity-viewport {
     top: 10px;
     margin-bottom: 10px;
   }
-  
+
   section.pinterest .masonry .item .textWrapper {
     padding: 0 15px 15px;
     color: #333333;
     font-weight: 100;
     text-align: left;
   }
-  
+
   section.pinterest .masonry .item em {
     position: relative;
     top: 5px;
@@ -385,42 +385,42 @@ div.flickity-viewport {
   section.pinterest .masonry {
     margin-left: 7%;
   }
-  
+
   section.pinterest .masonry .grid-sizer {
     width: 48.5%;
   }
-  
+
   section.pinterest .masonry .gutter-sizer {
     width: 3%;
   }
-  
+
   section.pinterest .masonry .item {
     width: 48.5%;
     margin-bottom: 3%;
     background-color: #fff;
     text-align: center;
   }
-  
+
   section.pinterest .masonry .item p,
   section.pinterest .masonry .item h3 {
     background: #fff;
     margin: 10px 0 0 0;
   }
-  
+
   section.pinterest .masonry .item img {
     width: 90%;
     border-radius: 10px;
     position: relative;
     top: 10px;
   }
-  
+
   section.pinterest .masonry .item .textWrapper {
     padding: 0 15px 15px;
     color: #333333;
     font-weight: 100;
     text-align: left;
   }
-  
+
   section.pinterest .masonry .item em {
     position: relative;
     top: 5px;
@@ -431,42 +431,42 @@ div.flickity-viewport {
   section.pinterest .masonry {
     margin-left: 4%;
   }
-  
+
   section.pinterest .masonry .grid-sizer {
     width: 31.83333333%;
   }
-  
+
   section.pinterest .masonry .gutter-sizer {
     width: 2.25%;
   }
-  
+
   section.pinterest .masonry .item {
     width: 31.83333333%;
     margin-bottom: 2.25%;
     background-color: #fff;
     text-align: center;
   }
-  
+
   section.pinterest .masonry .item p,
   section.pinterest .masonry .item h3 {
     background: #fff;
     margin: 10px 0 0 0;
   }
-  
+
   section.pinterest .masonry .item img {
     width: 90%;
     border-radius: 10px;
     position: relative;
     top: 10px;
   }
-  
+
   section.pinterest .masonry .item .textWrapper {
     padding: 0 15px 15px;
     color: #333333;
     font-weight: 100;
     text-align: left;
   }
-  
+
   section.pinterest .masonry .item em {
     position: relative;
     top: 5px;
@@ -477,42 +477,42 @@ div.flickity-viewport {
   section.pinterest .masonry {
     margin-left: 5.5%;
   }
-  
+
   section.pinterest .masonry .grid-sizer {
     width: 23.5%;
   }
-  
+
   section.pinterest .masonry .gutter-sizer {
     width: 2%;
   }
-  
+
   section.pinterest .masonry .item {
     width: 23.5%;
     margin-bottom: 2%;
     background-color: #fff;
     text-align: center;
   }
-  
+
   section.pinterest .masonry .item p,
   section.pinterest .masonry .item h3 {
     background: #fff;
     margin: 10px 0 0 0;
   }
-  
+
   section.pinterest .masonry .item img {
     width: 90%;
     border-radius: 10px;
     position: relative;
     top: 10px;
   }
-  
+
   section.pinterest .masonry .item .textWrapper {
     padding: 0 15px 15px;
     color: #333333;
     font-weight: 100;
     text-align: left;
   }
-  
+
   section.pinterest .masonry .item em {
     position: relative;
     top: 5px;
@@ -523,42 +523,42 @@ div.flickity-viewport {
   section.pinterest .masonry {
     margin-left: 7%;
   }
-  
+
   section.pinterest .masonry .grid-sizer {
     width: 18.5%;
   }
-  
+
   section.pinterest .masonry .gutter-sizer {
     width: 1.875%;
   }
-  
+
   section.pinterest .masonry .item {
     width: 18.5%;
     margin-bottom: 1.875%;
     background-color: #fff;
     text-align: center;
   }
-  
+
   section.pinterest .masonry .item p,
   section.pinterest .masonry .item h3 {
     background: #fff;
     margin: 10px 0 0 0;
   }
-  
+
   section.pinterest .masonry .item img {
     width: 90%;
     border-radius: 10px;
     position: relative;
     top: 10px;
   }
-  
+
   section.pinterest .masonry .item .textWrapper {
     padding: 0 15px 15px;
     color: #333333;
     font-weight: 100;
     text-align: left;
   }
-  
+
   section.pinterest .masonry .item em {
     position: relative;
     top: 5px;
@@ -569,42 +569,42 @@ div.flickity-viewport {
   section.pinterest .masonry {
     margin-left: 9%;
   }
-  
+
   section.pinterest .masonry .grid-sizer {
     width: 15.16666667%;
   }
-  
+
   section.pinterest .masonry .gutter-sizer {
     width: 1.8%;
   }
-  
+
   section.pinterest .masonry .item {
     width: 15.16666667%;
     margin-bottom: 1.8%;
     background-color: #fff;
     text-align: center;
   }
-  
+
   section.pinterest .masonry .item p,
   section.pinterest .masonry .item h3 {
     background: #fff;
     margin: 10px 0 0 0;
   }
-  
+
   section.pinterest .masonry .item img {
     width: 90%;
     border-radius: 10px;
     position: relative;
     top: 10px;
   }
-  
+
   section.pinterest .masonry .item .textWrapper {
     padding: 0 15px 15px;
     color: #333333;
     font-weight: 100;
     text-align: left;
   }
-  
+
   section.pinterest .masonry .item em {
     position: relative;
     top: 5px;
@@ -659,7 +659,7 @@ section.pinterest .boards li {
     -webkit-transform: scale(0.96);
     transform: scale(0.96);
   }
-  
+
   100% {
     opacity: 1;
     -webkit-transform: scale(1);
@@ -679,4 +679,8 @@ section.pinterest .boards li {
   section.pinterest .boards li:hover {
     background: rgba(0, 0, 0, 0.1);
   }
+}
+
+section.pinterest .masonry .item p, section.pinterest .masonry .item h3 {
+  word-break: break-word;
 }
