@@ -114,10 +114,6 @@
   font-size: 15px;
 }
 
-#events .charities .workshop-intro .mobile-only {
-  display: none;
-}
-
 #events .charities .flex-parent {
   display: -webkit-flex;
   display: -ms-flex;
@@ -186,9 +182,5 @@
 
   #events .charities img.header {
     width: 100%;
-  }
-
-  #events .charities .workshop-intro .mobile-only {
-    display: block;
   }
 }

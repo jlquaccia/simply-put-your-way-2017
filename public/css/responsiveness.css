@@ -1,3 +1,7 @@
+.mobile-only {
+  display: none;
+}
+
 @media screen and (max-width: 1415px) {
   #resources .helpfulBooks .booksWrapper .karen {
     transform: translateY(25%);
@@ -441,6 +445,10 @@
 
   #home .home__logo {
     width: 90%;
+  }
+
+  .mobile-only {
+    display: block;
   }
 }
 
