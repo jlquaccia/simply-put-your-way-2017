@@ -184,3 +184,9 @@
     width: 100%;
   }
 }
+
+@media (max-width: 450px) {
+  #events .tourdates {
+    font-size: 15px;
+  }
+}
