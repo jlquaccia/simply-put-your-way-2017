@@ -33,7 +33,7 @@ angular
 
         $(document).ready(function () {
           $.ajax({
-            url: 'https://api.pinterest.com/v1/boards/' + id + '/pins/?access_token=AdF_DZL-WRyxl7murQoU0aSTfDQeFTspRW447AND5kZqw0ApbwAAAAA&fields=id%2Clink%2Cnote%2Curl%2Cboard%2Cimage%2Ccreator%2Ccreated_at%2Ccolor%2Ccounts%2Cmedia%2Cattribution%2Cmetadata',
+            url: 'https://api.pinterest.com/v1/boards/' + id + '/pins/?access_token=AdF_DZL-WRyxl7murQoU0aSTfDQeFTspRW447AND5kZqw0ApbwAAAAA&fields=id%2Clink%2Cnote%2Curl%2Cboard%2Cimage%2Ccreated_at%2Ccolor%2Ccounts%2Cmedia%2Cattribution%2Cmetadata',
             type: 'GET',
             data: {},
             datatype: 'json',

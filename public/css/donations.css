@@ -91,9 +91,26 @@
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 /* charities help in so many ways */
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
+#donations .whereToDonate .charities .donations-one-warm-coat-wrapper {
+  float: initial;
+  margin: 0 auto;
+}
+
 #donations .whereToDonate .charities a {
   white-space: nowrap;
   font-weight: 600;
   font-size: 18px;
   color: rgba(143,57,64,1);
+}
+
+#donations .whereToDonate .charities .textile-recycling-bin-title-img-wrapper {
+  text-align: center;
+}
+
+#donations .whereToDonate .charities .textile-recycling-bin-paragraph {
+  max-width: 700px;
+}
+
+#donations .whereToDonate .charities .textile-recycling-bin-images {
+  width: 100px;
 }
