@@ -7,7 +7,7 @@ var validator = require('express-validator');
 var app = express();
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
-var mongoose = require('mongoose');
+// var mongoose = require('mongoose');
 var multer = require('multer');
 var passport = require('passport');
 var cookieParser = require('cookie-parser');
@@ -15,14 +15,14 @@ var session = require('express-session');
 
 // configuration ===========================================
 // config files
-var db = require('./config/db');
+// var db = require('./config/db');
 
 // set our port
 var port = process.env.PORT || 3000;
 
 // connect to our mongoDB database
 // mongoose.connect(process.env.MONGODB_URI || db.url);
-mongoose.connect(process.env.MONGODB_URL || db.url);
+// mongoose.connect(process.env.MONGODB_URL || db.url);
 
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 // get all data/stuff of the body (POST) parameters
